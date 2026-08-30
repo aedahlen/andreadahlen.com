@@ -136,10 +136,10 @@ a { color: inherit; text-decoration: none; }
   font-size: 1.5rem;
   line-height: 1;
   letter-spacing: -.005em;
-  color: var(--accent);
+  color: var(--ink);
   transition: color .2s;
 }
-.brand:hover { color: var(--ink); }
+.brand:hover { color: var(--accent); }
 
 .nav-list {
   list-style: none; padding: 0; margin: 0;
@@ -151,8 +151,10 @@ a { color: inherit; text-decoration: none; }
   content: ""; position: absolute; left: 0; right: 100%; bottom: 0;
   height: 1px; background: var(--accent); transition: right .28s ease;
 }
-.nav-list a:hover, .nav-list a.is-active { color: var(--accent); }
-.nav-list a:hover::after, .nav-list a.is-active::after { right: 0; }
+.nav-list a:hover { color: var(--accent); }
+.nav-list a.is-active { color: var(--ink); }
+.nav-list a:hover::after { right: 0; }
+.nav-list a.is-active::after { right: 0; background: var(--rule-strong); }
 
 .theme-toggle {
   width: 30px; height: 30px; flex: none;
@@ -173,7 +175,7 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .nav-toggle { display: none; }
 
 /* ---------- Hero ---------- */
-.hero { padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(1.5rem, 3.5vw, 2.4rem); }
+.hero { padding: clamp(2rem, 5vw, 3.2rem) 0 clamp(1.2rem, 3vw, 2rem); }
 /* Serif italic in the accent blue — the same voice as the wordmark
    and the accent words, so the page opens and closes in one register */
 .hero-greeting {
@@ -184,7 +186,7 @@ html[data-theme="dark"] .icon-moon { display: block; }
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 400;
-  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
   color: var(--accent);
   letter-spacing: -.01em;
 }
@@ -199,9 +201,9 @@ html[data-theme="dark"] .icon-moon { display: block; }
 
 
 .hero-heading {
-  font-size: var(--step-3);
+  font-size: clamp(1.6rem, 3.4vw, 2.5rem);
   font-weight: 300;
-  line-height: 1.28;
+  line-height: 1.25;
   letter-spacing: -.02em;
   max-width: 22ch;
   margin-bottom: 1.4rem;
