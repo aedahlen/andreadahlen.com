@@ -378,10 +378,6 @@ html[data-theme="dark"] .icon-moon { display: block; }
 }
 .about-body p { color: var(--soft); margin-bottom: 1.3rem; max-width: 52ch; }
 
-/* Sticky heading — the left column follows as the body scrolls */
-@media (min-width: 761px) {
-  .about-title { position: sticky; top: 100px; }
-}
 /* The off-the-clock line — a pull-quote under the heading */
 .about-coda {
   margin-top: 1.8rem;
@@ -390,7 +386,7 @@ html[data-theme="dark"] .icon-moon { display: block; }
   font-size: clamp(1.2rem, 2.2vw, 1.45rem);
   line-height: 1.4;
   letter-spacing: -.005em;
-  color: var(--accent-muted);
+  color: var(--soft);
   max-width: 26ch;
 }
 .about-body p:first-child { color: var(--ink); font-size: var(--step-1); font-weight: 300; line-height: 1.55; }
