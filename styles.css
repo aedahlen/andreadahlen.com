@@ -15,6 +15,7 @@
   --rule-strong: #D5D7DB;
   --accent: #2B4EFF;
   --accent-soft: #5C77FF;
+  --logo-filter: none;
 
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
@@ -38,6 +39,7 @@ html[data-theme="dark"] {
   --rule-strong: #2C2E34;
   --accent: #7B95FF;
   --accent-soft: #A3B5FF;
+  --logo-filter: invert(1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,6 +52,7 @@ html[data-theme="dark"] {
     --rule-strong: #2C2E34;
     --accent: #7B95FF;
     --accent-soft: #A3B5FF;
+    --logo-filter: invert(1);
     }
 }
 
@@ -124,19 +127,8 @@ a { color: inherit; text-decoration: none; }
 .site-header.is-stuck { border-bottom-color: var(--rule); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 
-.brand { display: flex; align-items: baseline; gap: .6rem; font-size: .9rem; font-weight: 500; }
-/* AED set tight so the three letters read as one mark, not as a word */
-.brand-mark {
-  font-size: 1.32rem;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: -.045em;
-  color: var(--accent);
-  transition: color .2s;
-}
-.brand-name { color: var(--ink); transition: color .2s; }
-.brand:hover .brand-mark { color: var(--ink); }
-.brand:hover .brand-name { color: var(--soft); }
+.brand { display: flex; align-items: center; gap: .7rem; font-size: .9rem; font-weight: 500; }
+.brand img { width: 34px; height: 34px; filter: var(--logo-filter); }
 
 .nav-list {
   list-style: none; padding: 0; margin: 0;
