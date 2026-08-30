@@ -12,7 +12,7 @@
 <meta name="theme-color" content="#0C0C0E" media="(prefers-color-scheme: dark)" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="icon" type="image/png" href="logo.png" />
 </head>
@@ -30,7 +30,7 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
       <ul id="nav-list" class="nav-list">
-        <li><a href="work.html">Work</a></li>
+        <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -47,7 +47,7 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero wrap" aria-labelledby="hero-heading">
-    <p class="hero-greeting reveal" aria-label="Hej. Hallå. Hi. Hullo.">
+    <p class="hero-greeting label reveal" aria-label="Hej. Hallå. Hi. Hullo.">
       <span class="greeting-word">Hej.</span>
       <span class="greeting-word">Hallå.</span>
       <span class="greeting-word">Hi.</span>
@@ -61,30 +61,22 @@
       shaping complex digital products and services. I work across research, UX and UI,
       from early discovery through to polished delivery.
     </p>
-    <p class="hero-links reveal">
-      <a href="work.html">Selected work</a>
-      <a href="#contact">Get in touch</a>
-    </p>
-    <p class="hero-places reveal">
-      <span><b>Finland</b></span>·<span><b>California</b></span>·<span><b>Scotland</b></span>·<span><b>Copenhagen</b></span>
-    </p>
+    <dl class="hero-meta reveal">
+      <div><dt>Based in</dt><dd>Copenhagen</dd></div>
+      <div><dt>Focus</dt><dd>Product · UX · Research</dd></div>
+      <div><dt>Experience</dt><dd>10+ years</dd></div>
+    </dl>
   </section>
 
   <!-- ===== CLIENTS ===== -->
   <section class="marquee" aria-label="Shipped complex digital products for">
-    <div class="marquee-track" aria-hidden="true">
-      <span>Shelter Scotland <i>✳</i> NHS Scotland <i>✳</i> Scottish Government <i>✳</i> VisitScotland <i>✳</i> Carbon Trust <i>✳</i> Business Gateway <i>✳</i>&nbsp;</span>
-      <span>Shelter Scotland <i>✳</i> NHS Scotland <i>✳</i> Scottish Government <i>✳</i> VisitScotland <i>✳</i> Carbon Trust <i>✳</i> Business Gateway <i>✳</i>&nbsp;</span>
-    </div>
+    <div class="marquee-track" aria-hidden="true"><span>Shelter Scotland <i>✳</i> NHS Scotland <i>✳</i> Scottish Government <i>✳</i> VisitScotland <i>✳</i> Carbon Trust <i>✳</i> Business Gateway <i>✳</i>&nbsp;</span><span>Shelter Scotland <i>✳</i> NHS Scotland <i>✳</i> Scottish Government <i>✳</i> VisitScotland <i>✳</i> Carbon Trust <i>✳</i> Business Gateway <i>✳</i>&nbsp;</span></div>
   </section>
 
   <!-- ===== WORK ===== -->
   <section class="section wrap" id="work" aria-labelledby="work-heading">
-    <div class="sec-head reveal">
-      <span class="label" id="work-heading">Selected work</span>
-      <a class="sec-more" href="work.html">All six projects →</a>
-    </div>
-    <ol class="work-index reveal">
+    <span class="label sec-label reveal" id="work-heading">Selected work</span>
+    <ol class="work-index reveal" id="work-list">
       <li>
         <a href="work/tabatwo.html">
           <img class="work-thumb" src="thumbs/tabatwo.png" alt="Six Tabatwo app screens showing onboarding, home feed, groups, workout playback, scheduling and chat." width="1120" height="740" loading="lazy" />
@@ -115,8 +107,42 @@
           <span class="work-meta">2018</span>
         </a>
       </li>
+      <li class="is-extra" hidden>
+        <a href="work/tours-management-system.html">
+          <img class="work-thumb" src="thumbs/tours.png" alt="The tours booking platform prototype, with a Scottish landscape hero and tour search." width="1120" height="740" loading="lazy" />
+          <div class="work-text">
+            <h3 class="work-title">Tours Management System</h3>
+            <p class="work-desc">A bespoke booking platform — 1,600+ tours and 600+ operators managed in its first year.</p>
+          </div>
+          <span class="work-meta">2017</span>
+        </a>
+      </li>
+      <li class="is-extra" hidden>
+        <a href="work/famly.html">
+          <img class="work-thumb" src="thumbs/famly.png" alt="The Famly prototype homepage with its headline and call-to-action buttons." width="1120" height="740" loading="lazy" />
+          <div class="work-text">
+            <h3 class="work-title">Famly</h3>
+            <p class="work-desc">A speculative product concept, prototyped end to end and shipped as a live demo.</p>
+          </div>
+          <span class="work-meta">2026</span>
+        </a>
+      </li>
+      <li class="is-extra" hidden>
+        <a href="work/nudging.html">
+          <img class="work-thumb" src="thumbs/nudging.png" alt="The piano staircase at Odenplan station in Stockholm, its treads painted as piano keys." width="1120" height="740" loading="lazy" />
+          <div class="work-text">
+            <h3 class="work-title">Nudging</h3>
+            <p class="work-desc">Behavioural design and the EAST framework applied to waste management across the NHS.</p>
+          </div>
+          <span class="work-meta">2021</span>
+        </a>
+      </li>
     </ol>
-    <p class="work-more reveal"><a href="work.html">View all work →</a></p>
+    <p class="work-more reveal">
+      <button class="work-toggle" type="button" aria-expanded="false" aria-controls="work-list">
+        See more work <span class="chev" aria-hidden="true">↓</span>
+      </button>
+    </p>
   </section>
 
   <!-- ===== IN NUMBERS ===== -->
