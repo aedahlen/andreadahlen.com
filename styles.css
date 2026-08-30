@@ -382,16 +382,16 @@ html[data-theme="dark"] .icon-moon { display: block; }
 @media (min-width: 761px) {
   .about-title { position: sticky; top: 100px; }
 }
-/* The off-the-clock line — an aside in the serif italic, no rule above */
-.about-body .about-coda {
-  margin-top: 1.9rem;
+/* The off-the-clock line — a pull-quote under the heading */
+.about-coda {
+  margin-top: 1.8rem;
   font-family: var(--font-serif);
   font-style: italic;
   font-size: clamp(1.2rem, 2.2vw, 1.45rem);
   line-height: 1.4;
   letter-spacing: -.005em;
   color: var(--accent-muted);
-  max-width: 40ch;
+  max-width: 26ch;
 }
 .about-body p:first-child { color: var(--ink); font-size: var(--step-1); font-weight: 300; line-height: 1.55; }
 
