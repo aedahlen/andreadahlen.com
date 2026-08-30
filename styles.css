@@ -412,3 +412,108 @@ html[data-theme="dark"] .icon-moon { display: block; }
   }
   .nav-list.is-open { display: flex; }
 }
+
+/* =========================================================
+   Case study pages
+   ========================================================= */
+.cs-hero { padding: clamp(2rem, 6vw, 3.5rem) 0 clamp(2rem, 5vw, 3rem); }
+.cs-title {
+  font-size: clamp(1.9rem, 4.6vw, 3.2rem);
+  font-weight: 300;
+  line-height: 1.14;
+  letter-spacing: -.025em;
+  max-width: 20ch;
+  margin: 1.2rem 0 1.4rem;
+  text-wrap: balance;
+}
+.cs-deck {
+  font-size: var(--step-1);
+  font-weight: 300;
+  color: var(--soft);
+  max-width: 48ch;
+  line-height: 1.55;
+}
+.cs-meta {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.6rem 2rem;
+  margin-top: clamp(2rem, 5vw, 3rem);
+}
+.cs-meta > div { border-top: 1px solid var(--rule); padding-top: .75rem; }
+.cs-meta dt {
+  font-size: .67rem; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--faint); margin-bottom: .3rem;
+}
+.cs-meta dd { margin: 0; font-size: .9rem; }
+
+/* Body sections */
+.cs-body { padding-bottom: clamp(3rem, 7vw, 5rem); }
+.cs-section { margin-top: clamp(2.5rem, 6vw, 4rem); }
+.cs-section h2 {
+  font-size: 1.3rem; font-weight: 500; letter-spacing: -.015em;
+  padding-bottom: .7rem; margin-bottom: 1.2rem;
+  border-bottom: 1px solid var(--rule);
+}
+.cs-section p { color: var(--soft); max-width: 62ch; margin-bottom: 1.1rem; }
+.cs-section ul, .cs-section ol { color: var(--soft); max-width: 62ch; padding-left: 1.1rem; margin-bottom: 1.1rem; }
+.cs-section li { margin-bottom: .5rem; }
+.cs-section h3 {
+  font-size: 1rem; font-weight: 500; color: var(--ink);
+  margin: 1.8rem 0 .6rem;
+}
+
+/* Figures */
+.cs-figure { margin: clamp(2rem, 5vw, 3rem) 0; }
+.cs-figure img { width: 100%; height: auto; border: 1px solid var(--rule); }
+.cs-figure figcaption {
+  font-size: .78rem; color: var(--faint);
+  margin-top: .7rem; max-width: 60ch;
+}
+.cs-figures-2 {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+.cs-figures-2 .cs-figure { margin: 0; }
+
+/* Numbers */
+.cs-stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.8rem;
+  margin: clamp(2rem, 5vw, 3rem) 0;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.4rem;
+}
+.cs-stats b {
+  display: block; font-size: 1.8rem; font-weight: 300;
+  letter-spacing: -.03em; line-height: 1;
+  color: var(--accent); margin-bottom: .35rem;
+}
+.cs-stats span { font-size: .78rem; color: var(--soft); }
+
+/* Pull quote */
+.cs-quote {
+  margin: clamp(2.5rem, 6vw, 4rem) 0;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--rule);
+}
+.cs-quote blockquote {
+  font-size: clamp(1.1rem, 2.4vw, 1.55rem);
+  font-weight: 300; line-height: 1.42; letter-spacing: -.012em;
+  max-width: 40ch; text-wrap: balance;
+}
+.cs-quote .who { margin-top: 1.2rem; font-size: .8rem; color: var(--faint); }
+.cs-quote .who b { font-weight: 500; color: var(--ink); }
+
+/* Next case study */
+.cs-next { border-top: 1px solid var(--rule); padding: 2rem 0 clamp(3rem, 6vw, 4rem); }
+.cs-next a { display: flex; align-items: baseline; justify-content: space-between; gap: 2rem; }
+.cs-next .label { margin-bottom: .5rem; display: block; }
+.cs-next .n-title {
+  font-size: 1.45rem; font-weight: 400; letter-spacing: -.022em;
+  transition: color .2s;
+}
+.cs-next a:hover .n-title { color: var(--accent); }
+.cs-next .n-arrow { color: var(--faint); font-size: 1.2rem; }
+
+@media (max-width: 760px) {
+  .cs-next a { flex-direction: column; gap: .4rem; }
+}
