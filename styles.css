@@ -163,11 +163,17 @@ html[data-theme="dark"] .icon-moon { display: block; }
 
 /* ---------- Hero ---------- */
 .hero { padding: clamp(4rem, 12vw, 8rem) 0 clamp(3rem, 7vw, 5rem); }
+/* Cycling greeting — sentence case and softer, so it reads as a different
+   voice from the uppercase title line directly beneath it. */
 .hero-greeting {
   position: relative;
   display: block;
-  min-height: 1.4em;
-  margin-bottom: clamp(2.2rem, 6vw, 3.5rem);
+  min-height: 1.5em;
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--soft);
+  letter-spacing: -.01em;
 }
 /* Greeting words cycle in the same spot */
 .hero-greeting .greeting-word {
