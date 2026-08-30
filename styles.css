@@ -334,18 +334,17 @@ html[data-theme="dark"] .icon-moon { display: block; }
 }
 .about-body p:first-child { color: var(--ink); font-size: var(--step-1); font-weight: 300; line-height: 1.55; }
 
-.skill-list {
-  list-style: none; padding: 0;
-  margin-top: 2.4rem;
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
-  gap: 0 2rem;
+/* Capabilities as one flowing statement rather than a ruled list */
+.skill-flow {
+  font-size: clamp(1.15rem, 2.3vw, 1.65rem);
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -.015em;
+  color: var(--ink);
   border-top: 1px solid var(--rule);
+  padding-top: 1.6rem;
 }
-.skill-list li {
-  padding: .55rem 0;
-  border-bottom: 1px solid var(--rule);
-  font-size: .85rem; color: var(--soft);
-}
+.skill-flow i { font-style: normal; color: var(--accent); padding: 0 .45rem; }
 
 /* ---------- Quote ---------- */
 .quote-band { padding: clamp(2.5rem, 6vw, 4rem) 0; }
