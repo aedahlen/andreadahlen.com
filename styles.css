@@ -213,7 +213,7 @@ html[data-theme="dark"] .icon-moon { display: block; }
 /* Sub-page hero sits tighter than the homepage one */
 .page-hero { padding-top: clamp(2.5rem, 8vw, 5rem); }
 .back-link {
-  display: inline-block;
+  display: block; width: fit-content;
   font-size: .8rem; color: var(--faint);
   margin-bottom: clamp(2rem, 5vw, 3rem);
   transition: color .2s;
