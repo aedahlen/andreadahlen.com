@@ -555,3 +555,16 @@ html[data-theme="dark"] .icon-moon { display: block; }
   .proto-bar .proto-url { display: none; }
   .proto-frame iframe { height: 380px; }
 }
+
+/* ---------- Section head with a link through ---------- */
+.sec-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 2rem; margin-bottom: clamp(1.6rem, 3vw, 2.2rem);
+}
+.sec-more, .work-more a {
+  font-size: .82rem; color: var(--soft);
+  border-bottom: 1px solid var(--rule-strong);
+  padding-bottom: .25rem; transition: .22s;
+}
+.sec-more:hover, .work-more a:hover { color: var(--accent); border-color: var(--accent); }
+.work-more { margin-top: 1.8rem; }

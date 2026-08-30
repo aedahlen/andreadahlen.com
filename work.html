@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Andrea Dahlén — Product Designer</title>
+<title>Selected work — Andrea Dahlén</title>
 <meta name="description" content="Copenhagen-based Product Designer with 10+ years of experience designing complex digital products and services across research, UX and UI." />
-<meta property="og:title" content="Andrea Dahlén — Product Designer" />
+<meta property="og:title" content="Selected work — Andrea Dahlén" />
 <meta property="og:description" content="Copenhagen-based Product Designer turning messy problems into simple, useful experiences." />
 <meta property="og:type" content="website" />
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
@@ -21,7 +21,7 @@
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="#top">
+    <a class="brand" href="index.html">
       <img src="logo.png" alt="" width="759" height="759" />
       <span>Andrea Dahlén</span>
     </a>
@@ -30,10 +30,10 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
       <ul id="nav-list" class="nav-list">
-        <li><a href="work.html">Work</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="work.html" class="is-active">Work</a></li>
+        <li><a href="index.html#about">About</a></li>
         <li><a href="cv.html">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
     <button class="theme-toggle" type="button" aria-label="Switch colour theme">
@@ -45,35 +45,18 @@
 
 <main id="main">
 
-  <!-- ===== HERO ===== -->
-  <section class="hero wrap" aria-labelledby="hero-heading">
-    <p class="hero-greeting label reveal" aria-label="Hej. Hallå. Hi. Hullo.">
-      <span class="greeting-word">Hej.</span>
-      <span class="greeting-word">Hallå.</span>
-      <span class="greeting-word">Hi.</span>
-      <span class="greeting-word">Hullo.</span>
-    </p>
-    <h1 class="hero-heading reveal" id="hero-heading">
-      Product designer turning messy problems into <em>simple, useful</em> experiences.
-    </h1>
+  <!-- ===== PAGE HERO ===== -->
+  <section class="hero wrap page-hero" aria-labelledby="work-heading">
+    <span class="label reveal">Selected work</span>
+    <h1 class="hero-heading reveal" id="work-heading">Six projects, ten years.</h1>
     <p class="hero-body reveal">
-      I'm Andrea — a Copenhagen-based product designer with 10+ years of experience
-      shaping complex digital products and services. I work across research, UX and UI,
-      from early discovery through to polished delivery.
+      Mostly regulated, high-complexity environments — healthcare, public sector and
+      enterprise — where the work has to be accessible, defensible and genuinely useful.
     </p>
-    <dl class="hero-meta reveal">
-      <div><dt>Based in</dt><dd>Copenhagen</dd></div>
-      <div><dt>Focus</dt><dd>Product · UX · Research</dd></div>
-      <div><dt>Experience</dt><dd>10+ years</dd></div>
-    </dl>
   </section>
 
   <!-- ===== WORK ===== -->
-  <section class="section wrap" id="work" aria-labelledby="work-heading">
-    <div class="sec-head reveal">
-      <span class="label" id="work-heading">Selected work</span>
-      <a class="sec-more" href="work.html">All six projects →</a>
-    </div>
+  <section class="section wrap" aria-label="Case studies">
     <ol class="work-index reveal">
       <li>
         <a href="work/tabatwo.html">
@@ -105,68 +88,38 @@
           <span class="work-meta">2018</span>
         </a>
       </li>
+      <li>
+        <a href="work/tours-management-system.html">
+          <img class="work-thumb" src="thumbs/tours.png" alt="The tours booking platform prototype, with a Scottish landscape hero and tour search." width="1120" height="740" loading="lazy" />
+          <div class="work-text">
+            <h3 class="work-title">Tours Management System</h3>
+            <p class="work-desc">A bespoke booking platform — 1,600+ tours and 600+ operators managed in its first year.</p>
+          </div>
+          <span class="work-meta">2017</span>
+        </a>
+      </li>
+      <li>
+        <a href="work/famly.html">
+          <img class="work-thumb" src="thumbs/famly.png" alt="The Famly prototype homepage with its headline and call-to-action buttons." width="1120" height="740" loading="lazy" />
+          <div class="work-text">
+            <h3 class="work-title">Famly</h3>
+            <p class="work-desc">A speculative product concept, prototyped end to end and shipped as a live demo.</p>
+          </div>
+          <span class="work-meta">2026</span>
+        </a>
+      </li>
+      <li>
+        <a href="work/nudging.html">
+          <img class="work-thumb" src="thumbs/nudging.png" alt="The piano staircase at Odenplan station in Stockholm, its treads painted as piano keys." width="1120" height="740" loading="lazy" />
+          <div class="work-text">
+            <h3 class="work-title">Nudging</h3>
+            <p class="work-desc">Behavioural design and the EAST framework applied to waste management across the NHS.</p>
+          </div>
+          <span class="work-meta">2021</span>
+        </a>
+      </li>
     </ol>
-    <p class="work-more reveal"><a href="work.html">View all work →</a></p>
   </section>
-
-  <!-- ===== PROOF: numbers + clients ===== -->
-  <section class="section wrap proof" aria-labelledby="numbers-heading">
-    <span class="label sec-label reveal" id="numbers-heading">In numbers</span>
-    <dl class="stat-row reveal">
-      <div><b>10+</b><span>Years across product design, UX and research</span></div>
-      <div><b>8</b><span>Person multidisciplinary team led end to end</span></div>
-      <div><b>40+</b><span>Interviews run for NHS Scotland's cervical screening project</span></div>
-      <div><b>WCAG 2.1 AA</b><span>Accessibility standard delivered across Shelter's digital estate</span></div>
-    </dl>
-
-    <div class="clients reveal">
-      <span class="label" id="clients-heading">Shipped complex digital products for</span>
-    <ul class="client-list">
-      <li>Shelter Scotland</li>
-      <li>NHS Scotland</li>
-      <li>Scottish Government</li>
-      <li>VisitScotland</li>
-      <li>Carbon Trust</li>
-      <li>Business Gateway</li>
-    </ul>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section class="section wrap" id="about" aria-labelledby="about-heading">
-    <span class="label sec-label reveal">About</span>
-    <div class="about-grid">
-      <h2 class="about-title reveal" id="about-heading">A Swedish-speaking Finn — think Moomin</h2>
-      <div class="about-body reveal">
-        <p>I was raised between California, Finland and Denmark, and I'm now Copenhagen-based — a Product Designer with 10+ years of experience designing complex digital services across product design, UX and research.</p>
-        <p>I work mostly in regulated, high-complexity environments — healthcare, public sector and enterprise — where governance and inclusion matter. I approach design methodically: user flows and requirements before visual polish, research that turns into action, and close collaboration with product, engineering and subject-matter teams.</p>
-        <p>Ten-plus years in, I still bring a lot of curiosity about the humans on both ends of the screen.</p>
-        <p class="about-coda">Happiest at my Finnish summerhouse, foraging blueberries and mushrooms, and spending time with my daughter.</p>
-        <ul class="skill-list">
-          <li>UX Strategy &amp; Product Design</li>
-          <li>User Research &amp; Testing</li>
-          <li>Product Discovery &amp; Concept Development</li>
-          <li>Accessibility &amp; Inclusive Design</li>
-          <li>Enterprise &amp; Healthcare UX</li>
-          <li>Design Leadership &amp; Mentoring</li>
-          <li>Stakeholder Management</li>
-          <li>Agile &amp; Lean UX</li>
-          <li>Design Systems &amp; Consistency</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TESTIMONIAL ===== -->
-  <section class="quote-band wrap" aria-label="Testimonial">
-    <blockquote class="reveal">
-      What stood out most was Andrea's ability to balance user experience thinking with
-      practical execution. She helped us clarify fundamental product concepts that became
-      central to our platform's direction.
-    </blockquote>
-    <p class="quote-by reveal"><b>Mariano Alesandro</b> — Co-Founder &amp; CTO, Tabatwo</p>
-  </section>
-
 
   <!-- ===== CONTACT ===== -->
   <section class="section wrap" id="contact" aria-labelledby="contact-heading">
@@ -190,7 +143,7 @@
   <div class="wrap footer-inner">
     <span>© <span id="year"></span> Andrea Dahlén</span>
     <span>Designed &amp; built in Copenhagen</span>
-    <a href="#top">Back to top ↑</a>
+    <a href="index.html">Back home ↑</a>
   </div>
 </footer>
 
