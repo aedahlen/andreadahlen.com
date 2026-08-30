@@ -331,14 +331,6 @@ html[data-theme="dark"] .icon-moon { display: block; }
 }
 
 
-/* Client marks sit above the title. Height-matched, so wide logos read
-   larger than square ones — that is expected rather than a bug. */
-.work-logo {
-  height: 44px; width: auto; max-width: 170px;
-  object-fit: contain; object-position: left center;
-  margin-bottom: 1rem;
-}
-
 /* Projects beyond the first three, revealed by the toggle */
 .work-index li[hidden] { display: none; }
 .work-more { margin-top: 1.6rem; }
