@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Andrea Dahlén — Product Designer</title>
+<meta name="description" content="Copenhagen-based Product Designer with 10+ years of experience designing complex digital products and services across research, UX and UI." />
+<meta property="og:title" content="Andrea Dahlén — Product Designer" />
+<meta property="og:description" content="Copenhagen-based Product Designer turning messy problems into simple, useful experiences." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#EBF0F9" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0C1220" media="(prefers-color-scheme: dark)" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a href="#top" class="monogram" aria-label="Andrea Dahlén — home">
+      <img src="logo.png" alt="" width="759" height="759" />
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <ul id="nav-list" class="nav-list">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>
+    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero wrap" aria-labelledby="hero-heading">
+    <p class="hero-greeting reveal" aria-label="Hej. Hallå. Hi. Hullo.">
+      <span class="greeting-word">Hej.</span>
+      <span class="greeting-word">Hallå.</span>
+      <span class="greeting-word">Hi.</span>
+      <span class="greeting-word">Hullo.</span>
+    </p>
+    <h1 class="hero-heading reveal" id="hero-heading">
+      Product designer turning messy problems into
+      <em>simple, useful</em> experiences.
+    </h1>
+    <p class="hero-body reveal">
+      I'm Andrea — a Copenhagen-based product designer with 10+ years of experience
+      shaping complex digital products and services. I work across research, UX and UI,
+      from early discovery through to polished delivery.
+    </p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary" href="#work">View selected work</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+    <dl class="hero-meta reveal">
+      <div><dt>Based in</dt><dd>Copenhagen</dd></div>
+      <div><dt>Focus</dt><dd>Product · UX · Research</dd></div>
+      <div><dt>Experience</dt><dd>10+ years</dd></div>
+      <div><dt>Status</dt><dd>Available for freelance</dd></div>
+    </dl>
+  </section>
+
+  <!-- ===== CLIENT STRIP ===== -->
+  <section class="clients" aria-label="Selected clients and organisations">
+    <div class="wrap">
+      <p class="clients-label">Trusted by teams at</p>
+      <ul class="clients-list">
+        <li>Shelter Scotland</li>
+        <li>NHS Scotland</li>
+        <li>VisitScotland</li>
+        <li>Business Gateway</li>
+        <li>Carbon Trust</li>
+        <li>Designit</li>
+        <li>Tabatwo</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== WORK ===== -->
+  <section class="section wrap" id="work" aria-labelledby="work-heading">
+    <div class="section-head reveal">
+      <p class="eyebrow">Selected work</p>
+      <h2 class="section-title" id="work-heading">A decade of designing for clarity</h2>
+      <p class="section-intro">
+        Enterprise platforms, healthcare services and public-sector products —
+        mostly high-complexity environments where good design has to earn its place.
+        Select a project for the full story.
+      </p>
+    </div>
+
+    <ol class="work-grid">
+      <!-- Cards are populated with data-* for the detail dialog -->
+      <li class="work-card reveal">
+        <button class="work-card-btn" data-project="tabatwo">
+          <span class="work-thumb" data-mono="T2" style="--c1:#2669EC;--c2:#1a4bb5"></span>
+          <span class="work-body">
+            <span class="work-num">01</span>
+            <span class="work-title">Tabatwo</span>
+            <span class="work-role">UX Consultant · 2025</span>
+            <span class="work-desc">Defining and validating the core UX of a social fitness platform ahead of wider rollout.</span>
+            <span class="tags"><span>Product Design</span><span>Usability Testing</span><span>UX Strategy</span></span>
+          </span>
+        </button>
+      </li>
+
+      <li class="work-card reveal">
+        <button class="work-card-btn" data-project="shelter-scotland">
+          <span class="work-thumb" data-mono="SS" style="--c1:#3d7bf0;--c2:#2056c4"></span>
+          <span class="work-body">
+            <span class="work-num">02</span>
+            <span class="work-title">Shelter Scotland</span>
+            <span class="work-role">Product Lead · 2022–2024</span>
+            <span class="work-desc">Leading a multidisciplinary team of eight to run digital strategy, delivery and accessibility for a national homelessness charity.</span>
+            <span class="tags"><span>Design Leadership</span><span>Accessibility</span><span>Design Systems</span></span>
+          </span>
+        </button>
+      </li>
+
+      <li class="work-card reveal">
+        <button class="work-card-btn" data-project="nhs-scotland">
+          <span class="work-thumb" data-mono="NHS" style="--c1:#2f93d6;--c2:#1c6097"></span>
+          <span class="work-body">
+            <span class="work-num">03</span>
+            <span class="work-title">NHS National Services Scotland</span>
+            <span class="work-role">Senior User Researcher · 2021–2022</span>
+            <span class="work-desc">Inclusive research to tackle cervical-screening inequalities for minority groups and users with access needs.</span>
+            <span class="tags"><span>User Research</span><span>Inclusive Design</span><span>Healthcare</span></span>
+          </span>
+        </button>
+      </li>
+
+      <li class="work-card reveal">
+        <button class="work-card-btn" data-project="business-gateway">
+          <span class="work-thumb" data-mono="BG" style="--c1:#4f5fd6;--c2:#313e9e"></span>
+          <span class="work-body">
+            <span class="work-num">04</span>
+            <span class="work-title">Business Gateway</span>
+            <span class="work-role">Lead Product Designer · Whitespace</span>
+            <span class="work-desc">A full website redevelopment built on agile and lean methods, reaching a WAI 'A' accessibility rating.</span>
+            <span class="tags"><span>Information Architecture</span><span>Agile</span><span>Accessibility</span></span>
+          </span>
+        </button>
+      </li>
+
+      <li class="work-card reveal">
+        <button class="work-card-btn" data-project="tours">
+          <span class="work-thumb" data-mono="TMS" style="--c1:#6a54d4;--c2:#3e2f97"></span>
+          <span class="work-body">
+            <span class="work-num">05</span>
+            <span class="work-title">Tours Management System</span>
+            <span class="work-role">Lead UX Producer · VisitScotland</span>
+            <span class="work-desc">A bespoke booking platform — 1,600+ tours and 600+ operators managed in its first year.</span>
+            <span class="tags"><span>User Research</span><span>Journey Mapping</span><span>Prototyping</span></span>
+          </span>
+        </button>
+      </li>
+
+      <li class="work-card reveal">
+        <button class="work-card-btn" data-project="scotland-is-now">
+          <span class="work-thumb" data-mono="SN" style="--c1:#2fa1b2;--c2:#1c6774"></span>
+          <span class="work-body">
+            <span class="work-num">06</span>
+            <span class="work-title">Scotland Is Now</span>
+            <span class="work-role">Lead UX Producer · scotland.org</span>
+            <span class="work-desc">Phase 2 redesign of study, events, news and history sections — plus an interactive universities map.</span>
+            <span class="tags"><span>Content Design</span><span>Prototyping</span><span>Interaction</span></span>
+          </span>
+        </button>
+      </li>
+
+      <li class="work-card reveal">
+        <button class="work-card-btn" data-project="business-stream">
+          <span class="work-thumb" data-mono="BSt" style="--c1:#3f74ea;--c2:#2350bf"></span>
+          <span class="work-body">
+            <span class="work-num">07</span>
+            <span class="work-title">Business Stream</span>
+            <span class="work-role">UX Producer</span>
+            <span class="work-desc">A focused UX review of the payments page to lift understanding and conversion within tight CMS constraints.</span>
+            <span class="tags"><span>UX Review</span><span>Conversion</span><span>Wireframing</span></span>
+          </span>
+        </button>
+      </li>
+
+      <li class="work-card reveal">
+        <button class="work-card-btn" data-project="nudging">
+          <span class="work-thumb" data-mono="N" style="--c1:#5f6f8c;--c2:#3a495f"></span>
+          <span class="work-body">
+            <span class="work-num">08</span>
+            <span class="work-title">Nudging: From Automatic to Reflective</span>
+            <span class="work-role">MA Dissertation · Distinction</span>
+            <span class="work-desc">Applying behavioural design and the EAST framework to waste management across the NHS.</span>
+            <span class="tags"><span>Behavioural Design</span><span>Research</span><span>Sustainability</span></span>
+          </span>
+        </button>
+      </li>
+
+      <li class="work-card reveal">
+        <button class="work-card-btn" data-project="smor">
+          <span class="work-thumb" data-mono="S" style="--c1:#8892ad;--c2:#59627d"></span>
+          <span class="work-body">
+            <span class="work-num">09</span>
+            <span class="work-title">Smør</span>
+            <span class="work-role">Brand Design</span>
+            <span class="work-desc">Logo, packaging and brand voice for a Danish sandwich concept.</span>
+            <span class="tags"><span>Branding</span><span>Packaging</span><span>Voice</span></span>
+          </span>
+        </button>
+      </li>
+
+      <li class="work-card reveal">
+        <button class="work-card-btn" data-project="designit">
+          <span class="work-thumb" data-mono="Di" style="--c1:#6c7589;--c2:#434b5b"></span>
+          <span class="work-body">
+            <span class="work-num">10</span>
+            <span class="work-title">Designit</span>
+            <span class="work-role">Content Producer</span>
+            <span class="work-desc">Case studies, articles, trend research and social across the studio's channels.</span>
+            <span class="tags"><span>Copywriting</span><span>Strategy</span><span>Research</span></span>
+          </span>
+        </button>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section wrap about" id="about" aria-labelledby="about-heading">
+    <div class="about-grid">
+      <div class="about-portrait reveal" aria-hidden="true">
+        <div class="portrait-tile">
+          <img class="portrait-art" src="snorkmaiden.svg" alt="" width="2400" height="2400" />
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title" id="about-heading">A Swedish-speaking Finn — think Moomin</h2>
+        <p>
+          I was raised between California, Finland and Denmark, and I'm now Copenhagen-based.
+          I'm a freelance UX/UI designer with over a decade of experience in digital, working
+          mostly in regulated, high-complexity environments — healthcare, public sector and
+          enterprise — where governance and inclusion matter.
+        </p>
+        <p>
+          I approach design methodically: user flows and requirements before visual polish,
+          research that turns into action, and close collaboration with product, engineering
+          and subject-matter teams. Outside of work you'll find me writing, running, going to
+          gigs, and spending time with my daughter.
+        </p>
+
+        <h3 class="about-subhead">What I do</h3>
+        <ul class="skill-list">
+          <li>UX Strategy &amp; Product Design</li>
+          <li>User Research &amp; Testing</li>
+          <li>Product Discovery &amp; Concept Development</li>
+          <li>Accessibility &amp; Inclusive Design</li>
+          <li>Enterprise &amp; Healthcare UX</li>
+          <li>Design Leadership &amp; Mentoring</li>
+          <li>Stakeholder Management</li>
+          <li>Agile &amp; Lean UX</li>
+          <li>Design Systems &amp; Consistency</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section wrap quotes" aria-labelledby="quotes-heading">
+    <h2 class="sr-only" id="quotes-heading">What colleagues say</h2>
+    <ul class="quotes-grid">
+      <li class="quote reveal">
+        <blockquote>What stood out most was Andrea's ability to balance user experience thinking with practical execution. She helped us clarify fundamental product concepts that became central to our platform's direction.</blockquote>
+        <p class="quote-by">Mariano Alesandro<span>Co-Founder &amp; CTO, Tabatwo</span></p>
+      </li>
+      <li class="quote reveal">
+        <blockquote>Her UX knowledge is top-notch, and she always found the right balance between business goals and technical realities. A clear and constructive communicator who kept quality consistently high.</blockquote>
+        <p class="quote-by">Amanda Collins<span>Head of Communications &amp; Engagement, Shelter Scotland</span></p>
+      </li>
+      <li class="quote reveal">
+        <blockquote>A great problem solver with sharp attention to detail, applying user-centred design — and it blends fantastically well with an appreciation for visual aesthetic.</blockquote>
+        <p class="quote-by">Sarah Ormerod<span>Account Director, Whitespace</span></p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section wrap" id="experience" aria-labelledby="exp-heading">
+    <div class="section-head reveal">
+      <p class="eyebrow">Experience</p>
+      <h2 class="section-title" id="exp-heading">Career at a glance</h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline-item reveal">
+        <span class="timeline-date">2025 — Present</span>
+        <div class="timeline-body">
+          <h3>Senior Product Designer</h3>
+          <p class="timeline-org">Freelance</p>
+          <p>Leading design of core product features — social workout experiences, synchronised video training and session scheduling — across discovery, design and delivery.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <span class="timeline-date">2022 — 2024</span>
+        <div class="timeline-body">
+          <h3>Product Lead</h3>
+          <p class="timeline-org">Shelter Scotland</p>
+          <p>Owned digital strategy, delivery and performance for the charity's digital estate, leading a team of eight and making the website measurably more accessible.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <span class="timeline-date">2021 — 2022</span>
+        <div class="timeline-body">
+          <h3>Senior User Researcher</h3>
+          <p class="timeline-org">NHS National Services Scotland</p>
+          <p>Designed and led inclusive research in the Service Design Hub to address health inequalities, with a focus on behavioural design and social innovation.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <span class="timeline-date">2020 — 2021</span>
+        <div class="timeline-body">
+          <h3>Senior UX Designer</h3>
+          <p class="timeline-org">Shelter</p>
+          <p>Led UX for Fundraising and Cross-Org teams, mentored a junior designer, and built the pattern library and design system through Shelter's rebrand to WCAG 2.1 AA.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <span class="timeline-date">2019 — 2020</span>
+        <div class="timeline-body">
+          <h3>UX Designer</h3>
+          <p class="timeline-org">Shelter Scotland</p>
+          <p>Sole UX designer for the Scotland team — research through to UI, a headless-CMS migration, and a new microsite for the Empty Homes team. Promoted to Senior within six months.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <span class="timeline-date">2017 — 2019</span>
+        <div class="timeline-body">
+          <h3>UX Designer</h3>
+          <p class="timeline-org">Dentsu Creative (Whitespace)</p>
+          <p>Delivered digital experiences for Business Gateway, VisitScotland, Scotland.org, Business Stream, Sustrans and Food Standards Scotland — research, wireframing, prototyping and accessible QA.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <span class="timeline-date">2015 — 2017</span>
+        <div class="timeline-body">
+          <h3>Design &amp; Digital Coordinator</h3>
+          <p class="timeline-org">Carbon Trust</p>
+          <p>Sole in-house digital designer — website research and responsive redesign, CMS management (Umbraco), microsites and marketing collateral.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal">
+        <span class="timeline-date">2014</span>
+        <div class="timeline-body">
+          <h3>Communications Assistant</h3>
+          <p class="timeline-org">Designit</p>
+          <p>Developed communications materials across the firm's channels — copywriting, research and project management within a multidisciplinary team.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="education reveal">
+      <h3 class="about-subhead">Education</h3>
+      <ul class="edu-list">
+        <li><span>2021</span> Professional Certificate in UI Design — UX Design Institute</li>
+        <li><span>2017</span> Certificate in User Experience Design — London College of Communication</li>
+        <li><span>2015</span> MA Design &amp; Environment, Distinction — Goldsmiths, University of London</li>
+        <li><span>2014</span> BBA Design &amp; Business — Copenhagen School of Design &amp; Technology</li>
+        <li><span>2012</span> Design Management, Dean's List — Parsons The New School for Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section wrap contact" id="contact" aria-labelledby="contact-heading">
+    <div class="contact-inner reveal">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title contact-title" id="contact-heading">Let's make something clear and useful.</h2>
+      <p class="contact-body">
+        Available for freelance product design, UX and research. The quickest way to reach
+        me is email — I'll always reply.
+      </p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:andreadahlen@gmail.com">andreadahlen@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/andrea-dahl%C3%A9n-26a81685" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> Andrea Dahlén</span>
+    <span>Designed &amp; built in Copenhagen</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<!-- ===== PROJECT DETAIL DIALOG ===== -->
+<dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+  <button class="dialog-close" aria-label="Close">&times;</button>
+  <article class="dialog-content">
+    <p class="dialog-role" id="dialog-role"></p>
+    <h2 id="dialog-title"></h2>
+    <div id="dialog-body"></div>
+    <p class="dialog-note">This is a written summary. Original case studies with visuals live on the previous portfolio.</p>
+  </article>
+</dialog>
+
+<script src="projects.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
