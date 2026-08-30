@@ -16,7 +16,6 @@
   --accent: #2B4EFF;
   --accent-soft: #5C77FF;
   --accent-muted: #4A63C9;
-  --logo-filter: none;
 
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-serif: "Instrument Serif", Georgia, serif;
@@ -42,7 +41,6 @@ html[data-theme="dark"] {
   --accent: #7B95FF;
   --accent-soft: #A3B5FF;
   --accent-muted: #A3B5FF;
-  --logo-filter: invert(1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -56,8 +54,7 @@ html[data-theme="dark"] {
     --accent: #7B95FF;
     --accent-soft: #A3B5FF;
     --accent-muted: #A3B5FF;
-    --logo-filter: invert(1);
-    }
+      }
 }
 
 /* ---------- Reset & base ---------- */
@@ -131,8 +128,18 @@ a { color: inherit; text-decoration: none; }
 .site-header.is-stuck { border-bottom-color: var(--rule); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 
-.brand { display: flex; align-items: center; gap: .7rem; font-size: .9rem; font-weight: 500; }
-.brand img { width: 34px; height: 34px; filter: var(--logo-filter); }
+/* Wordmark in the same serif italic used for accent words elsewhere */
+.brand {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.35rem;
+  line-height: 1;
+  letter-spacing: -.005em;
+  color: var(--accent);
+  transition: color .2s;
+}
+.brand:hover { color: var(--ink); }
 
 .nav-list {
   list-style: none; padding: 0; margin: 0;
