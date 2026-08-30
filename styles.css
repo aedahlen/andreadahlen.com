@@ -7,17 +7,18 @@
 
 /* ---------- Design tokens ---------- */
 :root {
-  --bg: #FFFFFF;
+  --bg: #FAF9F6;
   --ink: #0B0B0C;
   --soft: #6B6E76;
   --faint: #A2A6AE;
-  --rule: #E8E9EB;
-  --rule-strong: #D5D7DB;
+  --rule: #E6E4DE;
+  --rule-strong: #D4D1C9;
   --accent: #2B4EFF;
   --accent-soft: #5C77FF;
   --logo-filter: none;
 
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: "Schibsted Grotesk", "Inter", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
 
   --wrap: 1000px;
   --gutter: clamp(1.5rem, 6vw, 5rem);
@@ -162,13 +163,21 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .nav-toggle { display: none; }
 
 /* ---------- Hero ---------- */
-.hero { padding: clamp(3.5rem, 10vw, 7rem) 0 clamp(2.5rem, 5vw, 3.5rem); }
+.hero {
+  padding: clamp(3.5rem, 10vw, 7rem) 0 clamp(2.5rem, 6vw, 4rem);
+  text-align: center;
+}
 .hero-greeting {
   position: relative;
   display: block;
-  min-height: 1.4em;
-  margin-bottom: clamp(2.2rem, 6vw, 3.5rem);
+  min-height: 1.5em;
+  margin-bottom: 1.4rem;
+  font-size: clamp(1.3rem, 2.6vw, 1.8rem);
+  font-weight: 400;
+  color: var(--soft);
+  letter-spacing: -.01em;
 }
+.hero-greeting .greeting-word { left: 0; right: 0; }
 /* Greeting words cycle in the same spot */
 .hero-greeting .greeting-word {
   position: absolute; left: 0; top: 0;
@@ -184,12 +193,18 @@ html[data-theme="dark"] .icon-moon { display: block; }
   font-weight: 300;
   line-height: 1.28;
   letter-spacing: -.02em;
-  max-width: 22ch;
-  margin-bottom: clamp(2.2rem, 6vw, 3.5rem);
+  max-width: 18ch;
+  margin: 0 auto clamp(1.6rem, 4vw, 2.2rem);
   text-wrap: balance;
 }
-.hero-heading em { font-style: normal; color: var(--accent); }
-.hero-body { color: var(--soft); max-width: 42ch; }
+/* Accent words in serif italic — the one recurring typographic flourish */
+.ital, .hero-heading em, .about-title em, .contact-title em, .cs-title em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent);
+}
+.hero-body { color: var(--soft); max-width: 50ch; margin-inline: auto; }
 
 .hero-meta {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -202,6 +217,39 @@ html[data-theme="dark"] .icon-moon { display: block; }
   color: var(--faint); margin-bottom: .3rem;
 }
 .hero-meta dd { margin: 0; font-size: .9rem; }
+
+.hero-links {
+  display: flex; gap: 1.6rem; justify-content: center;
+  margin-top: clamp(1.6rem, 4vw, 2.2rem); font-size: .95rem;
+}
+.hero-links a {
+  border-bottom: 1px solid var(--rule-strong);
+  padding-bottom: .3rem; transition: .22s;
+}
+.hero-links a:hover { color: var(--accent); border-color: var(--accent); }
+
+.hero-places {
+  display: flex; justify-content: center; flex-wrap: wrap;
+  gap: 1.4rem; margin-top: clamp(1.8rem, 4vw, 2.6rem);
+  font-family: var(--font-serif); font-size: 1.1rem; color: var(--faint);
+}
+.hero-places b { font-weight: 400; color: var(--ink); }
+
+/* ---------- Client marquee ---------- */
+.marquee {
+  overflow: hidden; background: var(--ink);
+  padding: .85rem 0; margin: clamp(1.5rem, 4vw, 2.5rem) 0 0;
+}
+.marquee-track {
+  display: flex; gap: 2.5rem; white-space: nowrap;
+  animation: marquee 34s linear infinite;
+  color: var(--bg); font-size: .74rem;
+  letter-spacing: .14em; text-transform: uppercase; font-weight: 500;
+}
+.marquee-track span { display: flex; align-items: center; gap: 2.5rem; }
+.marquee-track i { color: var(--accent-soft); font-style: normal; }
+@keyframes marquee { from { transform: translateX(0) } to { transform: translateX(-50%) } }
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none } }
 
 /* Sub-page hero sits tighter than the homepage one */
 .page-hero { padding-top: clamp(2.5rem, 8vw, 5rem); }
@@ -226,9 +274,10 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .stat-row > div { margin: 0; }
 .stat-row b {
   display: block;
-  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
-  font-weight: 300; letter-spacing: -.03em; line-height: 1;
-  color: var(--accent); margin-bottom: .45rem;
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  font-weight: 400; letter-spacing: -.02em; line-height: 1;
+  color: var(--accent); margin-bottom: .5rem;
 }
 .stat-row span { display: block; font-size: .78rem; color: var(--soft); line-height: 1.45; }
 
@@ -364,17 +413,20 @@ html[data-theme="dark"] .icon-moon { display: block; }
 
 /* ---------- Contact ---------- */
 .contact-title {
-  font-size: var(--step-3); font-weight: 300;
-  line-height: 1.25; letter-spacing: -.02em;
-  max-width: 24ch; margin-bottom: 1.6rem; text-wrap: balance;
+  font-size: var(--step-3); font-weight: 400;
+  line-height: 1.14; letter-spacing: -.025em;
+  max-width: 22ch; margin: 0 auto 1.4rem; text-wrap: balance;
 }
-.contact-body { color: var(--soft); max-width: 40ch; margin-bottom: 2.5rem; }
-.contact-actions { display: flex; flex-wrap: wrap; gap: 2rem; font-size: .95rem; }
+.contact-body { color: var(--soft); max-width: 42ch; margin: 0 auto 2.2rem; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 2rem; font-size: .95rem; justify-content: center; }
 .contact-actions a {
   border-bottom: 1px solid var(--rule-strong);
   padding-bottom: .35rem; transition: .22s;
 }
 .contact-actions a:hover { color: var(--accent); border-color: var(--accent); }
+
+#contact .sec-label { text-align: center; }
+#contact > .reveal { text-align: center; }
 
 /* ---------- Footer ---------- */
 .site-footer {
@@ -500,7 +552,8 @@ html[data-theme="dark"] .icon-moon { display: block; }
   padding-top: 1.4rem;
 }
 .cs-stats b {
-  display: block; font-size: 1.8rem; font-weight: 300;
+  display: block; font-family: var(--font-serif);
+  font-size: 2.2rem; font-weight: 400;
   letter-spacing: -.03em; line-height: 1;
   color: var(--accent); margin-bottom: .35rem;
 }
