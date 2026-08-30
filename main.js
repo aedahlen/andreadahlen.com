@@ -1,6 +1,6 @@
 /* =========================================================
-   Interaction: theme, mobile nav, reveal-on-scroll,
-   scroll-spy nav, and the project detail dialog.
+   Interaction: theme, mobile nav, greeting carousel,
+   reveal-on-scroll and scroll-spy nav.
    ========================================================= */
 (function () {
   "use strict";
@@ -155,56 +155,5 @@
       });
     }, { rootMargin: "-45% 0px -50% 0px" });
     sections.forEach(function (s) { spy.observe(s); });
-  }
-
-  /* ---------- Project dialog ---------- */
-  var dialog = document.getElementById("project-dialog");
-  var dRole = document.getElementById("dialog-role");
-  var dTitle = document.getElementById("dialog-title");
-  var dBody = document.getElementById("dialog-body");
-  var closeBtn = dialog ? dialog.querySelector(".dialog-close") : null;
-  var lastFocused = null;
-
-  function openProject(key) {
-    var data = window.PROJECTS && window.PROJECTS[key];
-    if (!data || !dialog) return;
-    dRole.innerHTML = data.role;
-    dTitle.innerHTML = data.title;
-    dBody.innerHTML = data.body;
-    dialog.querySelector(".dialog-content").scrollTop = 0;
-    lastFocused = document.activeElement;
-    if (typeof dialog.showModal === "function") {
-      dialog.showModal();
-    } else {
-      dialog.setAttribute("open", "");
-    }
-    if (closeBtn) closeBtn.focus();
-  }
-
-  function closeProject() {
-    if (!dialog) return;
-    if (typeof dialog.close === "function") dialog.close();
-    else dialog.removeAttribute("open");
-    if (lastFocused && typeof lastFocused.focus === "function") lastFocused.focus();
-  }
-
-  document.querySelectorAll(".work-card-btn").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      openProject(btn.getAttribute("data-project"));
-    });
-  });
-
-  if (dialog) {
-    if (closeBtn) closeBtn.addEventListener("click", closeProject);
-    // Click on the backdrop (outside the dialog box) closes it.
-    dialog.addEventListener("click", function (e) {
-      if (e.target === dialog) closeProject();
-    });
-    dialog.addEventListener("cancel", function () {
-      // let the native Escape behaviour run, then restore focus
-      setTimeout(function () {
-        if (lastFocused && typeof lastFocused.focus === "function") lastFocused.focus();
-      }, 0);
-    });
   }
 })();

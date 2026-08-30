@@ -9,3 +9,6 @@
 
 # Logs
 *.log
+
+# Local design exploration
+_explore/
