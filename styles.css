@@ -163,7 +163,7 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .nav-toggle { display: none; }
 
 /* ---------- Hero ---------- */
-.hero { padding: clamp(3.5rem, 10vw, 7rem) 0 clamp(2.5rem, 5vw, 3.5rem); }
+.hero { padding: clamp(3.5rem, 10vw, 7rem) 0 clamp(1.2rem, 2.5vw, 2rem); }
 .hero-greeting {
   position: relative;
   display: block;
@@ -201,7 +201,7 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .hero-meta {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1.6rem 2rem;
-  margin-top: clamp(2.5rem, 6vw, 4rem);
+  margin-top: clamp(1.6rem, 3.5vw, 2.4rem);
 }
 .hero-meta > div { border-top: 1px solid var(--rule); padding-top: .75rem; }
 .hero-meta dt {
@@ -221,8 +221,6 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .back-link:hover { color: var(--accent); }
 
 /* ---------- In numbers ---------- */
-.numbers { padding: clamp(1.5rem, 4vw, 2.5rem) 0 clamp(1rem, 2vw, 1.5rem); }
-.numbers .label { display: block; margin-bottom: 1.4rem; }
 .stat-row {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
   gap: 1.8rem 2rem;
@@ -255,7 +253,9 @@ html[data-theme="dark"] .icon-moon { display: block; }
 
 /* ---------- Sections ---------- */
 .section { padding: clamp(3rem, 6vw, 4.5rem) 0; }
-.sec-label { display: block; margin-bottom: clamp(1.6rem, 3vw, 2.2rem); }
+/* The numbers follow straight on from the hero, so they need less air */
+.numbers-section { padding: clamp(1.6rem, 3.5vw, 2.4rem) 0 clamp(2rem, 4vw, 3rem); }
+.sec-label { display: block; margin-bottom: clamp(1.1rem, 2vw, 1.5rem); }
 
 /* ---------- Work index: rows with a readable image ---------- */
 .work-index { list-style: none; padding: 0; border-top: 1px solid var(--rule); }
