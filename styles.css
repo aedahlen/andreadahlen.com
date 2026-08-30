@@ -205,8 +205,8 @@ html[data-theme="dark"] .icon-moon { display: block; }
   font-weight: 300;
   line-height: 1.25;
   letter-spacing: -.02em;
-  max-width: 22ch;
-  margin-bottom: 1.4rem;
+  max-width: 26ch;
+  margin-bottom: 1.2rem;
   text-wrap: balance;
 }
 /* Accent words in serif italic — the recurring flourish */
@@ -217,11 +217,11 @@ html[data-theme="dark"] .icon-moon { display: block; }
   color: var(--accent);
 }
 .hero-foot {
-  display: flex; flex-wrap: wrap; align-items: baseline;
-  gap: .6rem 1.6rem;
-  margin-top: 1.4rem; font-size: .95rem;
+  margin-top: 1.4rem;
+  font-size: .95rem;
+  color: var(--soft);
+  max-width: 46ch;
 }
-.hero-place { color: var(--soft); }
 .hero-foot a {
   border-bottom: 1px solid var(--rule-strong);
   padding-bottom: .3rem; transition: .22s;
