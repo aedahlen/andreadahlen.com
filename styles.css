@@ -133,13 +133,10 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 400;
-  font-size: 1.38rem;
+  font-size: 1.5rem;
   line-height: 1;
   letter-spacing: -.005em;
   color: var(--accent);
-  /* Instrument Serif ships one weight, so font-weight would only trigger
-     synthetic bolding. A hairline stroke thickens it cleanly instead. */
-  -webkit-text-stroke: .4px currentColor;
   transition: color .2s;
 }
 .brand:hover { color: var(--ink); }
