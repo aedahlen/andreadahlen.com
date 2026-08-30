@@ -233,9 +233,10 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .stat-row span { display: block; font-size: .78rem; color: var(--soft); line-height: 1.45; }
 
 /* ---------- Clients ---------- */
+/* No rule above — whitespace separates it from the hero, the same way
+   every other section on the page is separated. */
 .clients {
-  padding: clamp(1rem, 3vw, 2rem) 0 clamp(2rem, 5vw, 3rem);
-  border-top: 1px solid var(--rule);
+  padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(2rem, 5vw, 3rem);
 }
 .clients .label { display: block; margin-bottom: 1.4rem; }
 .client-list {
