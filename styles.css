@@ -174,11 +174,19 @@ html[data-theme="dark"] .icon-moon { display: block; }
 
 /* ---------- Hero ---------- */
 .hero { padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(1.5rem, 3.5vw, 2.4rem); }
+/* Serif italic in the accent blue — the same voice as the wordmark
+   and the accent words, so the page opens and closes in one register */
 .hero-greeting {
   position: relative;
   display: block;
-  min-height: 1.4em;
-  margin-bottom: clamp(2.2rem, 6vw, 3.5rem);
+  min-height: 1.3em;
+  margin-bottom: .8rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+  color: var(--accent);
+  letter-spacing: -.01em;
 }
 /* Greeting words cycle in the same spot */
 .hero-greeting .greeting-word {
@@ -206,13 +214,17 @@ html[data-theme="dark"] .icon-moon { display: block; }
   font-weight: 400;
   color: var(--accent);
 }
-.hero-place { color: var(--soft); font-size: .95rem; }
-.hero-links { margin-top: 1.5rem; font-size: .95rem; }
-.hero-links a {
+.hero-foot {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  gap: .6rem 1.6rem;
+  margin-top: 1.4rem; font-size: .95rem;
+}
+.hero-place { color: var(--soft); }
+.hero-foot a {
   border-bottom: 1px solid var(--rule-strong);
   padding-bottom: .3rem; transition: .22s;
 }
-.hero-links a:hover { color: var(--accent); border-color: var(--accent); }
+.hero-foot a:hover { color: var(--accent); border-color: var(--accent); }
 
 .hero-meta {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
