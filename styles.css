@@ -212,6 +212,25 @@ html[data-theme="dark"] .icon-moon { display: block; }
 }
 .back-link:hover { color: var(--accent); }
 
+/* ---------- In numbers ---------- */
+.numbers { padding: clamp(1.5rem, 4vw, 2.5rem) 0 clamp(1rem, 2vw, 1.5rem); }
+.numbers .label { display: block; margin-bottom: 1.4rem; }
+.stat-row {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  gap: 1.8rem 2rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.5rem;
+  margin: 0;
+}
+.stat-row > div { margin: 0; }
+.stat-row b {
+  display: block;
+  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+  font-weight: 300; letter-spacing: -.03em; line-height: 1;
+  color: var(--accent); margin-bottom: .45rem;
+}
+.stat-row span { display: block; font-size: .78rem; color: var(--soft); line-height: 1.45; }
+
 /* ---------- Clients ---------- */
 .clients {
   padding: clamp(2rem, 5vw, 3rem) 0 clamp(1rem, 2vw, 1.5rem);
@@ -272,15 +291,10 @@ html[data-theme="dark"] .icon-moon { display: block; }
 }
 .about-body p { color: var(--soft); margin-bottom: 1.3rem; max-width: 52ch; }
 
-/* Numbers under the About heading — the left column's reason to exist */
-.stat-list { margin-top: 2.5rem; border-top: 1px solid var(--rule); }
-.stat-list > div { padding: .9rem 0; border-bottom: 1px solid var(--rule); }
-.stat-list b {
-  display: block; font-size: 1.65rem; font-weight: 300;
-  letter-spacing: -.03em; line-height: 1;
-  color: var(--accent); margin-bottom: .3rem;
+/* Sticky heading — the left column follows as the body scrolls */
+@media (min-width: 761px) {
+  .about-title { position: sticky; top: 100px; }
 }
-.stat-list span { font-size: .78rem; color: var(--soft); }
 /* The off-the-clock line — set apart from the professional copy */
 .about-body .about-coda {
   margin-top: 2rem;
