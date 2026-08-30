@@ -517,3 +517,28 @@ html[data-theme="dark"] .icon-moon { display: block; }
 @media (max-width: 760px) {
   .cs-next a { flex-direction: column; gap: .4rem; }
 }
+
+/* ---------- Embedded live prototype ---------- */
+.proto-frame {
+  border: 1px solid var(--rule);
+  margin: clamp(2rem, 5vw, 3rem) 0;
+  background: var(--bg);
+}
+.proto-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; padding: .65rem .9rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: .74rem; color: var(--faint);
+}
+.proto-bar .proto-url { letter-spacing: .01em; }
+.proto-bar a { color: var(--accent); }
+.proto-bar a:hover { color: var(--ink); }
+.proto-frame iframe {
+  display: block; width: 100%; border: 0;
+  height: clamp(420px, 64vh, 760px);
+  background: var(--bg);
+}
+@media (max-width: 620px) {
+  .proto-bar .proto-url { display: none; }
+  .proto-frame iframe { height: 380px; }
+}
