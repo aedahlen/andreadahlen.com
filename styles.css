@@ -15,6 +15,7 @@
   --rule-strong: #D5D7DB;
   --accent: #2B4EFF;
   --accent-soft: #5C77FF;
+  --accent-muted: #4A63C9;
   --logo-filter: none;
 
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -40,6 +41,7 @@ html[data-theme="dark"] {
   --rule-strong: #2C2E34;
   --accent: #7B95FF;
   --accent-soft: #A3B5FF;
+  --accent-muted: #A3B5FF;
   --logo-filter: invert(1);
 }
 
@@ -53,6 +55,7 @@ html[data-theme="dark"] {
     --rule-strong: #2C2E34;
     --accent: #7B95FF;
     --accent-soft: #A3B5FF;
+    --accent-muted: #A3B5FF;
     --logo-filter: invert(1);
     }
 }
@@ -325,12 +328,16 @@ html[data-theme="dark"] .icon-moon { display: block; }
 @media (min-width: 761px) {
   .about-title { position: sticky; top: 100px; }
 }
-/* The off-the-clock line — set apart from the professional copy */
+/* The off-the-clock line — an aside in the serif italic, no rule above */
 .about-body .about-coda {
-  margin-top: 2rem;
-  padding-top: 1.4rem;
-  border-top: 1px solid var(--rule);
-  color: var(--ink);
+  margin-top: 1.9rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+  line-height: 1.4;
+  letter-spacing: -.005em;
+  color: var(--accent-muted);
+  max-width: 40ch;
 }
 .about-body p:first-child { color: var(--ink); font-size: var(--step-1); font-weight: 300; line-height: 1.55; }
 
