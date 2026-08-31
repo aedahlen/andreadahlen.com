@@ -136,22 +136,6 @@
   }
 
 
-  /* ---------- Work list: reveal the remaining projects ---------- */
-  var workToggle = document.querySelector(".work-toggle");
-  var extras = Array.prototype.slice.call(document.querySelectorAll(".work-index .is-extra"));
-
-  if (workToggle && extras.length) {
-    workToggle.addEventListener("click", function () {
-      var open = workToggle.getAttribute("aria-expanded") === "true";
-      workToggle.setAttribute("aria-expanded", String(!open));
-      extras.forEach(function (li) { li.hidden = open; });
-      workToggle.firstChild.nodeValue = open ? "See more work " : "Show fewer ";
-      if (open) {
-        // collapsing: keep the toggle in view rather than jumping the page
-        workToggle.scrollIntoView({ block: "center", behavior: "smooth" });
-      }
-    });
-  }
 
   /* ---------- Scroll-spy nav ---------- */
   var navLinks = Array.prototype.slice.call(document.querySelectorAll(".nav-list a"));

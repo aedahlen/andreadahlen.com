@@ -435,17 +435,6 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .work-desc { font-size: .88rem; color: var(--soft); line-height: 1.55; }
 .work-meta { font-size: .78rem; color: var(--faint); white-space: nowrap; }
 
-/* Projects beyond the first three, revealed by the toggle */
-.work-index li[hidden] { display: none; }
-.work-more { margin-top: 1.6rem; }
-.work-toggle {
-  font-family: inherit; font-size: .88rem; color: var(--soft);
-  background: none; border: 0; padding: .4rem 0; cursor: pointer;
-  border-bottom: 1px solid var(--rule-strong); transition: .22s;
-}
-.work-toggle:hover { color: var(--accent); border-color: var(--accent); }
-.work-toggle .chev { display: inline-block; transition: transform .25s; }
-.work-toggle[aria-expanded="true"] .chev { transform: rotate(180deg); }
 
 /* ---------- About ---------- */
 .about-grid {
