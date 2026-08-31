@@ -433,6 +433,8 @@ html[data-theme="dark"] .icon-moon { display: block; }
 /* ---------- Sections ---------- */
 .section { padding: clamp(3rem, 6vw, 4.5rem) 0; }
 #work { padding-top: clamp(2.5rem, 6vw, 4rem); }
+/* "What I do" reads as a continuation of About, so it sits closer */
+.skills-section { padding-top: clamp(1rem, 2vw, 1.5rem); }
 /* The numbers follow straight on from the hero, so they need less air */
 .numbers-section { padding: clamp(1.6rem, 3.5vw, 2.4rem) 0 clamp(2rem, 4vw, 3rem); }
 .sec-label { display: block; margin-bottom: clamp(1.1rem, 2vw, 1.5rem); }
