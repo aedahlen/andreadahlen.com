@@ -547,8 +547,6 @@ html[data-theme="dark"] .icon-moon { display: block; }
   display: flex; flex-wrap: wrap;
   align-items: baseline; justify-content: space-between;
   gap: 1.2rem 2.5rem;
-  border-top: 1px solid var(--rule);
-  padding-top: clamp(1.6rem, 3.5vw, 2.4rem);
 }
 .contact-title {
   font-size: clamp(1.9rem, 4vw, 2.8rem);
