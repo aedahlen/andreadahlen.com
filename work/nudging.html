@@ -1,202 +1,69 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Nudging — Andrea Dahlén</title>
-<meta name="description" content="An MA dissertation on behavioural design — applying Dual Process Theory and the EAST framework to clinical waste segregation at Barts Health NHS Trust." />
-<meta property="og:title" content="Nudging: From Automatic to Reflective — Andrea Dahlén" />
-<meta property="og:description" content="Behavioural design applied to waste management in England's largest NHS trust." />
+<title>Nudging — from automatic to reflective</title>
+<meta name="description" content="An MA dissertation on behavioural design, asking whether nudge principles could close the gap between what NHS staff intend to do with clinical waste and what happens at the bin." />
+<link rel="canonical" href="https://www.andreadahlen.com/work/nudging.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Nudging — from automatic to reflective" />
+<meta property="og:description" content="An MA dissertation on behavioural design, asking whether nudge principles could close the gap between what NHS staff intend to do with clinical waste and what happens at the bin." />
+<meta property="og:url" content="https://www.andreadahlen.com/work/nudging.html" />
 <meta property="og:image" content="https://www.andreadahlen.com/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://www.andreadahlen.com/" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="og:type" content="article" />
-<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#0C0C0E" media="(prefers-color-scheme: dark)" />
-<link rel="stylesheet" href="../styles.css" />
-<link rel="icon" type="image/png" href="../logo.png" />
+<meta name="theme-color" content="#FAF8F3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0F1117" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<script>(function(){var r=document.documentElement;r.classList.add('js');try{var t=localStorage.getItem('ad-theme');if(t)r.setAttribute('data-theme',t);}catch(e){}})();</script>
 </head>
 <body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
-
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="../index.html">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11.8 7.9C12.3 5.6 13.9 3.4 16.4 1.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M14.4 4.2c1.7-1.6 4.2-2.3 6.5-1.9-.4 2.3-2.1 4.3-4.4 5-1.1.3-2.3-.1-2.7-1.1-.3-.8 0-1.5.6-2z" fill="currentColor"/><path d="M11.1 7.4c3.1.5 5.4 3.4 5.4 6.9 0 3.8-2.5 6.6-5.5 6.6s-5.5-2.8-5.5-6.6c0-3.5 2.4-6.4 5.6-6.9z" fill="currentColor"/><path d="M11 20.9v1.6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8.8 20.4l-.8.8M13.2 20.4l.8.8" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></svg>
       <span>Andrea Dahlén</span>
     </a>
-    <nav aria-label="Primary">
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Menu">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      </button>
-      <ul id="nav-list" class="nav-list">
-        <li><a href="../index.html#work" class="is-active">Work</a></li>
-        <li><a href="../index.html#about">About</a></li>
-        <li><a href="../cv.html">CV</a></li>
-        <li><a href="../index.html#contact">Contact</a></li>
-      </ul>
+    <nav class="nav" aria-label="Primary">
+      <a href="/" id="nav-work" class="on">Work</a>
+      <a href="/#about">About</a>
+      <a href="/cv.html" id="nav-cv">CV</a>
+      <a href="/#contact">Contact</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch colour theme">
-      <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>
-      <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+    <button class="icon-btn" id="theme" type="button" aria-label="Switch colour theme">
+      <svg class="sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>
+      <svg class="moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
     </button>
   </div>
 </header>
-
 <main id="main">
-
-  <!-- ===== HERO ===== -->
-  <section class="cs-hero wrap">
-    <a class="back-link reveal" href="../index.html#work">← Back to work</a>
-    <span class="label reveal">Case study</span>
-    <h1 class="cs-title reveal">Nudging: from automatic to reflective</h1>
-    <p class="cs-deck reveal">
-      An MA dissertation on behavioural design — asking whether nudge principles could
-      close the gap between what NHS staff intend to do with clinical waste and what
-      actually happens at the bin.
-    </p>
-    <dl class="cs-meta reveal">
-      <div><dt>Institution</dt><dd>Goldsmiths, University of London</dd></div>
-      <div><dt>Award</dt><dd>MA Design &amp; Environment, Distinction</dd></div>
-      <div><dt>Field site</dt><dd>Barts Health NHS Trust</dd></div>
-      <div><dt>Year</dt><dd>2015</dd></div>
-    </dl>
-  </section>
-
-  <div class="wrap cs-body">
-
-    <figure class="cs-figure reveal">
-      <img src="../images/nudging-ward.webp" alt="A dimly lit hospital ward with two empty beds, monitoring equipment and a curtained window." width="1500" height="956" />
-      <figcaption>The setting: a working hospital, where waste decisions are made in seconds by people whose attention is entirely elsewhere.</figcaption>
-    </figure>
-
-    <section class="cs-section reveal">
-      <h2>The problem</h2>
-      <p>
-        Healthcare produces an enormous volume of waste, and how it is segregated at the
-        point of disposal determines what happens to it afterwards. Clinical waste must be
-        incinerated at high cost and high carbon; general and recyclable waste need not
-        be. A single item dropped into the wrong bin moves the whole bag into the more
-        expensive, more damaging stream.
-      </p>
-      <p>
-        The interesting part is that this is rarely a knowledge problem. Staff generally
-        know the rules. The gap is between intention and action — a decision made in a
-        couple of seconds, by someone mid-task, with their attention on a patient rather
-        than on a bin.
-      </p>
-      <p>
-        My master's thesis at Goldsmiths asked whether behavioural design could close that
-        gap at Barts Health NHS Trust, England's largest NHS organisation.
-      </p>
-    </section>
-
-    <section class="cs-section reveal">
-      <h2>The theory</h2>
-      <p>
-        The research uses <strong>Dual Process Theory</strong> to examine the distance
-        between intended and actual behaviour. It distinguishes two systems of thinking:
-        the automatic — fast, unconscious, driven by habit and environment — and the
-        reflective — slow, analytical, deliberate.
-      </p>
-      <p>
-        Waste segregation in a hospital is almost entirely an automatic-system act.
-        Training, signage and policy all address the reflective system, which is largely
-        not the system making the decision. That mismatch explains why awareness campaigns
-        so often fail to change what ends up in the bin.
-      </p>
-
-      <h3>The EAST framework</h3>
-      <p>
-        To design interventions rather than just diagnose the problem, the work applies
-        the EAST framework — make the desired behaviour <strong>Easy</strong>,
-        <strong>Attractive</strong>, <strong>Social</strong> and <strong>Timely</strong>.
-        It shifts the question from "how do we tell people to do this?" to "how do we
-        arrange the environment so the right thing is the path of least resistance?"
-      </p>
-
-      <figure class="cs-figure reveal">
-        <img src="../images/nudging-piano-stairs.webp" alt="Two views of the piano staircase installed beside an escalator at Odenplan station in Stockholm, with the stair treads painted as black and white piano keys." width="1831" height="580" loading="lazy" />
-        <figcaption>The canonical demonstration: the piano staircase at Odenplan station in Stockholm, which made taking the stairs more appealing than the escalator without instructing anyone to do so. Easy, attractive and timely, all at the point of decision. (Photographs of the Volkswagen "Fun Theory" installation, included here as reference rather than as my own work.)</figcaption>
-      </figure>
-    </section>
-
-    <section class="cs-section reveal">
-      <h2>Method</h2>
-      <p>
-        The fieldwork combined qualitative and quantitative approaches, on the principle
-        that a nudge designed from a desk is only a guess.
-      </p>
-      <ul>
-        <li><strong>Interviews with sustainability experts</strong> — to understand where policy meets practice, and where previous interventions had failed.</li>
-        <li><strong>Fieldwork observation at Whipps Cross Hospital</strong> — watching how disposal decisions are actually made, rather than how they are described.</li>
-        <li><strong>Staff surveys and waste-management data analysis</strong> — testing stated intention against measured outcome.</li>
-        <li><strong>PESTEL assessment and stakeholder evaluation</strong> — mapping the political, economic and organisational constraints any intervention would have to survive.</li>
-      </ul>
-    </section>
-
-    <section class="cs-section reveal">
-      <h2>The ethical line</h2>
-      <p>
-        Nudging attracts a reasonable objection: if you are shaping someone's behaviour
-        without their conscious agreement, who decides what the right behaviour is? The
-        work takes that seriously rather than waving it away, and holds to a test for
-        whether an intervention is legitimate.
-      </p>
-      <p>
-        A nudge, used correctly, should be <strong>voluntary, avoidable, easy or passive,
-        and low cost</strong> — advancing organisational goals while respecting individual
-        autonomy. If an intervention fails any of those, it has stopped being a nudge and
-        become something else: a mandate, a penalty, or a manipulation.
-      </p>
-
-      <div class="cs-stats reveal">
-        <div><b>Dual Process</b><span>Theoretical frame — automatic vs reflective systems</span></div>
-        <div><b>EAST</b><span>Easy, Attractive, Social, Timely</span></div>
-        <div><b>Distinction</b><span>MA Design &amp; Environment, Goldsmiths</span></div>
-      </div>
-    </section>
-
-    <section class="cs-section reveal">
-      <h2>Why it still matters to my practice</h2>
-      <p>
-        This was academic work, not a shipped product — but it shaped how I approach
-        design problems a decade later. It is the reason I start with observed behaviour
-        rather than stated preference, why I treat friction as a design material rather
-        than a defect to be sanded away everywhere, and why I am sceptical of solutions
-        that depend on people reading something carefully.
-      </p>
-      <p>
-        Most of the products I have worked on since — housing advice for people in crisis,
-        business support, healthcare services — ask something of users at exactly the
-        moment they have least capacity to give it. The dissertation was where I first had
-        to take that seriously.
-      </p>
-    </section>
-
-  </div>
-
-  <!-- ===== NEXT ===== -->
-  <section class="cs-next wrap">
-    <a href="tabatwo.html">
-      <span>
-        <span class="label">Next case study</span>
-        <span class="n-title">Tabatwo</span>
-      </span>
-      <span class="n-arrow">→</span>
-    </a>
-  </section>
+<section class="cs-hero wrap"><span class="cs-motif" aria-hidden="true"></span><a class="back" href="/">← All work</a><p class="eyebrow">Case study · Nudging</p><h1>From automatic to <span class="em">reflective</span>.</h1><p class="cs-lede">An MA dissertation asking whether nudge principles could close the gap between what NHS staff intend to do with clinical waste and what actually happens at the bin.</p><dl class="cs-meta"><div><dt>Institution</dt><dd>Goldsmiths, University of London</dd></div><div><dt>Field site</dt><dd>Barts Health NHS Trust</dd></div><div><dt>Year</dt><dd>2015</dd></div><div><dt>Award</dt><dd>MA Design &amp; Environment, Distinction</dd></div></dl></section><section class="wrap tight"><div class="sec-head"><h2>At a glance</h2><p class="sec-note">If you read nothing else · 40 seconds</p></div><div class="glance"><article><h3>The problem</h3><p>Staff understand the waste segregation rules. Errors happen anyway. <b>The gap is between intention and action</b>: a decision made in a couple of seconds, by someone mid-task, with their attention on a patient rather than on a bin.</p></article><article><h3>What I did</h3><p>Applied Dual Process Theory and the <b>EAST framework</b> through expert interviews, hospital observation, staff surveys, waste-data analysis and a PESTEL and stakeholder assessment.</p></article><article><h3>What changed</h3><p>A finding that reshaped how I practise: segregation runs on <b>automatic thinking, while training addresses reflective thinking</b>. Which is why awareness campaigns fail.</p></article></div></section><section class="wrap"><div class="sec-head"><h2>How the work ran</h2><p class="sec-note">Select a step</p></div><div class="steps" role="tablist" aria-label="Process steps" style="--steps:4"><button class="step" role="tab" id="step-0" aria-controls="stepDetail" aria-selected="true" tabindex="0" data-step="0" data-detail="The obvious framing is that people need to be told the rules. Waste data and staff surveys both said they already knew them. Reframing it as a behaviour problem — the right action at the right moment, not the right belief — is what made the research worth doing."><span class="node">01</span><span class="nm">Frame</span><span class="ds">Set the question as a behaviour problem rather than a knowledge problem.</span><span class="out"><i>Research question</i></span></button><button class="step" role="tab" id="step-1" aria-controls="stepDetail" aria-selected="false" tabindex="-1" data-step="1" data-detail="England's largest NHS trust, in situ. The decision takes about two seconds and competes with a patient for attention. Nothing about the moment resembles the conditions under which the training was delivered."><span class="node">02</span><span class="nm">Observe</span><span class="ds">Watched what actually happens at the bin, in a working hospital, mid-task.</span><span class="out"><i>Field observation</i></span></button><button class="step" role="tab" id="step-2" aria-controls="stepDetail" aria-selected="false" tabindex="-1" data-step="2" data-detail="Experts described the policy view; staff described the moment. The distance between those two accounts is where the intention-action gap lives, and it is invisible from either one alone."><span class="node">03</span><span class="nm">Ask</span><span class="ds">Interviews with sustainability experts and surveys of the staff doing the segregating.</span><span class="out"><i>Interviews + survey</i></span></button><button class="step" role="tab" id="step-3" aria-controls="stepDetail" aria-selected="false" tabindex="-1" data-step="3" data-detail="Easy, Attractive, Social, Timely — applied to a bin. The useful conclusion was about placement, defaults and friction at the point of decision, not about better posters."><span class="node">04</span><span class="nm">Analyse</span><span class="ds">Waste data, PESTEL and stakeholder assessment against the EAST framework.</span><span class="out"><i>EAST analysis</i></span></button></div><div class="step-detail" id="stepDetail" role="tabpanel" tabindex="0" aria-labelledby="step-0" aria-live="polite"><h3>01 · Frame</h3><p>The obvious framing is that people need to be told the rules. Waste data and staff surveys both said they already knew them. Reframing it as a behaviour problem — the right action at the right moment, not the right belief — is what made the research worth doing.</p></div></section><section class="wrap"><div class="sec-head"><h2>Why awareness campaigns fail</h2><p class="sec-note">Dual Process Theory, applied to a bin</p></div><figure class="fig"><div class="systems"><div class="sys"><span class="sys-tag">System 1</span><h3>Automatic</h3><p>At the bin. About two seconds. Mid-task, attention on a patient. Runs on habit, placement and whatever is easiest to reach.</p></div><div class="sys-gap" aria-hidden="true"><span>the gap</span></div><div class="sys"><span class="sys-tag">System 2</span><h3>Reflective</h3><p>In the training room. Unhurried, undistracted, thinking about waste as a subject. Where every awareness campaign lands.</p></div></div><figcaption>Segregation happens in the automatic system; training addresses the reflective one. That mismatch is the reason knowing the rules and following them are different problems, and why more posters do not close the distance.</figcaption></figure></section><section class="wrap"><div class="numbers"><div class="num"><b>2 sec</b><span>The decision, mid-task, attention elsewhere</span></div><div class="num"><b>EAST</b><span>Framework applied: easy, attractive, social, timely</span></div><div class="num"><b>Distinction</b><span>MA Design &amp; Environment, Goldsmiths</span></div><div class="num"><b>2015</b><span>And still the thing that shapes how I practise</span></div></div></section><section class="wrap"><div class="sec-head"><h2>What it left me with</h2></div><ul class="success"><li>Observed behaviour beats reported behaviour</li><li>Friction is design material, not a defect</li><li>Design for the capacity people actually have at the decision point</li><li>Awareness is not a mechanism</li></ul></section><section class="wrap"><a class="nextcase" href="/work/business-gateway.html"><span><small>Next case study</small><b>Business Gateway</b></span><span class="cta-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></section>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <span>© <span id="year"></span> Andrea Dahlén</span>
-    <span>Designed &amp; built in Copenhagen</span>
-    <a href="../index.html#work">All work ↑</a>
+<footer class="site-footer" id="contact">
+  <span class="foot-motif left" aria-hidden="true"></span>
+  <div class="wrap">
+    <div class="foot-main">
+      <p class="foot-title">Let&rsquo;s connect</p>
+      <div class="foot-links">
+        <a href="mailto:andreadahlen@gmail.com">andreadahlen@gmail.com</a>
+        <a href="tel:+4571528283">+45 71 52 82 83</a>
+        <a href="https://www.linkedin.com/in/andrea-dahlen/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-inner">
+      <span>&copy; <span id="year">2026</span> Andrea Dahl&eacute;n</span>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
   </div>
 </footer>
 
-<script src="../main.js"></script>
+<script src="/main.js"></script>
 </body>
 </html>

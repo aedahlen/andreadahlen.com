@@ -1,222 +1,268 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Andrea Dahlén — Product Designer</title>
-<meta name="description" content="Copenhagen-based Product Designer with 10+ years of experience designing complex digital products and services across research, UX and UI." />
+<meta name="description" content="Product designer. Agency-trained, research-led, ten years in complex services. UX, UI, research and product strategy for NHS Scotland, Shelter, agency clients and early-stage teams." />
+<link rel="canonical" href="https://www.andreadahlen.com/" />
+<meta property="og:type" content="profile" />
 <meta property="og:title" content="Andrea Dahlén — Product Designer" />
-<meta property="og:description" content="Copenhagen-based Product Designer turning messy problems into simple, useful experiences." />
+<meta property="og:description" content="Product designer. Agency-trained, research-led, ten years in complex services. UX, UI, research and product strategy for NHS Scotland, Shelter, agency clients and early-stage teams." />
+<meta property="og:url" content="https://www.andreadahlen.com/" />
 <meta property="og:image" content="https://www.andreadahlen.com/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://www.andreadahlen.com/" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="og:type" content="website" />
-<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#0C0C0E" media="(prefers-color-scheme: dark)" />
-<link rel="stylesheet" href="styles.css" />
-<link rel="icon" type="image/png" href="logo.png" />
+<meta name="theme-color" content="#FAF8F3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0F1117" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<script>(function(){var r=document.documentElement;r.classList.add('js');try{var t=localStorage.getItem('ad-theme');if(t)r.setAttribute('data-theme',t);}catch(e){}})();</script>
 </head>
 <body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
-
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="#top">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11.8 7.9C12.3 5.6 13.9 3.4 16.4 1.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M14.4 4.2c1.7-1.6 4.2-2.3 6.5-1.9-.4 2.3-2.1 4.3-4.4 5-1.1.3-2.3-.1-2.7-1.1-.3-.8 0-1.5.6-2z" fill="currentColor"/><path d="M11.1 7.4c3.1.5 5.4 3.4 5.4 6.9 0 3.8-2.5 6.6-5.5 6.6s-5.5-2.8-5.5-6.6c0-3.5 2.4-6.4 5.6-6.9z" fill="currentColor"/><path d="M11 20.9v1.6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8.8 20.4l-.8.8M13.2 20.4l.8.8" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></svg>
       <span>Andrea Dahlén</span>
     </a>
-    <nav aria-label="Primary">
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Menu">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      </button>
-      <ul id="nav-list" class="nav-list">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="nav" aria-label="Primary">
+      <a href="/" id="nav-work" class="on">Work</a>
+      <a href="/#about">About</a>
+      <a href="/cv.html" id="nav-cv">CV</a>
+      <a href="/#contact">Contact</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch colour theme">
-      <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>
-      <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+    <button class="icon-btn" id="theme" type="button" aria-label="Switch colour theme">
+      <svg class="sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>
+      <svg class="moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
     </button>
   </div>
 </header>
-
 <main id="main">
 
-  <!-- ===== HERO ===== -->
-  <section class="hero wrap" aria-labelledby="hero-heading">
+
+  <section class="hero wrap">
     <span class="hero-motif" aria-hidden="true"></span>
-    <p class="hero-greeting reveal" aria-label="Hej. Hallå. Hi. Hullo.">
-      <span class="greeting-word">Hej.</span>
-      <span class="greeting-word">Hallå.</span>
-      <span class="greeting-word">Hi.</span>
-      <span class="greeting-word">Hullo.</span>
-    </p>
-    <h1 class="hero-heading reveal" id="hero-heading">
-      Product Designer turning messy problems into <em>simple, useful</em> experiences.
-    </h1>
-    <p class="hero-foot reveal">
-      <a href="#contact">Get in touch</a>
-    </p>
+    <div class="hero-inner">
+      <p class="hero-greeting reveal"><span class="greeting-word">Hej.</span><span class="greeting-word">Hall&aring;.</span><span class="greeting-word">Hi.</span><span class="greeting-word">Hullo.</span></p>
+      <h1 class="reveal">Product designer. <span class="em" style="white-space:nowrap">Agency-trained,</span> <span class="em" style="white-space:nowrap">research-led</span>, ten years in complex services.</h1>
+      <p class="hero-sub reveal">UX, UI, research and product strategy for NHS Scotland, Shelter, agency clients and early-stage teams. I settle flows and requirements before anyone argues about pixels, and I use research to create focus rather than to file findings.</p>
+      <div class="hero-actions reveal">
+        <a class="btn" href="#work">Selected work</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+      <p class="status reveal"><span class="dot"></span> Open to new roles · Copenhagen &amp; remote</p>
+    </div>
   </section>
 
-  <!-- ===== WORK ===== -->
-  <section class="section wrap" id="work" aria-labelledby="work-heading">
-    <span class="label sec-label reveal" id="work-heading">Browse case studies</span>
-    <ol class="work-index reveal" id="work-list">
-      <li>
-        <a href="work/tabatwo.html">
-          <h3 class="work-title">Tabatwo</h3>
-          <p class="work-desc">Defining and validating the core UX of a social fitness platform.</p>
-          <span class="work-meta">2025</span>
-        </a>
-      </li>
-      <li>
-        <a href="work/shelter-scotland.html">
-          <h3 class="work-title">Shelter Scotland</h3>
-          <p class="work-desc">Digital strategy, delivery and accessibility for a national homelessness charity.</p>
-          <span class="work-meta">2019–2024</span>
-        </a>
-      </li>
-      <li>
-        <a href="work/business-gateway.html">
-          <h3 class="work-title">Business Gateway</h3>
-          <p class="work-desc">A full website redevelopment reaching a WAI 'A' accessibility rating.</p>
-          <span class="work-meta">2018</span>
-        </a>
-      </li>
-      <li>
-        <a href="work/tours-management-system.html">
-          <h3 class="work-title">Tours Management System</h3>
-          <p class="work-desc">A bespoke booking platform — 1,600+ tours in its first year.</p>
-          <span class="work-meta">2017</span>
-        </a>
-      </li>
-      <li>
-        <a href="work/nudging.html">
-          <h3 class="work-title">Nudging</h3>
-          <p class="work-desc">Behavioural design and the EAST framework, applied across the NHS.</p>
-          <span class="work-meta">2021</span>
-        </a>
-      </li>
-      <li>
-        <a href="work/famly.html">
-          <h3 class="work-title">Famly</h3>
-          <p class="work-desc">A speculative product concept, prototyped end to end.</p>
-          <span class="work-meta">2026</span>
-        </a>
-      </li>
-    </ol>
+  <section class="wrap" id="work" style="padding-top:clamp(1.5rem,3vw,2.5rem)">
+    <div class="sec-head reveal">
+      <h2>Selected work</h2>
+      <p class="sec-note">Three projects, in depth · 4–6 min each</p>
+    </div>
+
+    <div class="cards">
+
+      <a class="card reveal" href="/work/shelter-scotland.html" >
+        <div class="plate">
+          <span class="plate-floral" aria-hidden="true"></span>
+          <img src="/images/logos/shelter.webp" alt="Shelter Scotland logo" width="150" height="131" />
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Shelter Scotland</h3>
+            <span class="card-kind">National homelessness charity</span>
+          </div>
+          <p class="card-sum">A protest-brand rebrand had to become a working digital system. I built the pattern library that carried it, then led the Scottish digital estate and a team of eight to WCAG 2.1 AA.</p>
+          <div class="meta">
+            <span class="chip">Design system</span><span class="chip">Accessibility</span><span class="chip">Team leadership</span>
+          </div>
+          <div class="card-foot">
+            <span>UX Designer → Product Lead · 2019–2024</span>
+            <span class="cta-read">Read the case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card reveal" href="/work/tabatwo.html" >
+        <div class="plate">
+          <span class="plate-floral" aria-hidden="true"></span>
+          <img src="/images/logos/tabatwo.webp" alt="Tabatwo logo" width="150" height="150" />
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Tabatwo</h3>
+            <span class="card-kind">Social fitness platform</span>
+          </div>
+          <p class="card-sum">The app could do everything and meant nothing. Five moderated sessions and eight product areas later, the team had a ranked backlog and an answer to what the product was actually for.</p>
+          <div class="meta">
+            <span class="chip">Discovery</span><span class="chip">Usability testing</span><span class="chip">Prioritisation</span>
+          </div>
+          <div class="card-foot">
+            <span>UX Consultant · 2025</span>
+            <span class="cta-read">Read the case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card reveal" href="/work/famly.html" >
+        <div class="plate">
+          <span class="plate-floral" aria-hidden="true"></span>
+          <img src="/images/logos/famly.webp" alt="Famly logo" width="150" height="82" />
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>Famly</h3>
+            <span class="card-kind">Speculative product concept</span>
+          </div>
+          <p class="card-sum">A speculative concept for Famly, taken from idea to a clickable prototype with Claude Code rather than starting in Figma. Built to be opened, not described.</p>
+          <div class="meta">
+            <span class="chip">Concept</span><span class="chip">Prototyping</span><span class="chip">AI-assisted build</span>
+          </div>
+          <div class="card-foot">
+            <span>Product Designer · 2026 · Live prototype</span>
+            <span class="cta-read">Read the case study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </div>
+      </a>
+
+    </div>
   </section>
 
-  <!-- ===== IN NUMBERS ===== -->
-  <section class="numbers-section wrap" aria-labelledby="numbers-heading">
-    <span class="label sec-label reveal" id="numbers-heading">In numbers</span>
-    <dl class="stat-row reveal">
-      <div><b>10+</b><span>Years across product design, UX and research</span></div>
-      <div><b>8</b><span>Person multidisciplinary team led end to end</span></div>
-      <div><b>40+</b><span>Interviews run for NHS Scotland's cervical screening project</span></div>
-      <div><b>WCAG 2.1 AA</b><span>Accessibility standard delivered across Shelter's digital estate</span></div>
-    </dl>
-
+  <section class="wrap">
+    <div class="sec-head reveal">
+      <h2>More case studies</h2>
+      <p class="sec-note">Same depth, less airtime</p>
+    </div>
+    <div class="archive reveal">
+      <a class="arow" href="/work/nudging.html" ><span class="logo" aria-hidden="true"><img src="/images/logos/nhs.png" alt="" width="264" height="96" loading="lazy" decoding="async" /></span><span class="nm">Nudging: from automatic to reflective<small>Behavioural design and the EAST framework, tested against clinical waste at England's largest NHS trust.</small></span><span class="yr">Goldsmiths · 2015</span><span class="go">Case study →</span></a>
+      <a class="arow" href="/work/business-gateway.html" ><span class="logo" aria-hidden="true"><img src="/images/logos/business-gateway.png" alt="" width="299" height="96" loading="lazy" decoding="async" /></span><span class="nm">Business Gateway<small>Full redevelopment and a personalisation tool, delivered to a WAI ‘A’ rating.</small></span><span class="yr">Whitespace · 2018</span><span class="go">Case study →</span></a>
+      <a class="arow" href="/work/tours-management-system.html" ><span class="logo" aria-hidden="true"><img src="/images/logos/visitscotland.png" alt="" width="353" height="96" loading="lazy" decoding="async" /></span><span class="nm">Tours Management System<small>A bespoke booking platform for VisitScotland that ran 1,600+ tours in its first year.</small></span><span class="yr">Whitespace · 2017</span><span class="go">Case study →</span></a>
+    </div>
   </section>
 
-  <!-- ===== TESTIMONIAL ===== -->
-  <section class="quote-band wrap" aria-label="Testimonial">
-    <blockquote class="reveal">
-      What stood out most was Andrea's ability to balance user experience thinking with
-      practical execution. She helped us clarify fundamental product concepts that became
-      central to our platform's direction.
+  <section class="wrap">
+    <div class="numbers reveal">
+      <div class="num"><b data-count="10" data-suffix="+">10+</b><span>Years across product design, UX and research</span></div>
+      <div class="num"><b data-count="8">8</b><span>Person multidisciplinary team led end to end</span></div>
+      <div class="num"><b data-count="40" data-suffix="+">40+</b><span>Interviews run for NHS Scotland's cervical screening project</span></div>
+      <div class="num"><b>AA</b><span>WCAG 2.1 met across Shelter's digital estate</span></div>
+    </div>
+    <div class="client-band reveal">
+      <div class="clients-head">
+        <p class="eyebrow" id="clients-heading">Shipped complex digital products for</p>
+        <a class="clients-more" href="/cv.html">See full career &rarr;</a>
+      </div>
+      <div class="client-names" role="group" aria-labelledby="clients-heading">
+        <ul class="client-track"><li>Shelter Scotland</li><li>NHS Scotland</li><li>Scottish Government</li><li>VisitScotland</li><li>Carbon Trust</li><li>Business Gateway</li><li>Tabatwo</li><li>Boxmove</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <blockquote class="quote reveal">
+      <p>“Andrea helped us clarify fundamental product concepts that became central to our platform's direction.”</p>
+      <footer>Mariano Alesandro — Co-Founder &amp; CTO, Tabatwo</footer>
     </blockquote>
-    <p class="quote-by reveal"><b>Mariano Alesandro</b> — Co-Founder &amp; CTO, Tabatwo</p>
   </section>
 
+  <section class="about-band" id="about">
+    <span class="about-motif" aria-hidden="true"></span>
+    <div class="wrap">
+      <div class="about-top reveal">
+        <p class="eyebrow" style="margin-bottom:1rem">About</p>
+        <h2>A Swedish-speaking Finn: <span class="em">think Moomin</span>.</h2>
+        <dl class="about-facts">
+          <div class="fact"><dt>Based in</dt><dd>Copenhagen</dd></div>
+          <div class="fact"><dt>Languages</dt><dd>English, Swedish, Danish</dd></div>
+          <div class="fact"><dt>Working</dt><dd>Onsite &amp; remote</dd></div>
+          <div class="fact"><dt>Experience</dt><dd>10+ years</dd></div>
+        </dl>
+        <div class="about-lede">
+          <p>Raised between Finland, California and Denmark, a decade in the UK, roots now firmly back in Copenhagen. It's the reason I notice when a service assumes everyone shares one language, one address format, one way of asking for help.</p>
+          <p>Most of my work has been where getting it wrong has consequences: housing advice for people in crisis, cervical screening for the people the NHS wasn't reaching, business support for owners with no time to spare. In that world accessibility isn't a finishing step. It decides who can use the thing at all.</p>
+          <p>I start from what people do rather than what they say they'll do, a habit picked up writing a dissertation on behavioural design.</p>
+          <p class="about-coda">Happiest at my Finnish summerhouse, foraging for blueberries and mushrooms, and spending time with my daughter.</p>
+        </div>
+      </div>
 
-  <!-- ===== CLIENTS ===== -->
-  <section class="clients wrap" aria-labelledby="clients-heading">
-    <div class="clients-head reveal">
-      <span class="label" id="clients-heading">Shipped complex digital products for</span>
-      <a class="clients-more" href="cv.html">See full career →</a>
-    </div>
-    <div class="client-marquee reveal">
-      <div class="client-scroll">
-        <ul class="client-track">
-          <li>Shelter Scotland</li>
-          <li>NHS Scotland</li>
-          <li>Scottish Government</li>
-          <li>VisitScotland</li>
-          <li>Carbon Trust</li>
-          <li>Business Gateway</li>
-          <li>Tabatwo</li>
-          <li>Boxmove</li>
+      <div class="principles reveal">
+        <div>
+          <span class="pn" aria-hidden="true"></span>
+          <h3>Flows before pixels</h3>
+          <p>Requirements and journeys get settled first. Everything after that is faster, and the arguments that do happen are about the right things.</p>
+        </div>
+        <div>
+          <span class="pn" aria-hidden="true"></span>
+          <h3>Research to focus, not to file</h3>
+          <p>A ranked list of three things beats a deck of forty observations. The job isn't to find everything. It's to say what to do first.</p>
+        </div>
+        <div>
+          <span class="pn" aria-hidden="true"></span>
+          <h3>Accessible by construction</h3>
+          <p>Built into the system and the components, not audited at the end. For an audience on old devices and poor connections, it decides who gets in at all.</p>
+        </div>
+      </div>
+
+      <div class="skills reveal">
+        <p class="eyebrow">What I do</p>
+        <ul class="chips-row">
+          <li>UX strategy</li><li>Product design</li><li>Product discovery</li>
+          <li>User research &amp; testing</li><li>Accessibility &amp; inclusive design</li>
+          <li>Enterprise &amp; healthcare UX</li><li>Design systems</li>
+          <li>Design leadership &amp; mentoring</li><li>Stakeholder management</li>
+          <li>Agile &amp; Lean UX</li>
         </ul>
-        <ul class="client-track" aria-hidden="true">
-          <li>Shelter Scotland</li>
-          <li>NHS Scotland</li>
-          <li>Scottish Government</li>
-          <li>VisitScotland</li>
-          <li>Carbon Trust</li>
-          <li>Business Gateway</li>
-          <li>Tabatwo</li>
-          <li>Boxmove</li>
-        </ul>
       </div>
-    </div>
-  </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section class="section wrap" id="about" aria-labelledby="about-heading">
-    <span class="label sec-label reveal">About</span>
-    <div class="about-grid">
-      <div class="about-side reveal">
-        <h2 class="about-title" id="about-heading">A Swedish-speaking Finn: <em>think Moomin</em></h2>
-        <p class="about-coda">Happiest at my Finnish summerhouse, foraging for blueberries and mushrooms, and spending time with my daughter.</p>
-      </div>
-      <div class="about-body reveal">
-        <p>Raised between Finland, California and Denmark and a decade spent in the UK, I have firmly planted my roots back in Copenhagen. It's the reason I notice when a service assumes everyone shares one language, one address format, one way of asking for help.</p>
-        <p>Most of my work has been where getting it wrong has consequences: housing advice for people in crisis, cervical screening for the people the NHS wasn't reaching, business support for owners with no time to spare. In that world accessibility isn't a finishing step. It decides who can use the thing at all.</p>
-        <p>I start from what people do rather than what they say they'll do, a habit picked up writing a dissertation on behavioural design, and I'd rather settle flows and requirements before anyone argues about visual polish. Still curious about the humans on both ends of the screen.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== WHAT I DO ===== -->
-  <section class="section wrap skills-section" aria-labelledby="skills-heading">
-    <span class="label sec-label reveal" id="skills-heading">What I do</span>
-    <p class="skill-flow reveal">
-      UX Strategy &amp; Product Design <i>/</i> User Research &amp; Testing <i>/</i> Product Discovery
-      &amp; Concept Development <i>/</i> Accessibility &amp; Inclusive Design <i>/</i> Enterprise
-      &amp; Healthcare UX <i>/</i> Design Leadership &amp; Mentoring <i>/</i> Stakeholder Management
-      <i>/</i> Agile &amp; Lean UX <i>/</i> Design Systems &amp; Consistency
-    </p>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section class="section wrap contact-band" id="contact" aria-labelledby="contact-heading">
-    <div class="contact-row reveal">
-      <h2 class="contact-title" id="contact-heading">Let's <em>connect</em>.</h2>
-      <div class="contact-actions">
-        <a href="mailto:andreadahlen@gmail.com">andreadahlen@gmail.com</a>
-        <a href="tel:+4571528283">+45 71 52 82 83</a>
-        <a href="https://www.linkedin.com/in/andrea-dahl%C3%A9n-26a81685" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="Andrea-Dahlen-CV.pdf" download>CV ↓</a>
+      <div class="career reveal">
+        <p class="eyebrow">Where</p>
+        <div class="career-list">
+          <div class="career-item">
+            <span class="yrs">2025 – Present</span>
+            <h3>Senior Product Designer</h3>
+            <p class="org">Freelance · Tabatwo, Boxmove</p>
+          </div>
+          <div class="career-item">
+            <span class="yrs">2022 – 2024</span>
+            <h3>Product Lead</h3>
+            <p class="org">Shelter Scotland</p>
+          </div>
+          <div class="career-item">
+            <span class="yrs">2021 – 2022</span>
+            <h3>Senior User Researcher</h3>
+            <p class="org">NHS National Services Scotland</p>
+          </div>
+        </div>
+        <a class="career-link" href="/cv.html">See all experience <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <span>© <span id="year"></span> Andrea Dahlén</span>
-    <span>Designed &amp; built in Copenhagen</span>
-    <a href="#top">Back to top ↑</a>
+<footer class="site-footer" id="contact">
+  <span class="foot-motif left" aria-hidden="true"></span>
+  <div class="wrap">
+    <div class="foot-main">
+      <p class="foot-title">Let&rsquo;s connect</p>
+      <div class="foot-links">
+        <a href="mailto:andreadahlen@gmail.com">andreadahlen@gmail.com</a>
+        <a href="tel:+4571528283">+45 71 52 82 83</a>
+        <a href="https://www.linkedin.com/in/andrea-dahlen/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-inner">
+      <span>&copy; <span id="year">2026</span> Andrea Dahl&eacute;n</span>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="/main.js"></script>
 </body>
 </html>

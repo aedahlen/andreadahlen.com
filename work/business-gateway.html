@@ -1,206 +1,69 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Business Gateway — Andrea Dahlén</title>
-<meta name="description" content="A full website redevelopment on agile and lean methods, reaching a WAI 'A' accessibility rating." />
-<meta property="og:title" content="Business Gateway — Andrea Dahlén" />
-<meta property="og:description" content="A full website redevelopment on agile and lean methods, reaching a WAI 'A' accessibility rating." />
+<title>Business Gateway — a site that had outgrown its own structure</title>
+<meta name="description" content="A full redevelopment separating start-up from growth, with a personalisation tool completed by 85% of users, delivered to a WAI ‘A’ accessibility rating." />
+<link rel="canonical" href="https://www.andreadahlen.com/work/business-gateway.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Business Gateway — a site that had outgrown its own structure" />
+<meta property="og:description" content="A full redevelopment separating start-up from growth, with a personalisation tool completed by 85% of users, delivered to a WAI ‘A’ accessibility rating." />
+<meta property="og:url" content="https://www.andreadahlen.com/work/business-gateway.html" />
 <meta property="og:image" content="https://www.andreadahlen.com/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://www.andreadahlen.com/" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="og:type" content="article" />
-<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#0C0C0E" media="(prefers-color-scheme: dark)" />
-<link rel="stylesheet" href="../styles.css" />
-<link rel="icon" type="image/png" href="../logo.png" />
+<meta name="theme-color" content="#FAF8F3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0F1117" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<script>(function(){var r=document.documentElement;r.classList.add('js');try{var t=localStorage.getItem('ad-theme');if(t)r.setAttribute('data-theme',t);}catch(e){}})();</script>
 </head>
 <body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
-
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="../index.html">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11.8 7.9C12.3 5.6 13.9 3.4 16.4 1.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M14.4 4.2c1.7-1.6 4.2-2.3 6.5-1.9-.4 2.3-2.1 4.3-4.4 5-1.1.3-2.3-.1-2.7-1.1-.3-.8 0-1.5.6-2z" fill="currentColor"/><path d="M11.1 7.4c3.1.5 5.4 3.4 5.4 6.9 0 3.8-2.5 6.6-5.5 6.6s-5.5-2.8-5.5-6.6c0-3.5 2.4-6.4 5.6-6.9z" fill="currentColor"/><path d="M11 20.9v1.6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8.8 20.4l-.8.8M13.2 20.4l.8.8" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></svg>
       <span>Andrea Dahlén</span>
     </a>
-    <nav aria-label="Primary">
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Menu">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      </button>
-      <ul id="nav-list" class="nav-list">
-        <li><a href="../index.html#work" class="is-active">Work</a></li>
-        <li><a href="../index.html#about">About</a></li>
-        <li><a href="../cv.html">CV</a></li>
-        <li><a href="../index.html#contact">Contact</a></li>
-      </ul>
+    <nav class="nav" aria-label="Primary">
+      <a href="/" id="nav-work" class="on">Work</a>
+      <a href="/#about">About</a>
+      <a href="/cv.html" id="nav-cv">CV</a>
+      <a href="/#contact">Contact</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch colour theme">
-      <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>
-      <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+    <button class="icon-btn" id="theme" type="button" aria-label="Switch colour theme">
+      <svg class="sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>
+      <svg class="moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
     </button>
   </div>
 </header>
-
 <main id="main">
-
-  <!-- ===== HERO ===== -->
-  <section class="cs-hero wrap">
-    <a class="back-link reveal" href="../index.html#work">← Back to work</a>
-    <span class="label reveal">Case study</span>
-    <h1 class="cs-title reveal">Business Gateway</h1>
-    <p class="cs-deck reveal">
-      Applying agile and lean methods as lead product designer on the bgateway.com
-      redevelopment — a site that had outgrown its own structure.
-    </p>
-    <dl class="cs-meta reveal">
-      <div><dt>Client</dt><dd>Business Gateway</dd></div>
-      <div><dt>Agency</dt><dd>Whitespace</dd></div>
-      <div><dt>Role</dt><dd>Lead Product Designer</dd></div>
-      <div><dt>Rating</dt><dd>WAI &lsquo;A&rsquo;</dd></div>
-    </dl>
-  </section>
-
-  <div class="wrap cs-body">
-
-    <figure class="cs-figure reveal">
-      <img src="../images/bg-homepage-header.jpg" alt="The Business Gateway homepage header photograph — a woman outdoors holding a phone." width="1491" height="780" />
-      <figcaption>The redeveloped site led with people rather than product — the audience is business owners, not procurement.</figcaption>
-    </figure>
-
-    <section class="cs-section reveal">
-      <h2>Aim</h2>
-      <p>Grow understanding, credibility and relevance among growth businesses without compromising the service delivered to start-ups — improving the experience of the site, and providing solutions for users who are time-poor.</p>
-    </section>
-
-    <section class="cs-section reveal">
-      <h2>Background</h2>
-      <p>In the four years since the previous site launched, user and site requirements had shifted. New functionality and content had been bolted onto individual areas rather than addressed holistically. Each addition was reasonable on its own; none of them added up to a structure.</p>
-      <p>It was time for a proper redevelopment rather than another extension.</p>
-    </section>
-
-    <section class="cs-section reveal">
-      <h2>Key tasks</h2>
-      <ul>
-        <li>Applying lean methodologies</li>
-        <li>Research and running workshops</li>
-        <li>Ideation, wireframing, user-centred design</li>
-        <li>Adhering to accessibility standards</li>
-        <li>Developing a pattern library</li>
-        <li>Collaboration with web developers and creative designers</li>
-        <li>Usability testing</li>
-      </ul>
-    </section>
-
-    <section class="cs-section reveal">
-      <h2>Research</h2>
-      <p>A detailed UX review delivered insights and recommendations, alongside research conducted with Progressive and Business Gateway to identify user needs.</p>
-
-      <div class="cs-cols">
-        <div>
-          <h3>Content improvements</h3>
-          <ul>
-            <li>Removing gated content</li>
-            <li>Surfacing popular guides</li>
-            <li>A more dynamic, less hierarchical structure</li>
-            <li>More actionable &ldquo;how to&rdquo; content</li>
-            <li>Filters instead of hierarchical navigation</li>
-            <li>Clearer separation of audiences by business stage</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Audience needs</h3>
-          <ul>
-            <li>Growth businesses wanted a personal, tailored service, and saw Business Gateway as a generalist rather than a specialist</li>
-            <li>Start-ups sought help, advice, networking and best practice</li>
-            <li>Both groups were time-poor, and wanted content delivered to them rather than hunted for</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="cs-section reveal">
-      <h2>Information architecture</h2>
-      <p>The new structure made it easier to find content depending on whether you were starting or running a business. Case studies and inspiration stories were grouped under a new <strong>Success Stories</strong> gateway, a new <strong>Your Sector</strong> section served industry-specific content, and Local Office pages were folded into the main site instead of sitting as separate microsites.</p>
-
-      <figure class="cs-figure reveal">
-        <img src="../images/bg-information-architecture.jpg" alt="An information architecture diagram for the Business Gateway site, showing top-level sections and their nested pages as a connected tree." width="1600" height="1031" loading="lazy" />
-        <figcaption>The architecture worked out in full before design began — the structural change the site actually needed.</figcaption>
-      </figure>
-    </section>
-
-    <section class="cs-section reveal">
-      <h2>Lean methodology</h2>
-      <p>Heaps of wireframes came before any build — it is cheaper to scrap paper than code. Rather than waterfall, the project ran on agile with regular co-creation workshops, so client feedback landed while there was still room to be iterative, instead of arriving at one final review.</p>
-      <p>Work was broken into <strong>two UX sprints, two design sprints and four development sprints</strong>. I was involved throughout every one — not only designing functionality, but acting as custodian of the product's behaviour and design from vision through to finished product.</p>
-
-      <div class="cs-figures-2">
-        <figure class="cs-figure">
-          <img src="../images/bg-wireframe-homepage.png" alt="A greyscale wireframe of the Business Gateway homepage showing layout blocks and content hierarchy without visual styling." width="804" height="1098" loading="lazy" />
-          <figcaption>Homepage wireframe — hierarchy resolved before any visual design.</figcaption>
-        </figure>
-        <figure class="cs-figure">
-          <img src="../images/bg-homepage.png" alt="The finished Business Gateway homepage in blue, yellow and green, with a support-finder tool, workshops and events, and news cards." width="641" height="1600" loading="lazy" />
-          <figcaption>The delivered homepage, with the tailored support tool near the top.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="cs-section reveal">
-      <h2>The tailored tool</h2>
-      <p>A personalisation tool serves content based on business stage, geography and industry sector. A food and drink start-up in Dundee sees resources for starting a business, local events, market reports and the Business Gateway services relevant to them.</p>
-      <p>The design brief I set myself was to keep it simple, short, optional and in plain language — three questions a time-poor owner can answer immediately, rather than a form.</p>
-    </section>
-
-    <section class="cs-section reveal">
-      <h2>Results</h2>
-      <div class="cs-stats reveal">
-        <div><b>85%</b><span>Of users completing the tool's three steps clicked through to a recommended resource</span></div>
-        <div><b>+392%</b><span>Path-to-market report downloads</span></div>
-        <div><b>+20.5%</b><span>More goals completed on-site</span></div>
-        <div><b>4.05</b><span>Pages per session, up from 3.81</span></div>
-      </div>
-      <p>Mobile pages per session rose <strong>23%</strong>, and the site reached a <strong>WAI &lsquo;A&rsquo; accessibility rating</strong>.</p>
-    </section>
-
-    <section class="cs-section reveal">
-      <h2>Phase 2 &amp; beyond</h2>
-      <p>With the MVP live, Phase 2 added online resource search, a mega nav, an expanded Your Sector section, a new case study header, events and workshops, and DigitalBoost — a Digital Scotland-funded programme helping businesses build digital skills, which went live in April 2019.</p>
-      <p>With limited time and budget for user testing during the build, I leaned heavily on close co-creation with the client and on prior research, to avoid designing in a silo — while continuing to push for formal testing and further accessibility work in later phases, including reducing PDFs on the site and working toward full AA compliance.</p>
-    </section>
-
-    <div class="cs-quote reveal">
-      <blockquote>
-        I've been working with Whitespace on a wide range of projects for over 7 years.
-        Their work and final products for DigitalBoost have always been incredibly useful
-        and engaging. They feel like part of the team and not just an agency.
-      </blockquote>
-      <p class="who"><b>Jacqui MacDougall</b> — Marketing Manager, Business Gateway</p>
-    </div>
-
-  </div>
-
-  <section class="cs-next wrap">
-    <a href="tours-management-system.html">
-      <span>
-        <span class="label">Next case study</span>
-        <span class="n-title">Tours Management System</span>
-      </span>
-      <span class="n-arrow">→</span>
-    </a>
-  </section>
+<section class="cs-hero wrap"><span class="cs-motif" aria-hidden="true"></span><a class="back" href="/">← All work</a><p class="eyebrow">Case study · Business Gateway</p><h1>A site that had outgrown <span class="em">its own structure</span>.</h1><p class="cs-lede">Four years of features added section by section, never across the platform. The redevelopment separated the two audiences the site had been trying to serve at once, and gave each of them a path.</p><dl class="cs-meta"><div><dt>Client</dt><dd>Business Gateway</dd></div><div><dt>Agency</dt><dd>Whitespace</dd></div><div><dt>Role</dt><dd>Lead Product Designer</dd></div><div><dt>Rating</dt><dd>WAI ‘A’</dd></div></dl></section><section class="wrap tight"><div class="sec-head"><h2>At a glance</h2><p class="sec-note">If you read nothing else · 40 seconds</p></div><div class="glance"><article><h3>The problem</h3><p>Functionality had accumulated <b>piecemeal, section by section</b>, for four years. Start-ups and growing businesses were being served the same undifferentiated site, and neither found what they came for.</p></article><article><h3>What I did</h3><p>Lean and agile: UX research, co-creation workshops, wireframes before visual design, then <b>two UX sprints, two design sprints and four development sprints</b>.</p></article><article><h3>What changed</h3><p>An information architecture that <b>separates start-up from growth</b>, a personalisation tool that delivers tailored content, and WAI ‘A’ accessibility compliance.</p></article></div></section><section class="wrap"><div class="sec-head"><h2>How the work ran</h2><p class="sec-note">Select a step</p></div><div class="steps" role="tablist" aria-label="Process steps" style="--steps:3"><button class="step" role="tab" id="step-0" aria-controls="stepDetail" aria-selected="true" tabindex="0" data-step="0" data-detail="A start-up looking for its first steps and an established business looking to grow have almost nothing in common except the logo at the top of the page. Separating them was the structural decision the rest of the project depended on."><span class="node">01</span><span class="nm">Research</span><span class="ds">Established what the two audiences actually came to the site to do.</span><span class="out"><i>UX research</i></span></button><button class="step" role="tab" id="step-1" aria-controls="stepDetail" aria-selected="false" tabindex="-1" data-step="1" data-detail="Getting the client into the room while the architecture was still movable is what stopped it being relitigated during build. Wireframes came out of the workshops, not before them."><span class="node">02</span><span class="nm">Co-create</span><span class="ds">Workshops with the client team to settle structure before anyone drew a screen.</span><span class="out"><i>Agreed IA</i></span></button><button class="step" role="tab" id="step-2" aria-controls="stepDetail" aria-selected="false" tabindex="-1" data-step="2" data-detail="Working in sprints with UX running ahead of design, and design ahead of development, kept decisions settled at the right moment rather than being reopened in the last week."><span class="node">03</span><span class="nm">Ship</span><span class="ds">Two UX sprints, two design sprints and four development sprints.</span><span class="out"><i>Live site</i></span></button></div><div class="step-detail" id="stepDetail" role="tabpanel" tabindex="0" aria-labelledby="step-0" aria-live="polite"><h3>01 · Research</h3><p>A start-up looking for its first steps and an established business looking to grow have almost nothing in common except the logo at the top of the page. Separating them was the structural decision the rest of the project depended on.</p></div></section><section class="wrap"><div class="sec-head"><h2>See it running</h2></div><figure class="fig"><div class="embed"><div class="embed-bar"><i></i><i></i><i></i><span>bgateway.com/personalised-support</span></div><div class="embed-stage ph"><span class="fig-tag">Live</span><span class="ph-mark"><i></i><b>bgateway.com/personalised-support</b></span></div></div><a class="embed-open" href="https://www.bgateway.com/personalised-support" target="_blank" rel="noopener">Open it in a new tab ↗</a><figcaption>The personalisation tool, still live. Answer a few questions and the site returns the support that applies to you rather than the full catalogue. 85% of users completed it and clicked through to the resources it recommended.</figcaption></figure></section><section class="wrap"><div class="numbers"><div class="num"><b>85%</b><span>Completed the personalisation tool and clicked through</span></div><div class="num"><b>392%</b><span>Increase in path-to-market report downloads</span></div><div class="num"><b>20.5%</b><span>Improvement in goals completed on site</span></div><div class="num"><b>23%</b><span>Rise in mobile pages per session</span></div></div></section><section class="wrap"><blockquote class="quote"><p>“I've been working with Whitespace on a wide range of projects for over 7 years. Their work and final products for DigitalBoost have always been incredibly useful and engaging. They feel like part of the team.”</p><footer>Jacqui MacDougall — Marketing Manager, Business Gateway</footer></blockquote></section><section class="wrap"><a class="nextcase" href="/work/tours-management-system.html"><span><small>Next case study</small><b>Tours Management System</b></span><span class="cta-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></section>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <span>© <span id="year"></span> Andrea Dahlén</span>
-    <span>Designed &amp; built in Copenhagen</span>
-    <a href="../index.html#work">All work ↑</a>
+<footer class="site-footer" id="contact">
+  <span class="foot-motif left" aria-hidden="true"></span>
+  <div class="wrap">
+    <div class="foot-main">
+      <p class="foot-title">Let&rsquo;s connect</p>
+      <div class="foot-links">
+        <a href="mailto:andreadahlen@gmail.com">andreadahlen@gmail.com</a>
+        <a href="tel:+4571528283">+45 71 52 82 83</a>
+        <a href="https://www.linkedin.com/in/andrea-dahlen/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-inner">
+      <span>&copy; <span id="year">2026</span> Andrea Dahl&eacute;n</span>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
   </div>
 </footer>
 
-<script src="../main.js"></script>
+<script src="/main.js"></script>
 </body>
 </html>

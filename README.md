@@ -1,48 +1,71 @@
-# andreadahlen.com — modern refresh
+# andreadahlen.com — v2
 
-A static, single-page redesign of the portfolio. No build step, no dependencies.
+Static site. No build step, no dependencies. Drop these files at the web root and it runs.
 
-## Files
-
-| File | Purpose |
-|------|---------|
-| `index.html` | Page markup — hero, selected work, about, testimonials, experience, contact |
-| `styles.css` | All styling. Design tokens at the top; light + dark themes |
-| `projects.js` | Case-study copy for the project detail dialog (plain data) |
-| `main.js` | Theme toggle, mobile nav, scroll reveal, scroll-spy, project dialog |
-| `logo.png` / `logo.webp` | The original AeD monogram badge, used in the header, About panel and favicon |
-
-## Run locally
-
-```sh
-python3 -m http.server 8000
-# then open http://localhost:8000
+```
+index.html                     home (hero, three featured case studies, more case studies, about, contact)
+cv.html                        CV
+work/shelter-scotland.html     ┐
+work/tabatwo.html              │
+work/famly.html                │ six case studies, same template
+work/nudging.html              │
+work/business-gateway.html     │
+work/tours-management-system.html ┘
+styles.css                     the whole design system
+main.js                        theme toggle, scroll reveals, counters, process rail
+images/motifs/*.png            the botanical masks (tinted by CSS, so they work in both themes)
+images/logos/*.webp            client logos for the homepage cards
+sitemap.xml, robots.txt
 ```
 
-Or open `index.html` directly in a browser.
+## Before you deploy
 
-## Deploy
+Nothing outstanding. All ten font files are in `fonts/` and self-hosted — Inter 300/400/500
+and Instrument Serif roman + italic, each in `latin` and `latin-ext`. No external font
+requests, no CDN dependency.
 
-Upload the four files (plus this README if you like) to any static host —
-Netlify, GitHub Pages, Cloudflare Pages, an S3 bucket, etc. Nothing to compile.
+## What must already be on the server
+
+These are all files you already have — keep them where they are:
+
+```
+images/shelter-logo.webp                images/tabatwo-screens.png
+images/shelter-billboard.webp           images/tours-prototype.jpg
+images/shelter-colours.webp             images/tours-prototype-tour-page.jpg
+images/shelter-patterns.webp
+images/shelter-storybook.webp           Andrea-Dahlen-CV.pdf
+images/shelter-brand-accessibility.webp og-image.jpg
+                                        favicon.svg, favicon-96.png, apple-touch-icon.png
+fonts/inter-{300,400,500}-normal-{latin,latin-ext}.woff2
+fonts/instrument-serif-400-italic-{latin,latin-ext}.woff2
+```
+
+Any image that doesn't resolve degrades to a labelled plate rather than a broken
+icon, so a wrong path is visible but never ugly.
+
+## Still to add
+
+Two images, both on the Tabatwo page, currently showing as "Add image" plates:
+
+- an annotated booking flow
+- the ranked backlog as the team received it
+
+Everything else on all eight pages is a real image, a live embed, or a built diagram.
+
+## URLs
+
+All six case study paths match your existing ones, so nothing needs redirecting and
+no inbound links break.
 
 ## Notes
 
-- **Theme**: follows the OS setting by default; the sun/moon button in the header
-  overrides it and the choice is remembered via `localStorage`.
-- **Colours** (`:root` in `styles.css`): accent `#2669EC`, tinted surface `#EBF0F9`.
-  Change `--accent` / `--bg` there and everything follows. The dark theme derives a
-  navy variant of the same palette; `--logo-filter` inverts the black badge so it
-  reads on dark.
-- **Type**: Futura, with a geometric-sans fallback stack (`Futura PT`, `Century
-  Gothic`, `Avenir Next`, `URW Gothic`) and Inter as a final web-loaded fallback for
-  machines without Futura installed.
-- **Logo**: `logo.png` is the original badge pulled from the current site. Swap the
-  file (keep the name) to update it everywhere.
-- **Accessibility**: semantic landmarks, skip link, visible focus rings, keyboard-
-  operable dialog, and `prefers-reduced-motion` support.
-- **Images**: the project tiles use generated gradient + monogram placeholders.
-  Drop real screenshots into a project tile by replacing `.work-thumb` markup, or
-  extend `projects.js` with image URLs.
-- Content (roles, dates, case studies) is lifted from the current site's CV and
-  project pages — review and adjust wording as needed.
+- **No framework, no bundler.** Edit the HTML directly.
+- **Dark mode** follows the OS by default; the header toggle overrides it and the
+  choice persists in `localStorage` under `ad-theme`.
+- **Reduced motion** is respected — reveals and counters resolve instantly.
+- **Contrast** is WCAG AA against every surface, in both themes. If you change
+  `--faint`, re-check it: at the old value it failed at 3.07:1.
+- **The botanicals** are CSS masks, not images, so they take their colour from
+  `--accent` and adapt to the theme. To dial them back site-wide, change one
+  number: `--motif` in `:root`.
+- **Print styles** are included; the CV prints cleanly.
