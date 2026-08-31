@@ -243,7 +243,7 @@ html[data-theme="dark"] .icon-moon { display: block; }
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  padding: clamp(2rem, 5vw, 3.2rem) 0 clamp(1.2rem, 3vw, 2rem);
+  padding: clamp(2rem, 5vw, 3.2rem) 0 clamp(1rem, 2vw, 1.4rem);
 }
 
 /* Botanical motif in the hero's right half — homepage only, and never
@@ -253,6 +253,9 @@ html[data-theme="dark"] .icon-moon { display: block; }
   width: 46%; aspect-ratio: 1;
   background: url('images/floral-motif-accent.svg') right center / contain no-repeat;
   opacity: .20;
+  /* fade out before the rows begin, so nothing sits behind text */
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 92%);
+          mask-image: linear-gradient(to bottom, #000 55%, transparent 92%);
   pointer-events: none;
   z-index: -1;
 }
@@ -363,7 +366,7 @@ html[data-theme="dark"] .icon-moon { display: block; }
 /* No rule above — whitespace separates it from the hero, the same way
    every other section on the page is separated. */
 .clients {
-  padding: clamp(3rem, 7vw, 5rem) 0 clamp(2rem, 5vw, 3rem);
+  padding: clamp(2rem, 5vw, 3rem) 0 clamp(2rem, 5vw, 3rem);
 }
 .clients .label { display: block; margin-bottom: 1.4rem; }
 
@@ -403,6 +406,7 @@ html[data-theme="dark"] .icon-moon { display: block; }
 
 /* ---------- Sections ---------- */
 .section { padding: clamp(3rem, 6vw, 4.5rem) 0; }
+#work { padding-top: clamp(1.2rem, 2.5vw, 1.8rem); }
 /* The numbers follow straight on from the hero, so they need less air */
 .numbers-section { padding: clamp(1.6rem, 3.5vw, 2.4rem) 0 clamp(2rem, 4vw, 3rem); }
 .sec-label { display: block; margin-bottom: clamp(1.1rem, 2vw, 1.5rem); }
