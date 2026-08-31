@@ -366,9 +366,9 @@ html[data-theme="dark"] .icon-moon { display: block; }
 /* No rule above — whitespace separates it from the hero, the same way
    every other section on the page is separated. */
 .clients {
-  padding: clamp(2rem, 5vw, 3rem) 0 clamp(2rem, 5vw, 3rem);
+  padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(2.5rem, 6vw, 4rem);
 }
-.clients .label { display: block; margin-bottom: 1.4rem; }
+
 
 /* Names scroll continuously; the second track is a copy so the loop is seamless */
 .client-marquee {
@@ -389,13 +389,18 @@ html[data-theme="dark"] .icon-moon { display: block; }
   gap: 2.4rem;
   font-size: .92rem; color: var(--soft); white-space: nowrap;
 }
-.clients-more { margin-top: 1.4rem; font-size: .88rem; }
-.clients-more a {
-  color: var(--soft);
+.clients-head {
+  display: flex; flex-wrap: wrap;
+  align-items: baseline; justify-content: space-between;
+  gap: .6rem 2rem;
+  margin-bottom: 1.8rem;
+}
+.clients-more {
+  font-size: .88rem; color: var(--soft);
   border-bottom: 1px solid var(--rule-strong);
   padding-bottom: .25rem; transition: .22s;
 }
-.clients-more a:hover { color: var(--accent); border-color: var(--accent); }
+.clients-more:hover { color: var(--accent); border-color: var(--accent); }
 
 .client-track li::after {
   content: "✳"; color: var(--accent);
@@ -409,13 +414,18 @@ html[data-theme="dark"] .icon-moon { display: block; }
   .client-scroll { animation: none; width: auto; }
   .client-scroll .client-track[aria-hidden="true"] { display: none; }
   .client-track { flex-wrap: wrap; white-space: normal; gap: .6rem 2.4rem; }
-  .clients-more { margin-top: 1.4rem; font-size: .88rem; }
-.clients-more a {
-  color: var(--soft);
+  .clients-head {
+  display: flex; flex-wrap: wrap;
+  align-items: baseline; justify-content: space-between;
+  gap: .6rem 2rem;
+  margin-bottom: 1.8rem;
+}
+.clients-more {
+  font-size: .88rem; color: var(--soft);
   border-bottom: 1px solid var(--rule-strong);
   padding-bottom: .25rem; transition: .22s;
 }
-.clients-more a:hover { color: var(--accent); border-color: var(--accent); }
+.clients-more:hover { color: var(--accent); border-color: var(--accent); }
 
 .client-track li::after { display: none; }
 }
