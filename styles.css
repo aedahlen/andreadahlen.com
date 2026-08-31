@@ -407,48 +407,29 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .numbers-section { padding: clamp(1.6rem, 3.5vw, 2.4rem) 0 clamp(2rem, 4vw, 3rem); }
 .sec-label { display: block; margin-bottom: clamp(1.1rem, 2vw, 1.5rem); }
 
-/* ---------- Work index: alternating editorial bands ---------- */
-.work-index { list-style: none; padding: 0; display: grid; gap: clamp(2.5rem, 6vw, 4.5rem); }
+/* ---------- Work index: text rows, no imagery ---------- */
+.work-index { list-style: none; padding: 0; border-top: 1px solid var(--rule); }
+.work-index li { border-bottom: 1px solid var(--rule); }
 .work-index a {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-  gap: clamp(1.5rem, 4vw, 3rem);
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) auto;
+  gap: clamp(1rem, 3vw, 2.4rem);
+  align-items: baseline;
+  padding: clamp(1.5rem, 3.2vw, 2rem) 0;
+  transition: opacity .3s ease;
 }
-/* Image swaps sides on every other project */
-.work-index li:nth-child(even) a { grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); }
-.work-index li:nth-child(even) .work-media { order: 2; }
+/* Every row dims except the one being pointed at */
+.work-index:hover a { opacity: .35; }
+.work-index a:hover, .work-index a:focus-visible { opacity: 1; }
 
-.work-media { overflow: hidden; }
-.work-thumb {
-  /* height:auto is required — the width/height attributes are applied as
-     presentational hints, which would otherwise pin the height at 740px
-     and stop aspect-ratio from resolving. */
-  width: 100%; height: auto;
-  aspect-ratio: 112 / 74;
-  object-fit: cover;
-  transition: opacity .3s ease, transform .5s cubic-bezier(.2,.7,.2,1);
-}
-.work-index a:hover .work-thumb { opacity: .9; transform: scale(1.02); }
-
-.work-num {
-  display: block;
-  font-size: .72rem; letter-spacing: .16em;
-  color: var(--faint); margin-bottom: .7rem;
-  font-variant-numeric: tabular-nums;
-}
 .work-title {
-  font-size: clamp(1.4rem, 2.6vw, 2rem);
-  font-weight: 300; letter-spacing: -.022em; line-height: 1.15;
-  margin-bottom: .8rem; transition: color .2s;
+  font-size: 1.25rem; font-weight: 400;
+  letter-spacing: -.018em; line-height: 1.2;
+  transition: color .2s;
 }
 .work-index a:hover .work-title { color: var(--accent); }
-.work-desc { font-size: .88rem; color: var(--soft); line-height: 1.55; max-width: 42ch; }
-.work-meta {
-  display: block; margin-top: 1rem;
-  font-size: .74rem; color: var(--faint); letter-spacing: .05em;
-}
-
+.work-desc { font-size: .88rem; color: var(--soft); line-height: 1.55; }
+.work-meta { font-size: .75rem; color: var(--faint); white-space: nowrap; letter-spacing: .04em; }
 
 /* Projects beyond the first three, revealed by the toggle */
 .work-index li[hidden] { display: none; }
@@ -617,9 +598,7 @@ html[data-theme="dark"] .icon-moon { display: block; }
 /* ---------- Responsive ---------- */
 @media (max-width: 760px) {
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-  .work-index a,
-  .work-index li:nth-child(even) a { grid-template-columns: 1fr; gap: 1.2rem; }
-  .work-index li:nth-child(even) .work-media { order: 0; }
+  .work-index a { grid-template-columns: 1fr; row-gap: .4rem; }
   .timeline-item, .edu-list li { grid-template-columns: 1fr; gap: .3rem; }
   .hero-meta { grid-template-columns: repeat(2, 1fr); }
 
