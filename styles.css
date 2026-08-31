@@ -723,6 +723,13 @@ html[data-theme="dark"] .icon-moon { display: block; }
   border-top: 1px solid var(--rule);
   padding-top: 1.4rem;
 }
+/* When the stats follow the heading directly, the h2's own bottom rule
+   already provides the line — drop the duplicate. */
+.cs-section h2 + .cs-stats {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
 .cs-stats b {
   display: block; font-size: 1.8rem; font-weight: 300;
   letter-spacing: -.03em; line-height: 1;
