@@ -543,16 +543,30 @@ html[data-theme="dark"] .icon-moon { display: block; }
 }
 
 /* ---------- Contact ---------- */
-.contact-title {
-  font-size: var(--step-3); font-weight: 300;
-  line-height: 1.25; letter-spacing: -.02em;
-  max-width: 24ch; margin-bottom: 1.6rem; text-wrap: balance;
+/* Contact: heading and links on one line */
+.contact-band { padding-bottom: clamp(2rem, 5vw, 3rem); }
+.contact-row {
+  display: flex; flex-wrap: wrap;
+  align-items: baseline; justify-content: space-between;
+  gap: 1.2rem 2.5rem;
+  border-top: 1px solid var(--rule);
+  padding-top: clamp(1.6rem, 3.5vw, 2.4rem);
 }
-.contact-body { color: var(--soft); max-width: 40ch; margin-bottom: 2.5rem; }
-.contact-actions { display: flex; flex-wrap: wrap; gap: 2rem; font-size: .95rem; }
+.contact-title {
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  margin: 0;
+}
+.contact-actions {
+  display: flex; flex-wrap: wrap;
+  gap: .6rem 1.8rem;
+  font-size: .95rem;
+}
 .contact-actions a {
   border-bottom: 1px solid var(--rule-strong);
-  padding-bottom: .35rem; transition: .22s;
+  padding-bottom: .3rem; transition: .22s;
 }
 .contact-actions a:hover { color: var(--accent); border-color: var(--accent); }
 
