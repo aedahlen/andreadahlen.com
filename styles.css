@@ -523,6 +523,25 @@ html[data-theme="dark"] .icon-moon { display: block; }
 }
 .edu-list li span { color: var(--faint); font-size: .75rem; letter-spacing: .04em; }
 
+/* ---------- Experience, condensed ---------- */
+.exp-list { list-style: none; padding: 0; border-top: 1px solid var(--rule); }
+.exp-list li {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(.8rem, 2vw, 1.8rem);
+  align-items: baseline;
+  padding: .95rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.exp-date { font-size: .78rem; color: var(--faint); letter-spacing: .04em; }
+.exp-role { font-size: .98rem; }
+.exp-org  { font-size: .9rem; color: var(--soft); }
+
+@media (max-width: 700px) {
+  .exp-list li { grid-template-columns: 1fr; gap: .15rem; padding: .85rem 0; }
+  .exp-date { order: -1; }
+}
+
 /* ---------- Contact ---------- */
 .contact-title {
   font-size: var(--step-3); font-weight: 300;
