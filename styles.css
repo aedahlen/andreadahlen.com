@@ -671,6 +671,50 @@ html[data-theme="dark"] .icon-moon { display: block; }
 }
 .cs-figures-2 .cs-figure { margin: 0; }
 
+/* Numbered process steps */
+.cs-steps { list-style: none; padding: 0; border-top: 1px solid var(--rule); }
+.cs-steps li {
+  display: grid; grid-template-columns: 3rem minmax(0, 1fr);
+  gap: clamp(.8rem, 2vw, 1.4rem);
+  align-items: baseline;
+  padding: 1.3rem 0; border-bottom: 1px solid var(--rule);
+}
+.cs-steps .n {
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 1.15rem; color: var(--accent);
+}
+.cs-steps h3 { font-size: 1rem; font-weight: 500; margin-bottom: .35rem; }
+.cs-steps p { font-size: .88rem; color: var(--soft); margin: 0; max-width: 60ch; }
+
+/* Two columns of short points */
+.cs-cols {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+.cs-cols h3 {
+  font-size: .72rem; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--faint); font-weight: 500; margin: 0 0 .8rem;
+}
+.cs-cols ul { margin: 0; padding-left: 1.05rem; }
+
+/* Findings by area */
+.cs-area { border-top: 1px solid var(--rule); padding-top: 1.4rem; margin-top: 2rem; }
+.cs-area > h3 {
+  font-size: 1.15rem; font-weight: 500; letter-spacing: -.015em;
+  margin: 0 0 1.1rem;
+}
+.cs-area-cols {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(1.2rem, 3vw, 2.4rem);
+}
+.cs-area-cols h4 {
+  font-size: .7rem; letter-spacing: .16em; text-transform: uppercase;
+  font-weight: 500; margin: 0 0 .6rem; color: var(--faint);
+}
+.cs-area-cols h4.rec { color: var(--accent); }
+.cs-area-cols ul { margin: 0; padding-left: 1.05rem; }
+.cs-area-cols li { font-size: .86rem; margin-bottom: .45rem; }
+
 /* Numbers */
 .cs-stats {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
