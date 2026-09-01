@@ -301,7 +301,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
   -webkit-mask:url("/images/motifs/corner.png") bottom right/contain no-repeat;
   mask:url("/images/motifs/corner.png") bottom right/contain no-repeat;
 }
-@media (max-width:900px){.about-motif{display:none}}
+@media (max-width:900px){.about-motif{width:min(320px,54vw);right:-6%;top:-1%;opacity:calc(var(--motif) * 1.15)}}
 .about-top{max-width:70ch}
 .about-band h2{
   font-family:var(--h2-font);font-weight:var(--h2-weight);letter-spacing:var(--h2-track);
@@ -366,6 +366,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
   -webkit-mask:url("/images/motifs/rosehipB.png") bottom left/contain no-repeat;
   mask:url("/images/motifs/rosehipB.png") bottom left/contain no-repeat;
 }
+@media (max-width:640px){.foot-motif.left{width:min(200px,48vw);left:-11%;bottom:2.6rem}}
 .footer-inner{position:relative;display:flex;flex-wrap:wrap;gap:.6rem 2rem;justify-content:space-between;font-size:.78rem;color:var(--faint);border-top:1px solid var(--rule);padding-top:1.2rem}
 .footer-inner a{color:var(--faint);text-decoration:none}
 .footer-inner a:hover{color:var(--accent)}
@@ -714,6 +715,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
   .js .reveal{opacity:1;transform:none}
+  .js .motif-reveal{filter:none}
   .js .hero-greeting{position:static;min-height:0}
   .js .hero-greeting .greeting-word{position:static;opacity:1;transform:none;transition:none}
   .js .hero-greeting .greeting-word + .greeting-word{margin-left:.3em}
@@ -743,6 +745,10 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .client-names{margin-top:.75rem}
 .client-track{display:flex;flex-wrap:wrap;gap:.55rem 2.4rem;margin:0;padding:0;list-style:none}
 .client-track li{font-size:.95rem;font-weight:500;color:var(--soft)}
+
+/* ---------- botanicals fade in ---------- */
+.js .motif-reveal{filter:opacity(0);transition:filter 1.2s ease}
+.js .motif-reveal.in{filter:opacity(1)}
 
 /* ---------- skip link ---------- */
 .skip-link{

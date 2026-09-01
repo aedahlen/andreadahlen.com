@@ -33,7 +33,7 @@
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', paintToggle);
 
   /* ---------- reveal on scroll ---------- */
-  var reveals = document.querySelectorAll('.reveal');
+  var reveals = document.querySelectorAll('.reveal, .motif-reveal');
   if (!reveals.length) { /* nothing to do */ }
   else if (reduce || !('IntersectionObserver' in window)) {
     reveals.forEach(function (el) { el.classList.add('in'); });
