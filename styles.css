@@ -136,7 +136,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .brand{display:flex;align-items:center;gap:.55rem;text-decoration:none;margin-right:auto}
 .brand svg{width:20px;height:20px;color:var(--accent);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .brand:hover svg{transform:rotate(-9deg) scale(1.12)}
-.brand span{font-family:var(--font-serif);font-style:normal;font-size:1.16rem;letter-spacing:.002em}
+.brand span{font-family:var(--font-serif);font-style:normal;font-size:1.34rem;letter-spacing:.012em}
 
 /* --- wordmark options --- */
 
@@ -156,7 +156,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .icon-btn:hover{color:var(--accent);border-color:var(--rule-2)}
 @media (max-width:700px){
   .header-inner{flex-wrap:wrap;height:auto;padding-block:.65rem;gap:.5rem 1rem}
-  .brand span{font-size:1.08rem}
+  .brand span{font-size:1.25rem}
   .nav{order:3;flex-basis:100%;gap:1.15rem;border-top:1px solid var(--rule);padding-top:.45rem}
   .nav a{font-size:.8rem}
   .hero-motif{opacity:calc(var(--motif) * .5);right:-16%;width:min(300px,58vw)}
