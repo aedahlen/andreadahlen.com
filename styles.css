@@ -721,6 +721,10 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
   *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
   .js .reveal{opacity:1;transform:none}
   .js .motif-reveal{filter:none}
+  .client-marquee{-webkit-mask-image:none;mask-image:none}
+  .client-scroll{animation:none;width:auto}
+  .client-track{flex-wrap:wrap;gap:.6rem 1.6rem}
+  .client-scroll .client-track[aria-hidden="true"]{display:none}
   .js .hero-greeting{position:static;min-height:0}
   .js .hero-greeting .greeting-word{position:static;opacity:1;transform:none;transition:none}
   .js .hero-greeting .greeting-word + .greeting-word{margin-left:.3em}
@@ -747,9 +751,16 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .clients-head{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;align-items:baseline;justify-content:space-between}
 .clients-more{color:var(--accent);font-size:.85rem;text-decoration:none;border-bottom:1px solid var(--rule-2);padding-bottom:2px}
 .clients-more:hover{border-color:var(--accent)}
-.client-names{margin-top:.75rem}
-.client-track{display:flex;flex-wrap:wrap;gap:.55rem 2.4rem;margin:0;padding:0;list-style:none}
-.client-track li{font-size:.95rem;font-weight:500;color:var(--soft)}
+.client-marquee{
+  margin-top:.75rem;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);
+}
+.client-scroll{display:flex;width:max-content;animation:client-scroll 140s linear infinite}
+.client-marquee:hover .client-scroll,.client-marquee:focus-within .client-scroll{animation-play-state:paused}
+.client-track{display:flex;gap:2.4rem;margin:0;padding:0 2.4rem 0 0;list-style:none}
+.client-track li{white-space:nowrap;font-size:.95rem;font-weight:500;color:var(--soft)}
+@keyframes client-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* ---------- botanicals fade in ---------- */
 .js .motif-reveal{filter:opacity(0);transition:filter 1.2s ease}
