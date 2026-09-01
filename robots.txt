@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.andreadahlen.com/sitemap.xml
+Sitemap: https://andreadahlen.com/sitemap.xml
