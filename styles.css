@@ -45,8 +45,8 @@
   --paper-2:#F4F6FD;
   --panel:#FFFFFF;
   --ink:#14161C;
-  --soft:#555B6B;
-  --faint:#676C7A;
+  --soft:#4A5170;
+  --faint:#656B8A;
   --rule:#E6E8EF;
   --rule-2:#D3D7E3;
   --accent:#3F54BE;
@@ -79,9 +79,9 @@
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --paper:#0F1117; --paper-2:#161922; --panel:#171A23;
-    --ink:#ECEAE3; --soft:#A3A7B3; --faint:#80838F;
+    --ink:#E7E9F2; --soft:#A6ACBF; --faint:#8D93A8;
     --rule:#252934; --rule-2:#39404E;
-    --accent:#93A2F5; --accent-2:#B6C0FA; --wash:#1B2033; --on-accent:#0F1117; --plate-filter:grayscale(1) contrast(.9) opacity(.92); --plate-bg:#BDBAB2; --plate-bg-hi:#D4D1C8; --motif:.15;
+    --accent:#93A2F5; --accent-2:#B6C0FA; --wash:#1B2033; --on-accent:#0F1117; --plate-filter:grayscale(1) contrast(.9) opacity(.92); --plate-bg:#C3C8D9; --plate-bg-hi:#D6DAE7; --motif:.15;
     --shadow:0 1px 2px rgba(0,0,0,.4),0 14px 34px -20px rgba(0,0,0,.8);
   }
   
@@ -89,9 +89,9 @@
 }
 :root[data-theme="dark"]{
   --paper:#0F1117; --paper-2:#161922; --panel:#171A23;
-  --ink:#ECEAE3; --soft:#A3A7B3; --faint:#80838F;
+  --ink:#E7E9F2; --soft:#A6ACBF; --faint:#8D93A8;
   --rule:#252934; --rule-2:#39404E;
-  --accent:#93A2F5; --accent-2:#B6C0FA; --wash:#1B2033; --on-accent:#0F1117; --plate-filter:grayscale(1) contrast(.9) opacity(.92); --plate-bg:#BDBAB2; --plate-bg-hi:#D4D1C8; --motif:.15;
+  --accent:#93A2F5; --accent-2:#B6C0FA; --wash:#1B2033; --on-accent:#0F1117; --plate-filter:grayscale(1) contrast(.9) opacity(.92); --plate-bg:#C3C8D9; --plate-bg-hi:#D6DAE7; --motif:.15;
   --shadow:0 1px 2px rgba(0,0,0,.4),0 14px 34px -20px rgba(0,0,0,.8);
 }
 
@@ -137,6 +137,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .brand svg{width:20px;height:20px;color:var(--accent);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .brand:hover svg{transform:rotate(-9deg) scale(1.12)}
 .brand .brand-name{font-family:var(--font-sans);font-size:1rem;font-weight:500;letter-spacing:-.01em;color:var(--ink)}
+@media (max-width:960px){.brand .brand-loc{display:none}}
 .brand .brand-role{font-size:.92rem;color:var(--faint);white-space:nowrap;line-height:1.1;padding:.15rem 0 .15rem .75rem;margin-left:.2rem;border-left:1px solid var(--rule-2)}
 
 /* --- wordmark options --- */
