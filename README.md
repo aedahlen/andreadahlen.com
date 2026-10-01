@@ -7,7 +7,8 @@ index.html                     home (hero, three featured case studies, more cas
 cv.html                        CV
 work/shelter-scotland.html     ┐
 work/tabatwo.html              │
-work/famly.html                │ six case studies, same template
+work/shelter-coronavirus.html  │
+work/famly.html                │ seven case studies, same template
 work/nudging.html              │
 work/business-gateway.html     │
 work/tours-management-system.html ┘
@@ -54,7 +55,7 @@ Everything else on all eight pages is a real image, a live embed, or a built dia
 
 ## URLs
 
-All six case study paths match your existing ones, so nothing needs redirecting and
+All case study paths match your existing ones, so nothing needs redirecting and
 no inbound links break.
 
 ## Notes
