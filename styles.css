@@ -305,8 +305,8 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 @media (max-width:900px){.about-motif{width:min(320px,54vw);right:-6%;top:-1%;opacity:calc(var(--motif) * 1.15)}}
 .about-top{max-width:70ch}
 .about-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,320px);gap:clamp(2rem,5vw,4.5rem);align-items:start}
-.about-photo{margin:0;padding-top:2.4rem}
-.about-photo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.about-photo{margin:0;padding-top:5.5rem;position:relative}
+.about-photo img{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
 .principles .principles-head{grid-column:1/-1;margin-bottom:-.6rem;font-size:.685rem;color:var(--faint);line-height:1.2}
 @media (max-width:1100px){.about-split .about-facts{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:800px){.about-split{grid-template-columns:1fr}.about-photo{order:-1;padding-top:0;max-width:220px}}
@@ -834,3 +834,29 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
   .tl-voices{grid-template-columns:1fr}
   .tl-q.ten,.tl-q.land{grid-column:1}
 }
+
+/* ---- about photo floral ---- */
+.about-photo-motif{
+  position:absolute;left:-25%;top:2.6rem;width:50%;aspect-ratio:371/560;
+  background:var(--accent);opacity:calc(var(--motif) * 2.2);pointer-events:none;
+  -webkit-mask:url("/images/motifs/spray.png") top left/contain no-repeat;
+  mask:url("/images/motifs/spray.png") top left/contain no-repeat;
+}
+@media (max-width:800px){.about-photo-motif{left:auto;right:-55%;top:-1rem;width:70%}}
+
+/* ---- more case studies ---- */
+.more-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+@media (max-width:760px){.more-grid{grid-template-columns:1fr}}
+.mcard{
+  display:flex;flex-direction:column;gap:.55rem;text-decoration:none;color:inherit;
+  background:var(--panel);border:1px solid var(--rule);border-radius:var(--radius);
+  padding:clamp(1.2rem,2.4vw,1.6rem);transition:border-color .25s ease,transform .25s ease;
+}
+.mcard:hover,.mcard:focus-visible{border-color:var(--accent);transform:translateY(-2px)}
+.mcard-meta{font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--faint)}
+.mcard h3{font-family:var(--font-serif);font-weight:400;font-size:clamp(1.35rem,2.2vw,1.6rem);line-height:1.15;letter-spacing:-.005em;transition:color .25s ease}
+.mcard:hover h3,.mcard:focus-visible h3{color:var(--accent)}
+.mcard p{color:var(--soft);font-size:.9rem;line-height:1.6;flex:1}
+.mcard-foot{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:.5rem;padding-top:.9rem;border-top:1px solid var(--rule)}
+.mcard-go{display:inline-flex;align-items:center;gap:.35rem;font-size:.82rem;color:var(--accent);font-weight:500}
+@media (prefers-reduced-motion:reduce){.mcard{transition:none}.mcard:hover{transform:none}}
