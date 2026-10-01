@@ -137,7 +137,6 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .brand svg{width:20px;height:20px;color:var(--accent);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .brand:hover svg{transform:rotate(-9deg) scale(1.12)}
 .brand .brand-name{font-family:var(--font-sans);font-size:1rem;font-weight:500;letter-spacing:-.01em;color:var(--ink)}
-@media (max-width:960px){.brand .brand-loc{display:none}}
 .brand .brand-role{font-size:.92rem;color:var(--faint);white-space:nowrap;line-height:1.1;padding:.15rem 0 .15rem .75rem;margin-left:.2rem;border-left:1px solid var(--rule-2)}
 
 /* --- wordmark options --- */
@@ -756,6 +755,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
   font-size:clamp(1.35rem,2.8vw,1.9rem);color:var(--accent);letter-spacing:-.01em;
 }
 .hero-greeting .greeting-word + .greeting-word{margin-left:.3em}
+.hero-kicker{margin:0 0 1.1rem}
 .js .hero-greeting{position:relative;min-height:1.3em}
 .js .hero-greeting .greeting-word{
   position:absolute;left:0;top:0;opacity:0;transform:translateY(.4em);
