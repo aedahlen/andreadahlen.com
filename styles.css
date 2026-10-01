@@ -880,3 +880,12 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .finding-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1rem;padding-bottom:.8rem;border-bottom:1px solid var(--rule)}
 .findings .finding .area{margin:0;font-size:1.05rem;font-weight:500;letter-spacing:-.01em;text-transform:none;color:var(--ink)}
 .findings .finding .inner{grid-template-columns:1fr;gap:1rem;padding:0}
+
+/* ---- what to fix first (Tabatwo) ---- */
+.fixgrid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media (max-width:900px){.fixgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.fixgrid{grid-template-columns:1fr}}
+.fixgrid li{background:var(--panel);padding:1.4rem 1.3rem 1.5rem;display:flex;flex-direction:column;gap:.55rem}
+.fix-n{font-size:1.9rem;font-weight:300;letter-spacing:-.03em;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums;margin-bottom:.5rem}
+.fixgrid h3{font-size:1rem;font-weight:500;letter-spacing:-.01em}
+.fixgrid p{font-size:.88rem;color:var(--soft);line-height:1.6}
