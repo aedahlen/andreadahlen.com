@@ -53,7 +53,7 @@
   --accent-2:#2B3A87;
   --wash:#EBEDF9;
   --on-accent:#FAF8F3;
-  --plate-filter:grayscale(1) contrast(.9) opacity(.9);
+  --plate-filter:grayscale(1) contrast(1.05) opacity(.72);
   --plate-bg:#EFECE2;
   --plate-bg-hi:#FBF9F3;
   --motif:.17;
@@ -232,7 +232,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 }
 .plate::after{
   content:"";position:absolute;inset:0;background:var(--accent);
-  mix-blend-mode:color;opacity:.92;transition:opacity .45s ease;pointer-events:none;
+  mix-blend-mode:color;opacity:0;transition:opacity .45s ease;pointer-events:none;
 }
 .card:hover .plate::after,.card:focus-visible .plate::after{opacity:0}
 .card:hover .plate img,.card:focus-visible .plate img{filter:none;transform:scale(1.03)}
