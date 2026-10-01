@@ -860,3 +860,4 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .mcard-foot{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:.5rem;padding-top:.9rem;border-top:1px solid var(--rule)}
 .mcard-go{display:inline-flex;align-items:center;gap:.35rem;font-size:.82rem;color:var(--accent);font-weight:500}
 @media (prefers-reduced-motion:reduce){.mcard{transition:none}.mcard:hover{transform:none}}
+@media (min-width:761px){.more-grid > .mcard:first-child:nth-last-child(2n+1){grid-column:1/-1}}
