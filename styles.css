@@ -337,8 +337,8 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .principles h3{font-size:1.02rem;font-weight:500;margin:.7rem 0 .45rem}
 .principles p{color:var(--soft);font-size:.9rem;line-height:1.6}
 .skills{margin-top:clamp(2.5rem,6vw,4rem);padding-top:clamp(2rem,4vw,2.6rem);border-top:1px solid var(--rule-2)}
-.about-band .chips-row{gap:.55rem;margin-top:1.1rem}
-.about-band .chips-row li{font-size:.88rem;color:var(--ink);padding:.45rem .95rem;background:var(--panel)}
+.about-band .chips-row{gap:.5rem;margin-top:1.1rem}
+.about-band .chips-row li{font-size:.83rem;padding:.32rem .8rem}
 .chips-row{display:flex;flex-wrap:wrap;gap:.45rem;margin:.9rem 0 0;padding:0}
 .chips-row li{
   list-style:none;font-size:.8rem;color:var(--soft);
