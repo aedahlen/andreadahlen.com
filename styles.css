@@ -67,7 +67,7 @@
   --hero-weight:300;
   --hero-size:clamp(2.1rem,4.6vw,3.5rem);
   --hero-track:-0.03em;
-  --radius:14px;
+  --radius:0px;
   --wrap:1080px;
 }
 /* ---- variant B "Linen": warmer paper, deeper accent, serif section heads ---- */
@@ -210,13 +210,18 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
   border-radius:var(--radius);overflow:hidden;
   transition:border-color .25s,transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s;
 }
-.card:hover,.card:focus-visible{border-color:var(--rule-2);transform:translateY(-3px);box-shadow:var(--shadow)}
+.card{transition:border-color .2s ease}
+.card:hover,.card:focus-visible{border-color:var(--accent)}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:transform .3s cubic-bezier(.2,.8,.2,1);z-index:2}
+.card:hover::before,.card:focus-visible::before{transform:scaleY(1)}
+.card:hover h3,.card:focus-visible h3{color:var(--accent)}
+.card-top h3{transition:color .2s ease}
 .plate{
   position:relative;display:grid;place-items:center;padding:2.1rem 1.5rem;
   background:var(--plate-bg);border-right:1px solid var(--rule);overflow:hidden;min-height:172px;
   transition:background .45s ease;
 }
-.card:hover .plate,.card:focus-visible .plate{background:var(--plate-bg-hi)}
+.card:hover .plate,.card:focus-visible .plate{background:var(--wash)}
 .plate-floral{
   position:absolute;inset:auto -14% -22% auto;width:78%;aspect-ratio:404/560;
   background:var(--accent);opacity:0;transform:translateY(14px) rotate(4deg);
@@ -234,8 +239,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
   content:"";position:absolute;inset:0;background:var(--accent);
   mix-blend-mode:color;opacity:.92;transition:opacity .45s ease;pointer-events:none;
 }
-.card:hover .plate::after,.card:focus-visible .plate::after{opacity:0}
-.card:hover .plate img,.card:focus-visible .plate img{filter:none;transform:scale(1.03)}
+.card:hover .plate img,.card:focus-visible .plate img{transform:scale(1.04)}
 
 .card-body{padding:1.6rem clamp(1.2rem,3vw,2rem) 1.5rem;display:flex;flex-direction:column;gap:.7rem}
 .card-top{display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap}
@@ -858,7 +862,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
   background:var(--panel);border:1px solid var(--rule);border-radius:var(--radius);
   padding:clamp(1.2rem,2.4vw,1.6rem);transition:border-color .25s ease,transform .25s ease;
 }
-.mcard:hover,.mcard:focus-visible{border-color:var(--accent);transform:translateY(-2px)}
+.mcard:hover,.mcard:focus-visible{border-color:var(--accent)}
 .mcard-meta{font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--faint)}
 .mcard h3{font-size:1.22rem;font-weight:500;letter-spacing:-.012em;line-height:1.25;transition:color .25s ease}
 .mcard:hover h3,.mcard:focus-visible h3{color:var(--accent)}
