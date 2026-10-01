@@ -854,7 +854,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 }
 .mcard:hover,.mcard:focus-visible{border-color:var(--accent);transform:translateY(-2px)}
 .mcard-meta{font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--faint)}
-.mcard h3{font-family:var(--font-serif);font-weight:400;font-size:clamp(1.35rem,2.2vw,1.6rem);line-height:1.15;letter-spacing:-.005em;transition:color .25s ease}
+.mcard h3{font-size:1.22rem;font-weight:500;letter-spacing:-.012em;line-height:1.25;transition:color .25s ease}
 .mcard:hover h3,.mcard:focus-visible h3{color:var(--accent)}
 .mcard p{color:var(--soft);font-size:.9rem;line-height:1.6;flex:1}
 .mcard-foot{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:.5rem;padding-top:.9rem;border-top:1px solid var(--rule)}
