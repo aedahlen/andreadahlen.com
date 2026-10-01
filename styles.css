@@ -41,21 +41,21 @@
   --font-sans:"Inter",-apple-system,"Segoe UI",system-ui,sans-serif;
   --font-serif:"Instrument Serif",Georgia,"Times New Roman",serif;
 
-  --paper:#FAF8F3;
-  --paper-2:#F2EFE7;
-  --panel:#FFFDF9;
+  --paper:#FFFFFF;
+  --paper-2:#F4F6FD;
+  --panel:#FFFFFF;
   --ink:#14161C;
-  --soft:#5B5F6C;
-  --faint:#6A6B74;
-  --rule:#E3DFD5;
-  --rule-2:#CFCABC;
+  --soft:#555B6B;
+  --faint:#676C7A;
+  --rule:#E6E8EF;
+  --rule-2:#D3D7E3;
   --accent:#3F54BE;
   --accent-2:#2B3A87;
   --wash:#EBEDF9;
-  --on-accent:#FAF8F3;
+  --on-accent:#FFFFFF;
   --plate-filter:grayscale(1) contrast(.9) opacity(.9);
-  --plate-bg:#EFECE2;
-  --plate-bg-hi:#FBF9F3;
+  --plate-bg:#F4F6FD;
+  --plate-bg-hi:#FFFFFF;
   --motif:.17;
   --berry:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%3E%3Cpath%20d%3D%27M11.8%207.9C12.3%205.6%2013.9%203.4%2016.4%201.8%27%20stroke%3D%27black%27%20stroke-width%3D%271.7%27%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%2F%3E%3Cpath%20d%3D%27M14.4%204.2c1.7-1.6%204.2-2.3%206.5-1.9-.4%202.3-2.1%204.3-4.4%205-1.1.3-2.3-.1-2.7-1.1-.3-.8%200-1.5.6-2z%27%20fill%3D%27black%27%2F%3E%3Cpath%20d%3D%27M11.1%207.4c3.1.5%205.4%203.4%205.4%206.9%200%203.8-2.5%206.6-5.5%206.6s-5.5-2.8-5.5-6.6c0-3.5%202.4-6.4%205.6-6.9z%27%20fill%3D%27black%27%2F%3E%3Cpath%20d%3D%27M11%2020.9v1.6%27%20stroke%3D%27black%27%20stroke-width%3D%271.5%27%20stroke-linecap%3D%27round%27%2F%3E%3Cpath%20d%3D%27M8.8%2020.4l-.8.8M13.2%2020.4l.8.8%27%20stroke%3D%27black%27%20stroke-width%3D%271.25%27%20stroke-linecap%3D%27round%27%2F%3E%3C%2Fsvg%3E");
   --shadow:0 1px 2px rgba(20,22,28,.04),0 12px 30px -18px rgba(20,22,28,.30);
@@ -96,6 +96,9 @@
 }
 
 
+
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .about-band{--band:#1F2A66}}
+:root[data-theme="dark"] .about-band{--band:#1F2A66}
 
 /* ============ BASE ============ */
 *{box-sizing:border-box}
@@ -289,8 +292,11 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 
 /* ============ ABOUT BAND ============ */
 .about-band{
-  position:relative;overflow:hidden;background:var(--paper-2);
-  border-block:1px solid var(--rule);
+  --band:#2B3A87;
+  --ink:#FFFFFF; --soft:#DCE1FB; --faint:#BEC6F4; --accent:#C9D0FC;
+  --rule:rgba(255,255,255,.18); --rule-2:rgba(255,255,255,.3); --panel:rgba(255,255,255,.08);
+  position:relative;overflow:hidden;background:var(--band);color:var(--ink);
+  border-block:1px solid var(--band);
   padding-block:clamp(3.5rem,8vw,6rem);
 }
 
