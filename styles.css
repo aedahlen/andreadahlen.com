@@ -304,6 +304,11 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 }
 @media (max-width:900px){.about-motif{width:min(320px,54vw);right:-6%;top:-1%;opacity:calc(var(--motif) * 1.15)}}
 .about-top{max-width:70ch}
+.about-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,320px);gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.about-photo{margin:0;padding-top:2.4rem}
+.about-photo img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius)}
+@media (max-width:1100px){.about-split .about-facts{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:800px){.about-split{grid-template-columns:1fr}.about-photo{order:-1;padding-top:0;max-width:220px}}
 .about-band h2{
   font-family:var(--h2-font);font-weight:var(--h2-weight);letter-spacing:var(--h2-track);
   font-size:clamp(1.5rem,3.2vw,2.1rem);margin-bottom:1.1rem;
