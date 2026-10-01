@@ -97,9 +97,6 @@
 
 
 
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .about-band{--band:#1F2A66}}
-:root[data-theme="dark"] .about-band{--band:#1F2A66}
-
 /* ============ BASE ============ */
 *{box-sizing:border-box}
 body{
@@ -292,11 +289,8 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 
 /* ============ ABOUT BAND ============ */
 .about-band{
-  --band:#2B3A87;
-  --ink:#FFFFFF; --soft:#DCE1FB; --faint:#BEC6F4; --accent:#C9D0FC;
-  --rule:rgba(255,255,255,.18); --rule-2:rgba(255,255,255,.3); --panel:rgba(255,255,255,.08);
-  position:relative;overflow:hidden;background:var(--band);color:var(--ink);
-  border-block:1px solid var(--band);
+  position:relative;overflow:hidden;background:var(--paper-2);
+  border-block:1px solid var(--rule);
   padding-block:clamp(3.5rem,8vw,6rem);
 }
 
