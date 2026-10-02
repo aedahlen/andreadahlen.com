@@ -270,10 +270,14 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .about-split{row-gap:0}
 .about-head{grid-column:1/-1}
 .about-head h2{margin-bottom:0}
-.about-photo{margin:0;padding-top:1.7rem;position:relative}
+.about-photo{margin:0;position:relative}
+/* Facts and lede become grid items so the photo can sit level with the first paragraph */
+.about-top{display:contents}
+.about-facts{grid-column:1/-1}
+.about-lede{grid-column:1;max-width:70ch}
+.about-photo{grid-column:2;grid-row:3}
 .about-photo img{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
-@media (max-width:1100px){.about-split .about-facts{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:800px){.about-split{grid-template-columns:1fr}.about-photo{order:-1;padding-top:0;max-width:220px;margin-bottom:2rem}}
+@media (max-width:800px){.about-split{grid-template-columns:1fr}.about-photo{order:-1;grid-column:auto;grid-row:auto;max-width:220px;margin-bottom:2rem}}
 .about-band h2{
   font-family:var(--h2-font);font-weight:var(--h2-weight);letter-spacing:var(--h2-track);
   font-size:clamp(1.5rem,3.2vw,2.1rem);margin-bottom:1.1rem;
@@ -287,7 +291,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 }
 .fact dt{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--faint)}
 .fact dd{margin:.35rem 0 0;font-size:.88rem}
-@media (max-width:640px){.about-facts{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:800px){.about-facts{grid-template-columns:repeat(2,1fr)}}
 .principles{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
   gap:clamp(1.2rem,3vw,2.4rem);margin-top:clamp(2.5rem,6vw,4rem);
