@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shelter's rebrand and design system</title>
+<meta name="description" content="Turning Shelter's new brushstroke brand into a design system for the website: an accessible colour palette, upper case research and a Storybook theme." />
+<link rel="canonical" href="https://andreadahlen.com/work/shelter-rebrand.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Shelter's rebrand and design system" />
+<meta property="og:description" content="Turning Shelter's new brushstroke brand into a design system for the website: an accessible colour palette, upper case research and a Storybook theme." />
+<meta property="og:url" content="https://andreadahlen.com/work/shelter-rebrand.html" />
+<meta property="og:image" content="https://andreadahlen.com/og-image.jpg?v=3" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0F1117" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<script>(function(){var r=document.documentElement;r.classList.add('js');try{var t=localStorage.getItem('ad-theme');if(t)r.setAttribute('data-theme',t);}catch(e){}})();</script>
+<style>
+.ph{background:#FFF4C2;color:#5A4500;padding:0 .25em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.ph-note{display:block;margin-top:.5rem;font-size:.8rem;color:#5A4500;background:#FFF4C2;padding:.5rem .7rem;max-width:66ch}
+@media (prefers-color-scheme:dark){.ph,.ph-note{background:#4A3D00;color:#FFE9A3}}
+/* swatches */
+.swatches{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media (max-width:860px){.swatches{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.sw{background:var(--panel);display:flex;flex-direction:column}
+.sw-chip{height:96px;display:flex;align-items:flex-end;padding:.7rem .85rem;color:#fff;font-size:.78rem;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.sw-body{padding:.9rem .95rem 1.05rem;display:flex;flex-direction:column;gap:.35rem}
+.sw-body b{font-weight:500;font-size:.95rem}
+.sw-body code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.74rem;color:var(--faint)}
+.sw-body p{font-size:.84rem;color:var(--soft);line-height:1.5}
+.sw-ratio{display:inline-flex;align-items:center;gap:.4rem;font-size:.74rem;font-variant-numeric:tabular-nums;color:var(--ink)}
+.sw-ratio i{font-style:normal;font-size:.64rem;letter-spacing:.1em;padding:.15rem .35rem;border:1px solid var(--rule-2);color:var(--soft)}
+.sw-demo{font-size:.9rem;margin-top:.25rem;background:#fff;padding:.4rem .5rem;border:1px solid var(--rule)}
+.sw-demo a{text-decoration:underline;text-underline-offset:3px}
+/* device previews */
+.devices{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:clamp(1.2rem,3vw,2.4rem);align-items:end}
+@media (max-width:760px){.devices{grid-template-columns:1fr}.phone{justify-self:center}}
+.laptop{border:1px solid var(--rule-2);background:var(--panel)}
+.laptop .embed-bar{border-bottom:1px solid var(--rule)}
+.dv-screen{position:relative;background:var(--plate-bg);display:grid;place-items:center;overflow:hidden}
+.laptop .dv-screen{aspect-ratio:16/10;width:100%}
+.phone{width:240px;border:1px solid var(--rule-2);background:var(--ink);padding:10px;}
+.phone .dv-screen{aspect-ratio:390/844;width:100%;background:var(--plate-bg)}
+.dv-screen{display:block!important;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.dv-screen img{display:block;width:100%;height:auto}
+.dv-screen .slot{font-size:.78rem;color:#5A4500;background:#FFF4C2;padding:.5rem .7rem;max-width:80%;text-align:center;line-height:1.45}
+.device-cap{margin-top:.75rem;font-size:.83rem;color:var(--faint)}
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M11.8 7.9C12.3 5.6 13.9 3.4 16.4 1.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M14.4 4.2c1.7-1.6 4.2-2.3 6.5-1.9-.4 2.3-2.1 4.3-4.4 5-1.1.3-2.3-.1-2.7-1.1-.3-.8 0-1.5.6-2z" fill="currentColor"/><path d="M11.1 7.4c3.1.5 5.4 3.4 5.4 6.9 0 3.8-2.5 6.6-5.5 6.6s-5.5-2.8-5.5-6.6c0-3.5 2.4-6.4 5.6-6.9z" fill="currentColor"/><path d="M11 20.9v1.6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8.8 20.4l-.8.8M13.2 20.4l.8.8" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/></svg>
+      <span class="brand-name">Andrea Dahlén</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/" id="nav-work" class="on">Work</a>
+      <a href="/#about">About</a>
+      <a href="/cv.html" id="nav-cv">CV</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button class="icon-btn" id="theme" type="button" aria-label="Switch colour theme">
+      <svg class="sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>
+      <svg class="moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+    </button>
+  </div>
+</header>
+<main id="main">
+<section class="cs-hero"><span class="cs-motif motif-reveal" aria-hidden="true"></span><div class="cs-hero-inner wrap"><p class="eyebrow">Case study · Shelter</p><h1>Shelter's <span class="em">rebrand</span> and design system</h1><p class="cs-lede">Shelter introduced a new brand, built around a red brushstroke. As Senior UX Designer, I turned it into a design system for the website, while making sure the housing advice stayed easy to read.</p><dl class="cs-meta"><div><dt>Client</dt><dd>Shelter</dd></div><div><dt>Role</dt><dd>Senior UX Designer</dd></div><div><dt>Years</dt><dd>2019–2021</dd></div><div><dt>Still live</dt><dd>england.shelter.org.uk</dd></div></dl></div></section>
+
+<section class="wrap tight"><div class="sec-head"><h2>At a glance</h2><p class="sec-note">The short version</p></div><div class="glance"><article><h3>The problem</h3><p>The new brand was a <b>red brushstroke</b>, designed for posters and campaigns. It had to work on a website people read on their phones, often when they are stressed. And the red couldn't be used for everything.</p></article><article><h3>What I did</h3><p>Added <b>extra colours for digital</b>, gave every colour a name and a use, wrote component specs for three screen sizes, and built the brand as a <b>theme in Storybook</b> for developers.</p></article><article><h3>What changed</h3><p>The new brand launched on the design system. <b>Years later, england.shelter.org.uk is still built on it.</b></p></article></div></section>
+
+<section class="wrap tight"><blockquote class="quote"><p>“She was an invaluable mentor, teaching me a great deal and helping me significantly enhance my design skills.”</p><footer>Lizzie Nightingale, Senior Interaction Designer, Government Digital Service (former Junior UX Designer at Shelter)</footer></blockquote></section>
+
+<section class="wrap"><div class="sec-head"><h2>The brand, as it arrived</h2></div><div class="figs"><figure class="fig"><div class="fig-plate img"><img src="/images/shelter-logo.webp" alt="The Shelter brushstroke logo." loading="lazy" decoding="async" /></div><figcaption>The brushstroke logo: a roof that is also an upward arrow.</figcaption></figure><figure class="fig"><div class="fig-plate img"><img src="/images/shelter-billboard.webp" alt="A Shelter campaign billboard in the rebrand's visual language." loading="lazy" decoding="async" /></div><figcaption>A campaign billboard in the new style. The same brand also had to work on advice pages.</figcaption></figure></div></section>
+
+<section class="wrap"><div class="sec-head"><h2>The red</h2></div><div class="essay"><p>The brand was built on one strong red. That works on a poster. On a website the colour also has to show what you can click and which pages you have visited, and text has to be easy to read on a small screen.</p><p>One red couldn't do all of that and still meet accessibility contrast requirements. So I made the case for extra colours just for digital. We used a version of the red that passes AA for buttons and main links, and gave text links their own blue, with colours for hover and visited links.</p><p>That meant convincing the brand and marketing team.</p></div>
+<div class="swatches" style="margin-top:2rem">
+ <div class="sw"><div class="sw-chip" style="background:#EB001F">#EB001F</div><div class="sw-body"><b>Accessible red</b><code>primary-link</code><span class="sw-ratio">4.61 : 1 <i>AA</i></span><p>Primary actions and emphasis. Kept away from long reading.</p></div></div>
+ <div class="sw"><div class="sw-chip" style="background:#336DF5">#336DF5</div><div class="sw-body"><b>Link blue</b><code>text-link</code><span class="sw-ratio">4.52 : 1 <i>AA</i></span><p>New for digital. Text links, so red didn't have to be a link too.</p></div></div>
+ <div class="sw"><div class="sw-chip" style="background:#660099">#660099</div><div class="sw-body"><b>Mauve</b><code>link-visited</code><span class="sw-ratio">10.37 : 1 <i>AAA</i></span><p>Visited links, so people can see which advice they've already read.</p></div></div>
+ <div class="sw"><div class="sw-chip" style="background:#C8001A">#C8001A</div><div class="sw-body"><b>Dark red</b><code>primary-link-hover</code><span class="sw-ratio">6.05 : 1 <i>AA</i></span><p>Hover states, including text links.</p></div></div>
+</div>
+<p class="device-cap">Contrast measured against white. Colours from the palette I handed over.</p>
+<div class="rolegrid" style="margin-top:2rem"><div class="rolerow"><b>Every colour has a name and a use</b><p>For example primary-link, text-link, standard-text, error and disabled. This meant designers and developers didn't have to decide colours page by page.</p></div><div class="rolerow"><b>Colours for messages</b><p>Error, success and alert messages each got a border colour and a light background colour. Disabled buttons got one grey.</p></div></div>
+</section>
+
+<section class="wrap"><div class="sec-head"><h2>How the work ran</h2></div><ol class="prio"><li><span>Audit<small>The brand was made for posters, not for a form on a small phone. I went through the website page by page and listed where the brushstroke, the font and the red didn't work. That list became the brief.</small></span></li><li><span>Encode<small>Every colour got a name and a use. Links got their own blue, with colours for visited and hover, and for error, success, alert and disabled.</small></span></li><li><span>Specify<small>Component specs for desktop, tablet and mobile, including when not to use each one. Written so content designers and developers could use them too.</small></span></li><li><span>Build<small>We built the brand as a theme in Storybook, so developers worked from real components instead of screenshots.</small></span></li></ol></section>
+
+<section class="wrap"><div class="sec-head"><h2>Upper case research</h2><p class="sec-note">September 2020</p></div><div class="essay"><p>The new brand used a lot of capital letters, and stakeholders were hoping to use them on the website too. Using uppercase letters can make the user feel like YOU ARE SHOUTING AT THEM, so I looked at the research before we designed anything.</p><p>All-caps has been shown to increase stress levels and cognitive load, make reading slower and make text harder to scan. Screen readers can read out words typed in capitals letter by letter. And we needed to keep in mind that whilst we wanted to express a louder voice through protesting, Shelter’s website is primarily a support service.</p></div>
+<div class="numbers" style="margin-top:2rem;grid-template-columns:repeat(2,1fr)"><div class="num"><b>18 of 20</b><span>Most viewed pages over two years were support journeys: get help, housing advice and search</span></div><div class="num"><b>2</b><span>Exceptions: Donate, and one campaign page</span></div></div>
+<div class="rolegrid" style="margin-top:2rem"><div class="rolerow"><b>Caps could be used on</b><p>Main headings on Donate, Events and Campaign pages, buttons, and tags on cards. Short text, not paragraphs.</p></div><div class="rolerow"><b>We advised against</b><p>Caps in paragraphs and smaller headings, in the main navigation, which is hard to scan on mobile, and on advice pages.</p></div><div class="rolerow"><b>Added with code</b><p>Caps should be added with CSS, not typed into the content system, so screen readers read out words and not single letters.</p></div><div class="rolerow"><b>Next steps</b><p>Test an all-caps and a title case version on Userlytics: ask people to remember the campaign name, and time how long each takes to read.</p></div></div>
+<div class="figs" style="margin-top:2rem"><figure class="fig wide"><div class="fig-plate img"><img src="/images/shelter-caps-hero.webp" alt="A campaign hero with BUILD HOMES in large capitals beside a sentence-case H1 reading Let's build a better future." loading="lazy" decoding="async" /></div><figcaption>Capitals used next to the main heading, not instead of it. The heading people read stays in sentence case.</figcaption></figure></div>
+<div class="essay" style="margin-top:2rem"><p>The UX team also reviewed Barlow, the new brand font, against Arial, the font we used before. We looked at how it showed characters that are easy to mix up, like 1, I and l, and how it read at small sizes. Barlow looked lighter than Arial, so we looked at using a medium weight for body text.</p></div>
+</section>
+
+<section class="wrap"><div class="sec-head"><h2>What was handed over</h2></div><div class="figs"><figure class="fig wide"><div class="fig-plate img"><img src="/images/shelter-colours.webp" alt="Shelter's colour variables, each named with a defined role." loading="lazy" decoding="async" /></div><figcaption>The full palette: brand colours on the left, the extra digital colours on the right.</figcaption></figure><figure class="fig"><div class="fig-plate img"><img src="/images/shelter-patterns.webp" alt="Pattern specifications for banners and search across breakpoints." loading="lazy" decoding="async" /></div><figcaption>Specs for banners and search on different screen sizes, with rules for when to use each version.</figcaption></figure><figure class="fig"><div class="fig-plate img"><img src="/images/shelter-storybook.webp" alt="The Shelter component library in Storybook." loading="lazy" decoding="async" /></div><figcaption>The component library in Storybook, where developers could see and test every component.</figcaption></figure></div></section>
+
+<section class="wrap"><div class="sec-head"><h2>The website today</h2></div>
+<div class="devices">
+ <figure class="fig"><div class="laptop"><div class="embed-bar"><i></i><i></i><i></i><span>england.shelter.org.uk</span></div><div class="dv-screen"><img src="/images/shelter-live-desktop.webp" alt="The england.shelter.org.uk homepage on desktop: Shelter logo, Housing advice menu, a hero reading No one should face homelessness alone, advice topic buttons, Support us and Take action sections, and the Fight for home footer." loading="lazy" decoding="async" /></div></div></figure>
+ <figure class="fig"><div class="phone"><div class="dv-screen"><img src="/images/shelter-live-mobile.webp" alt="The same homepage on a phone, with the Shelter logo, Donate, search and Menu buttons in the header." loading="lazy" decoding="async" /></div></div></figure>
+</div>
+<p class="device-cap">The homepage in 2026, on desktop and on a phone. Scroll inside the frames to see the full page. It still uses the design system.</p>
+</section>
+
+<section class="wrap"><div class="numbers" style="grid-template-columns:repeat(3,1fr)"><div class="num"><b>3</b><span>Breakpoints specified for every component</span></div><div class="num"><b>4.5:1+</b><span>Contrast for every link and text colour on white</span></div><div class="num"><b>1</b><span>Storybook theme for the new brand</span></div></div></section>
+
+<section class="wrap"><a class="nextcase" href="/work/shelter-scotland.html"><span><small>Next case study</small><b>Shelter Scotland</b></span><span class="cta-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <span class="foot-motif left motif-reveal" aria-hidden="true"></span>
+  <div class="wrap">
+    <div class="foot-main">
+      <p class="foot-title">Looking for a <span style="white-space:nowrap">senior product designer?</span> Let&rsquo;s <span class="em">talk</span></p>
+      <div class="foot-links">
+        <a href="mailto:andreadahlen@gmail.com">andreadahlen@gmail.com</a>
+        <a href="https://www.linkedin.com/in/andrea-dahlen/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-inner">
+      <span>&copy; <span id="year">2026</span> Andrea Dahl&eacute;n</span>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js"></script>
+</body>
+</html>

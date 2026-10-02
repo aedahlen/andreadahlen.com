@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Shelter Scotland: a design system, and the team behind it</title>
-<meta name="description" content="Five years across Shelter and Shelter Scotland: building the pattern library and design system through the rebrand, then leading the Scottish digital estate to WCAG 2.1 AA." />
+<title>Leading Shelter Scotland's digital team</title>
+<meta name="description" content="Product Lead at Shelter Scotland: managing a team of eight, a digital roadmap and prioritisation framework, and accessible housing advice." />
 <link rel="canonical" href="https://andreadahlen.com/work/shelter-scotland.html" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Shelter Scotland: a design system, and the team behind it" />
-<meta property="og:description" content="Five years across Shelter and Shelter Scotland: building the pattern library and design system through the rebrand, then leading the Scottish digital estate to WCAG 2.1 AA." />
+<meta property="og:title" content="Leading Shelter Scotland's digital team" />
+<meta property="og:description" content="Product Lead at Shelter Scotland: managing a team of eight, a digital roadmap and prioritisation framework, and accessible housing advice." />
 <meta property="og:url" content="https://andreadahlen.com/work/shelter-scotland.html" />
 <meta property="og:image" content="https://andreadahlen.com/og-image.jpg?v=3" />
 <meta property="og:image:width" content="1200" />
@@ -21,6 +21,65 @@
 <link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <script>(function(){var r=document.documentElement;r.classList.add('js');try{var t=localStorage.getItem('ad-theme');if(t)r.setAttribute('data-theme',t);}catch(e){}})();</script>
+<style>
+.ph{background:#FFF4C2;color:#5A4500;padding:0 .25em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.ph-note{display:block;margin-top:.5rem;font-size:.8rem;color:#5A4500;background:#FFF4C2;padding:.5rem .7rem;max-width:66ch}
+@media (prefers-color-scheme:dark){.ph,.ph-note{background:#4A3D00;color:#FFE9A3}}
+/* swatches */
+.swatches{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media (max-width:860px){.swatches{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.sw{background:var(--panel);display:flex;flex-direction:column}
+.sw-chip{height:96px;display:flex;align-items:flex-end;padding:.7rem .85rem;color:#fff;font-size:.78rem;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.sw-body{padding:.9rem .95rem 1.05rem;display:flex;flex-direction:column;gap:.35rem}
+.sw-body b{font-weight:500;font-size:.95rem}
+.sw-body code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.74rem;color:var(--faint)}
+.sw-body p{font-size:.84rem;color:var(--soft);line-height:1.5}
+.sw-ratio{display:inline-flex;align-items:center;gap:.4rem;font-size:.74rem;font-variant-numeric:tabular-nums;color:var(--ink)}
+.sw-ratio i{font-style:normal;font-size:.64rem;letter-spacing:.1em;padding:.15rem .35rem;border:1px solid var(--rule-2);color:var(--soft)}
+.sw-demo{font-size:.9rem;margin-top:.25rem;background:#fff;padding:.4rem .5rem;border:1px solid var(--rule)}
+.sw-demo a{text-decoration:underline;text-underline-offset:3px}
+/* device previews */
+.devices{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:clamp(1.2rem,3vw,2.4rem);align-items:end}
+@media (max-width:760px){.devices{grid-template-columns:1fr}.phone{justify-self:center}}
+.laptop{border:1px solid var(--rule-2);background:var(--panel)}
+.laptop .embed-bar{border-bottom:1px solid var(--rule)}
+.dv-screen{position:relative;background:var(--plate-bg);display:grid;place-items:center;overflow:hidden}
+.laptop .dv-screen{aspect-ratio:16/10;width:100%}
+.phone{width:240px;border:1px solid var(--rule-2);background:var(--ink);padding:10px;}
+.phone .dv-screen{aspect-ratio:390/844;width:100%;background:var(--plate-bg)}
+.dv-screen{display:block!important;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.dv-screen img{display:block;width:100%;height:auto}
+.dv-screen .slot{font-size:.78rem;color:#5A4500;background:#FFF4C2;padding:.5rem .7rem;max-width:80%;text-align:center;line-height:1.45}
+.device-cap{margin-top:.75rem;font-size:.83rem;color:var(--faint)}
+/* device previews */
+.devices{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:clamp(1.2rem,3vw,2.4rem);align-items:end}
+@media (max-width:760px){.devices{grid-template-columns:1fr}.phone{justify-self:center}}
+.laptop{border:1px solid var(--rule-2);background:var(--panel)}
+.laptop .embed-bar{border-bottom:1px solid var(--rule)}
+.dv-screen{position:relative;background:var(--plate-bg);display:grid;place-items:center;overflow:hidden}
+.laptop .dv-screen{aspect-ratio:16/10;width:100%}
+.phone{width:240px;border:1px solid var(--rule-2);background:var(--ink);padding:10px;}
+.phone .dv-screen{aspect-ratio:390/844;width:100%;background:var(--plate-bg)}
+.dv-screen{display:block!important;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.dv-screen img{display:block;width:100%;height:auto}
+.dv-screen .slot{font-size:.78rem;color:#5A4500;background:#FFF4C2;padding:.5rem .7rem;max-width:80%;text-align:center;line-height:1.45}
+.device-cap{margin-top:.75rem;font-size:.83rem;color:var(--faint)}
+</style>
+<style>
+.team{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+@media (max-width:760px){.team{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.team div{background:var(--panel);padding:1rem 1.1rem}
+.team b{display:block;font-size:1.6rem;font-weight:300;letter-spacing:-.02em;line-height:1}
+.team span{display:block;margin-top:.4rem;font-size:.84rem;color:var(--soft)}
+.team .me{background:var(--wash)}
+.areas{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+.areas span{border:1px solid var(--rule-2);background:var(--panel);padding:.45rem .8rem;font-size:.86rem}
+.linkcard{display:flex;justify-content:space-between;align-items:center;gap:1rem;border:1px solid var(--rule);background:var(--panel);padding:1.1rem 1.25rem;text-decoration:none;color:inherit;margin-top:1.6rem}
+.linkcard:hover{border-color:var(--accent)}
+.linkcard small{display:block;font-size:.74rem;color:var(--faint);font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.linkcard b{font-weight:500}
+.linkcard .go{color:var(--accent);font-size:.86rem;font-weight:500;white-space:nowrap}
+</style>
 </head>
 <body id="top">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -43,7 +102,33 @@
   </div>
 </header>
 <main id="main">
-<section class="cs-hero"><span class="cs-motif motif-reveal" aria-hidden="true"></span><div class="cs-hero-inner wrap"><p class="eyebrow">Case study · Shelter & Shelter Scotland</p><h1>A rebrand in <span class="em">rough red brushstroke</span>, made repeatable.</h1><p class="cs-lede">Shelter's rebrand was meant to look urgent and unpolished. My job was to turn it into components a team could use every week, and make sure people in crisis could still read the advice.</p><dl class="cs-meta"><div><dt>Client</dt><dd>Shelter &amp; Shelter Scotland</dd></div><div><dt>Role</dt><dd>UX Designer → Product Lead</dd></div><div><dt>Years</dt><dd>2019–2024</dd></div><div><dt>Standard</dt><dd>WCAG 2.1 AA</dd></div></dl></div></section><section class="wrap tight"><div class="sec-head"><h2>At a glance</h2><p class="sec-note">The short version</p></div><div class="glance"><article><h3>The problem</h3><p>The new brand was a <b>rough red brushstroke</b>, raw on purpose. It had to become interface components people could read and teams could reuse. And the brand red failed contrast for links.</p></article><article><h3>What I did</h3><p>I built the pattern library: every colour named with a job, specs for three screen sizes, and a <b>Storybook library</b> developers could build from. Then I led Shelter Scotland's digital team.</p></article><article><h3>What changed</h3><p><b>WCAG 2.1 AA across the Scottish site</b>, more people able to read the housing advice, and a team of eight working from one shared system.</p></article></div></section><section class="wrap tight"><blockquote class="quote"><p>“She was an invaluable mentor, teaching me a great deal and helping me significantly enhance my design skills.”</p><footer>Lizzie Nightingale, Senior Interaction Designer, Government Digital Service (former Junior UX Designer at Shelter)</footer></blockquote></section><section class="wrap"><div class="sec-head"><h2>The brand, as it arrived</h2><p class="sec-note">Loud on purpose</p></div><div class="figs"><figure class="fig"><div class="fig-plate img"><img src="/images/shelter-logo.webp" alt="The Shelter brushstroke logo." loading="lazy" decoding="async" data-mark="Logo" /></div><figcaption>The brushstroke mark: a roofline that doubles as an upward arrow.</figcaption></figure><figure class="fig"><div class="fig-plate img"><img src="/images/shelter-billboard.webp" alt="A Shelter campaign billboard in the rebrand's visual language." loading="lazy" decoding="async" data-mark="Campaign" /></div><figcaption>Campaign work in the same style. The brand had to work on a billboard and on an advice page someone reads in a panic.</figcaption></figure></div></section><section class="wrap"><div class="sec-head"><h2>How the work ran</h2><p class="sec-note">Five steps over five years</p></div><ol class="prio"><li><span>Audit<small>The rebrand was made for posters, not for a form field on a small phone. I went through the site screen by screen and listed where the brushstroke, the type and the red stopped working. That list became the brief.</small></span></li><li><span>Encode<small>Every colour got a name and a job. The brand red couldn't carry links at accessible contrast, so links got their own blue, with set colours for error, success, alert and disabled.</small></span></li><li><span>Specify<small>Component specs for desktop, tablet and mobile, including when not to use each one. Written so content designers and developers could follow them too.</small></span></li><li><span>Build<small>A Storybook library, so developers built from the live system instead of a screenshot. Accessibility lived inside the components, so it shipped by default.</small></span></li><li><span>Lead<small>As Product Lead I ran a team of eight: a UX designer, a senior developer, a user researcher and five content designers. I also owned the roadmap, budget, training and upkeep of the system.</small></span></li></ol></section><section class="wrap"><div class="sec-head"><h2>Colour with a job</h2><p class="sec-note">Decided once, used everywhere</p></div><div class="rolegrid"><div class="rolerow"><b>Brand red</b><p>Campaigns and emphasis. Loud on purpose, and kept away from anything people read under stress.</p></div><div class="rolerow"><b>Link blue</b><p>Text links and their states. Introduced because the brand red could not carry them at accessible contrast.</p></div><div class="rolerow"><b>Error / success / alert</b><p>Each state has its own colour and one job.</p></div><div class="rolerow"><b>Disabled</b><p>One colour, used the same way on every control.</p></div></div></section><section class="wrap"><div class="sec-head"><h2>What was handed over</h2></div><div class="figs"><figure class="fig wide"><div class="fig-plate img"><img src="/images/shelter-colours.webp" alt="Shelter's colour tokens, each named with a defined role." loading="lazy" decoding="async" data-mark="Colour tokens" /></div><figcaption>Every colour has a name and a job: primary-link, standard-text, error, disabled. Links got their own blue, because the red couldn't be the brand and an accessible link at the same time.</figcaption></figure><figure class="fig"><div class="fig-plate img"><img src="/images/shelter-patterns.webp" alt="Pattern specifications for banners and search across breakpoints." loading="lazy" decoding="async" data-mark="Pattern specs" /></div><figcaption>Pattern specifications across breakpoints. Banners and search documented with the rules for when and how each variant is used.</figcaption></figure><figure class="fig"><div class="fig-plate img"><img src="/images/shelter-storybook.webp" alt="The Shelter component library in Storybook." loading="lazy" decoding="async" data-mark="Storybook" /></div><figcaption>The library in Storybook. Developers could browse, theme and test every component in the browser.</figcaption></figure><figure class="fig wide"><div class="fig-plate img"><img src="/images/shelter-brand-accessibility.webp" alt="A page from Shelter's brand guidelines showing the accessibility requirement." loading="lazy" decoding="async" data-mark="Brand guidelines" /></div><figcaption>From the brand guidelines: the same infographic in print and on screen. The accessibility requirement is written into the brand book itself.</figcaption></figure></div><figure class="fig" style="margin-top:1.6rem"><div class="embed"><div class="embed-bar"><i></i><i></i><i></i><span>design.shelter.org.uk/digital-framework</span></div><div class="embed-stage"><iframe src="https://design.shelter.org.uk/digital-framework/accessibility-guides" title="Shelter digital framework — accessibility guides" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div><a class="embed-open" href="https://design.shelter.org.uk/digital-framework/accessibility-guides" target="_blank" rel="noopener">Open it in a new tab ↗</a><figcaption>The accessibility guides in Shelter's digital framework, still published: guidance and best practice, writing accessible content, social media, and the WCAG success criteria the estate was held to. Writing it down meant the standard didn't depend on any one person.</figcaption></figure><a class="embed-open reading" href="https://uxdesign.cc/rebranding-shelter-a-ux-designers-perspective-72b7255fc290" target="_blank" rel="noopener">The longer write-up, in UX Collective ↗</a></section><section class="wrap"><div class="numbers"><div class="num"><b>8</b><span>People led: designers, developers, content designers and a researcher</span></div><div class="num"><b>5</b><span>Years across three roles</span></div><div class="num"><b>AA</b><span>WCAG 2.1 met across the digital estate</span></div><div class="num"><b>3</b><span>Breakpoints specified for every component</span></div></div></section><section class="wrap"><a class="nextcase" href="/work/nhs-cervical-screening.html"><span><small>Next case study</small><b>NHS Scotland</b></span><span class="cta-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></section>
+<section class="cs-hero"><span class="cs-motif motif-reveal" aria-hidden="true"></span><div class="cs-hero-inner wrap"><p class="eyebrow">Case study · Shelter Scotland</p><h1>Leading <span class="em">Shelter Scotland's</span> digital team</h1><p class="cs-lede">As Product Lead, I managed a team of eight and was responsible for Shelter Scotland's website. I planned the team's work across advice, campaigns and fundraising, and made accessibility part of how we worked.</p><dl class="cs-meta"><div><dt>Client</dt><dd>Shelter Scotland</dd></div><div><dt>Role</dt><dd>Product Lead</dd></div><div><dt>Years</dt><dd>2022–2024</dd></div><div><dt>Team</dt><dd>8 people</dd></div></dl></div></section>
+
+<section class="wrap tight"><div class="sec-head"><h2>At a glance</h2><p class="sec-note">The short version</p></div><div class="glance"><article><h3>The role</h3><p>Lead the Scottish digital team and website, with <b>many teams asking for our time</b>: events, fundraising, campaigns, housing advice and the helpline.</p></article><article><h3>What I did</h3><p>Line managed a <b>team of eight</b>, created the digital roadmap, planned the work by quarter, managed the budget, and championed accessibility.</p></article><article><h3>What changed</h3><p>The team had a <b>digital roadmap</b>, so it was clear what we were working on, when, and what our goals were. Housing advice guides were rewritten as steps, which <b>reduced calls to the helpline</b>.</p></article></div></section>
+
+<section class="wrap tight"><blockquote class="quote"><p>“She’s super dedicated, efficient, and great at keeping projects on track. On top of that, she’s a clear and constructive communicator, making collaboration easy and enjoyable.”</p><footer>Amanda Collins, Head of Communications &amp; Engagement, Shelter Scotland</footer></blockquote></section>
+
+<section class="wrap"><div class="sec-head"><h2>The team</h2></div><div class="essay"><p>I line managed eight people.</p></div><div class="team" style="margin-top:1.4rem"><div><b>4</b><span>Content designers</span></div><div><b>1</b><span>Senior content designer</span></div><div><b>1</b><span>UX designer</span></div><div><b>1</b><span>User researcher</span></div><div><b>1</b><span>Developer</span></div></div></section>
+
+<section class="wrap"><div class="sec-head"><h2>Deciding what to take on</h2></div><div class="essay"><p>The digital team worked for the whole of Shelter Scotland. Each area had its own deadlines and priorities, and they often needed us at the same time.</p></div><div class="areas"><span>Events</span><span>Fundraising</span><span>Campaigns</span><span>Housing advice</span><span>Helpline</span></div>
+<div class="essay" style="margin-top:1.6rem"><p>I set up a prioritisation framework, so we decided what to take on in the same way each time. It also helped keep the other teams satisfied, because they could see why something was or wasn't on the roadmap. These were the questions we asked:</p></div>
+<ol class="prio" style="margin-top:1rem"><li><span>What user need does it meet?<small>And what evidence, from data or research, shows the need is real?</small></span></li><li><span>Which of Shelter Scotland's goals does it help?<small>And how much does it matter to the people asking for it?</small></span></li><li><span>Does something like it already exist?<small>Sometimes the answer was to improve what we had, not build something new.</small></span></li><li><span>Do we have the time and skills?<small>If it clashed with other planned work, we said no or not yet. Knowing how to say no was part of the job.</small></span></li></ol>
+</section>
+
+<section class="wrap"><div class="sec-head"><h2>The digital roadmap</h2></div><div class="essay"><p>Before, the team didn't have a roadmap. I created one, so it was clear what we were working on, when, and what our goals were. I planned the work quarter by quarter, managed the budget, and looked after several product streams at the same time.</p><p>I shared progress through quarterly reports and show and tells, and the team planned its work in sprints, with stand-ups, retros and a Kanban board.</p><p>I kept the Head of Communications and Engagement involved as the roadmap took shape, so it matched Shelter Scotland's goals, and kept in touch with the wider Shelter digital team to avoid doing the same work twice.</p></div></section>
+
+<section class="wrap"><div class="sec-head"><h2>Accessibility</h2></div><div class="essay"><p>Many people come to Shelter Scotland at a stressful time, and need to understand their housing rights quickly. I championed accessibility across the team, and the Scottish website met WCAG 2.1 AA.</p><p>That included the way the housing advice is written. We worked on guidance for writing accessible content, so that the advice can be understood by as many people as possible. We tested the advice with users, and rewrote guides as steps, with clear actions and next steps. This reduced calls to the helpline.</p></div>
+<div class="devices" style="margin-top:2rem"><figure class="fig"><div class="laptop"><div class="embed-bar"><i></i><i></i><i></i><span>scotland.shelter.org.uk</span></div><div class="dv-screen"><img src="/images/scotland-guide-desktop.webp" alt="A Shelter Scotland advice guide on repairs if you rent from a private landlord, with the pages in the guide listed as numbered steps, a short summary and a Next link." loading="lazy" decoding="async" /></div></div></figure><figure class="fig"><div class="phone"><div class="dv-screen"><img src="/images/scotland-guide-mobile.webp" alt="The same repairs guide on a phone." loading="lazy" decoding="async" /></div></div></figure></div>
+<p class="device-cap">A repairs guide on the Scottish website, on desktop and on a phone. The guide is split into numbered steps, with a short summary and a clear next step.</p>
+<a class="linkcard" href="https://design.shelter.org.uk/digital-framework/accessibility-guides" target="_blank" rel="noopener"><span><small>design.shelter.org.uk/digital-framework</small><b>Shelter's accessibility guides</b></span><span class="go">Open ↗</span></a>
+<p class="device-cap">Still published: guidance and best practice, writing accessible content, social media, and the WCAG criteria the website is held to.</p>
+<div class="figs" style="margin-top:2rem"><figure class="fig wide"><div class="fig-plate img"><img src="/images/shelter-brand-accessibility.webp" alt="A page from Shelter's brand guidelines showing the accessibility requirement." loading="lazy" decoding="async" /></div><figcaption>From Shelter's brand guidelines: the same infographic in print and on screen, with the accessibility requirement written into the guidelines.</figcaption></figure></div></section>
+
+<section class="wrap"><div class="numbers"><div class="num"><b>8</b><span>People in the team I line managed</span></div><div class="num"><b>5</b><span>Areas of Shelter Scotland the team supported</span></div><div class="num"><b>AA</b><span>WCAG 2.1 met across the Scottish website</span></div><div class="num"><b>2</b><span>Years as Product Lead</span></div></div></section>
+
+<section class="wrap"><div class="sec-head"><h2>What I took from it</h2></div><ol class="prio"><li><span>How to say no<small>Not everything could be done at once. A clear way of prioritising made it easier to explain why.</small></span></li><li><span>Working in a cross-functional team<small>Content designers, a UX designer, a researcher and a developer, all working towards the same goals.</small></span></li><li><span>Running the product side<small>Managing several product streams, planning by quarter and managing a budget.</small></span></li></ol></section>
+
+<section class="wrap"><a class="nextcase" href="/work/nhs-cervical-screening.html"><span><small>Next case study</small><b>NHS Scotland</b></span><span class="cta-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span></a></section>
 </main>
 
 <footer class="site-footer" id="contact">
