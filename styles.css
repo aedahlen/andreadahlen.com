@@ -213,7 +213,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 }
 .card{transition:border-color .2s ease}
 .card:hover,.card:focus-visible{border-color:var(--accent)}
-.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:transform .3s cubic-bezier(.2,.8,.2,1);z-index:2}
+.card::before{content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:3px;background:var(--accent);transform:scaleY(0);transform-origin:center;transition:transform .3s cubic-bezier(.2,.8,.2,1);z-index:2}
 .card:hover::before,.card:focus-visible::before{transform:scaleY(1)}
 .card:hover h3,.card:focus-visible h3{color:var(--accent)}
 .card-top h3{transition:color .2s ease}
