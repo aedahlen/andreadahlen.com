@@ -115,7 +115,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   mask:var(--berry) center/contain no-repeat; opacity:.9;
 }
 .em{font-family:var(--font-serif); font-style:var(--em-style); font-weight:400; letter-spacing:0}
-section{padding-block:clamp(3rem,7vw,5.5rem)}
+section{padding-block:clamp(2.25rem,5vw,4rem)}
 
 /* ============ HEADER ============ */
 .site-header{
@@ -239,7 +239,9 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .cta-read{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-weight:500}
 .cta-read svg{transition:transform .3s cubic-bezier(.2,.8,.2,1)}
 .card:hover .cta-read svg,.card:focus-visible .cta-read svg{transform:translateX(4px)}
+.cta-long{display:inline}
 @media (max-width:720px){
+  .cta-long{display:none}
   .card{grid-template-columns:1fr}
   .plate{border-right:0;border-bottom:1px solid var(--rule);min-height:140px}
 }
@@ -277,7 +279,7 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .about-lede{grid-column:1;max-width:70ch}
 .about-photo{grid-column:2;grid-row:3}
 .about-photo img{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
-@media (max-width:800px){.about-split{grid-template-columns:1fr}.about-photo{order:-1;grid-column:auto;grid-row:auto;max-width:220px;margin-bottom:2rem}}
+@media (max-width:800px){.about-split{grid-template-columns:1fr}.about-head{order:-2}.about-photo{order:-1;grid-column:auto;grid-row:auto;max-width:220px;margin:1.6rem 0 0}}
 .about-band h2{
   font-family:var(--h2-font);font-weight:var(--h2-weight);letter-spacing:var(--h2-track);
   font-size:clamp(1.5rem,3.2vw,2.1rem);margin-bottom:1.1rem;
@@ -621,9 +623,6 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
   *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
   .js .reveal{opacity:1;transform:none}
   .js .motif-reveal{filter:none}
-  .js .hero-greeting{position:static;min-height:0}
-  .js .hero-greeting .greeting-word{position:static;opacity:1;transform:none;transition:none}
-  .js .hero-greeting .greeting-word + .greeting-word{margin-left:.3em}
 }
 
 /* ---------- hero greeting (cycles; static without JS) ---------- */
@@ -642,6 +641,12 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .js .hero-greeting .greeting-word + .greeting-word{margin-left:0}
 .js .hero-greeting .greeting-word.is-active{opacity:1;transform:none}
 .js .hero-greeting .greeting-word.is-leaving{opacity:0;transform:translateY(-.4em)}
+/* reduced motion: show all four words side by side (must come after the rules above) */
+@media (prefers-reduced-motion:reduce){
+  .js .hero-greeting{position:static;min-height:0}
+  .js .hero-greeting .greeting-word{position:static;opacity:1;transform:none;transition:none}
+  .js .hero-greeting .greeting-word + .greeting-word{margin-left:.3em}
+}
 /* the track is a fixed width, so a narrower strip makes the same speed read faster.
    slow it as the viewport shrinks to keep the drift feeling equivalent. */
 @media (max-width:900px){.client-scroll{animation-duration:300s}}
